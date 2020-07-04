@@ -8,4 +8,4 @@ dist
 .env.*
 
 # Local Netlify folder
-.netlifyß
+.netlify
