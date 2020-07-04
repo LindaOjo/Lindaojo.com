@@ -1,6 +1,8 @@
 ---
 title: Sample
+excerpt: ""
 date: 4th, June 2020
+isBlogPost: true
 ---
 
 I really like using Markdown.
