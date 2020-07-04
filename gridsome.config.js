@@ -5,25 +5,17 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Lindaojo.com',
-  siteDescription: 'A personal website designed with Gridsome',
+  siteName: 'Linda Ojo',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: './content/blog/**/*.md',
         typeName: 'BlogPost',
-        route: '/blog/:slug'
+        path: './content/blog/**/*.md',
       }
     }
   ],
-  transformers: {
-    remark: {
-      // global remark options
-    }
-  },
   templates: {
-    Blogpost:'/blog/:title'
+    BlogPost: '/blog/:title'
   }
 }
- 

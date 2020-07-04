@@ -1,5 +1,5 @@
 {
-  "name": "website",
+  "name": "personal-website",
   "private": true,
   "scripts": {
     "build": "gridsome build",
@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.1",
     "gridsome": "^0.7.0"
   }
 }
