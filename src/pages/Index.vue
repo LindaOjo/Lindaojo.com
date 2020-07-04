@@ -1,4 +1,4 @@
-<template>
+<template class="bg-black">
   <Layout>
 
     <h1>HomePage</h1>
