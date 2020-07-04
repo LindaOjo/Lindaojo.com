@@ -1,10 +1,10 @@
 <template>
   <Layout>
       <span v-for="post in $page.allBlogPost.edges" :key="post.node.id">
-          <a :href="post.node.path">
+          <g-link :to="post.node.path">
           <h1>{{post.node.title}}</h1>
           <span>posted on {{post.node.date}}</span>
-          </a>
+          </g-link>
       </span>   
   </Layout>
 </template>
@@ -31,7 +31,5 @@ export default {
 </script>
 
 <style>
-a{
-    
-}
+
 </style>
