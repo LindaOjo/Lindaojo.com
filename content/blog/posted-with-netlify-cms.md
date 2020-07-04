@@ -2,6 +2,7 @@
 title: Posted with Netlify CMS
 excerpt: I really want to work
 date: 4th, July 2020
+isBlogPost: true
 ---
 ## **help me**
 

@@ -1,6 +1,8 @@
 ---
 title: Love is War
+excerpt: ""
 date: 1st, June 2020
+isBlogPost: true
 ---
 
 I really like using Markdown.
