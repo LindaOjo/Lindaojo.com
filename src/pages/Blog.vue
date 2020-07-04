@@ -6,7 +6,7 @@
                 <h1>{{post.node.title}}</h1>
                 <span>posted on {{post.node.date}}</span>
                 </g-link>
-            </div> 
+            </div>
       </span>   
   </Layout>
 </template>
