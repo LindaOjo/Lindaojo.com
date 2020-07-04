@@ -13,6 +13,12 @@ module.exports = {
         typeName: 'BlogPost',
         path: './content/blog/**/*.md',
       }
+    },
+    {
+      use: `gridsome-plugin-netlify-cms`,
+      options: {
+        publicPath: `/admin`
+      }
     }
   ],
   templates: {
