@@ -1,1 +1,1 @@
-# Linda.com2
+# lindaojo.com
