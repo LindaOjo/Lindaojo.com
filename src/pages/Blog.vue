@@ -1,7 +1,7 @@
 <template>
   <Layout>
       <span v-for="post in $page.allBlogPost.edges" :key="post.node.id">
-          <g-link :href="post.node.path">
+          <g-link :to="post.node.path">
           <h1>{{post.node.title}}</h1>
           <span>posted on {{post.node.date}}</span>
           </g-link>
