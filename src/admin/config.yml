@@ -13,7 +13,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Excerpt", name: "excerpt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "isBlogPost", name: "isBlogPost", widget: "boolean"}
@@ -24,7 +24,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Excerpt", name: "excerpt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "isBlogPost", name: "isBlogPost", widget: "boolean"}
+      - {label: "isBlogPost", name: "isBlogPost", widget: "boolean", default: "false"}
