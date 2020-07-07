@@ -45,7 +45,7 @@ h2{
     background-size: cover;
 }
 
-/* DEFAULT STYLES: DARK MODE ***********************************************************/ 
+/* DEFAULT STYLES: LIGHT MODE ***********************************************************/ 
 
 /* containers */
 .container {
@@ -103,10 +103,10 @@ h2{
 }
 
 
-/* LIGHT MODE ********************************************************/
-.light {
-    background-color: var(--light-theme-lg-container-background);
-    color: var(--light-theme-text-color);
+/* DARK MODE ********************************************************/
+.dark {
+    background-color: var(--dark-theme-lg-container-background);
+    color: var(--dark-theme-text-color);
 }
 
 
