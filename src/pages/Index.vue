@@ -1,24 +1,18 @@
-<template class="bg-black">
+<template>
   <Layout>
-
-    <h1>HomePage</h1>
-
-    <g-image src=""/>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-
+    <div class="flex justify-center">
+      <g-image class="profile-picture h-50 w-40" src="./../../content/images/profilepng.png"></g-image>
+    </div>
+    <h2 class="text-center p-4 font-bold">Software Engineer and Product Designer</h2>
+    <div>
+      <h2 class="md:p-8">Latest Posts</h2>
+    </div>
   </Layout>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-
 </style>

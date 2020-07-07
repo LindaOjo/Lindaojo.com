@@ -1,0 +1,113 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+:root {
+    --overall-background: linear-gradient(rgba(50, 224, 196, 1),rgba(33, 159, 199, 1));
+    --primary-green:rgba(50, 224, 196, 1);
+    /* Light */
+    --light-theme-lg-container-background: rgba(255, 255, 255, 0.7);
+    --light-text-color:rgba(16, 8, 18, 0.9);
+
+    /* Dark */
+    --dark-theme-lg-container-background: rgba(16, 8, 18, 0.9);
+    --dark-theme-text-color: white;
+
+    --link-hover-timing: all 0.25s ease-in-out;
+    --theme-change-timing: all 1s ease-in-out;
+}
+
+* {
+    box-sizing: border-box !important;
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box !important; 
+    /* for desktop mode  */
+    background-image: var(--overall-background); 
+    height: 100vh;
+
+}
+
+h1 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+h2{
+    font-size: 1.5rem;
+    background-size: cover;
+}
+
+/* DEFAULT STYLES: DARK MODE ***********************************************************/ 
+
+/* containers */
+.container {
+    background-image: var(--overall-background);
+    @apply p-8 h-screen w-screen;;
+}
+
+.lg-container {
+    background-color: var(--light-theme-lg-container-background);
+    color: var(--light-theme-text-color);
+    border-radius: 3rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    @apply p-6 px-6 h-full;
+}
+
+/* Profile Picture */
+
+.profile-picture {
+    border: 2px solid var(--primary-green);
+    border-radius: 50%;
+
+}
+
+/* Layout Breakpoints *****/
+
+/* Larger devices */
+@media (min-width: 1020px) {
+    .container{
+        @apply py-16 px-0;
+    }
+    .lg-container{
+        @apply px-16;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) { 
+    h1{
+        font-size: larger;
+    }
+    h2{
+        font-size: large;
+    }
+
+    .lg-container {
+        border-radius: 2rem;
+    }
+
+    .nav__link{
+        display: none;
+    }
+    .profile-picture {
+        @apply h-24 w-20;
+    }
+}
+
+
+/* LIGHT MODE ********************************************************/
+.light {
+    background-color: var(--light-theme-lg-container-background);
+    color: var(--light-theme-text-color);
+}
+
+
+
