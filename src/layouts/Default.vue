@@ -1,9 +1,9 @@
 <template>
-  <div class="layout container">
+  <div class="container">
     <div class="lg-container">
-      <header class="header h-6">
-        <h1>
-          <strong class="">
+      <header class="header p-0 flex items-baseline">
+        <h1 class="h1">
+          <strong>
             <g-link to="/">{{ $static.metadata.siteName }}</g-link>
           </strong>
         </h1>
@@ -12,6 +12,7 @@
           <g-link class="nav__link" to="/">Home</g-link>
           <g-link class="nav__link" to="/blog/">Blog</g-link>
           <g-link class="nav__link" to="/poems/">Poems</g-link>
+          <g-link class="nav__link" to="/poems/">Contact</g-link>
         </nav>
       </header>
       <slot />
@@ -27,31 +28,3 @@ query {
 }
 </static-query>
 
-<style>
-body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-}
-
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-}
-</style>

@@ -1,0 +1,86 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import "./variables.css";
+
+
+body {
+    box-sizing: border-box !important; 
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+    overflow: hidden;
+    height: auto;
+    /* for desktop mode  */
+    background: url(./../../content/images/profilepng.png);
+    background-image: var(--light-theme-overall-background);
+    background-size: cover;
+    height: 100vh;
+    line-height: 1.5;
+
+}
+
+.header {
+    @apply p-4;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+.nav__link {
+    margin-left: 40px;
+}
+
+/* containers */
+.container {
+    background: transparent;
+    @apply h-screen w-screen mx-auto p-8;
+}
+
+.lg-container {
+    background-color: rgba(16, 8, 18, 0.61);
+    color: var(--dark-theme-text-color);
+    border-radius: 3rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    @apply p-8 h-full w-full;
+}
+
+/* Profile Picture */
+
+.profile-picture {
+    @apply h-48 w-48;
+    border: 2px solid pink;
+    border-radius: 50%;
+
+}
+
+/* Layout Breakpoints *****/
+
+/* Larger devices */
+@media (min-width: 1020px) {
+    .container {
+        @apply px-0;
+    }
+    .lg-container{
+        @apply px-8;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) { 
+
+    .lg-container {
+        border-radius: 2rem;
+    }
+
+    .nav__link{
+        display: none;
+    }
+    .profile-picture {
+        @apply h-24 w-24;
+    }
+}
