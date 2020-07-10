@@ -10,7 +10,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
-  Vue.component('Layout', DefaultLayout)
+  Vue.component('Layout', DefaultLayout);
+    AOS.init();
+    window.addEventListener('load', AOS.refresh)
 }
-
-AOS.init();

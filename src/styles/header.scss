@@ -1,0 +1,72 @@
+@import "./variables.css";
+
+.header {
+    @apply p-4;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+.nav__link {
+    margin-left: 40px;
+    @apply py-2;
+    transition: border .2s;
+}
+
+.nav__link:hover {
+    position: relative;
+    border-bottom: 1px solid var(--pink);
+    border-top: 1px solid var(--pink);
+}
+
+.menu {
+    background-color: var(--dark-menu-background);
+    height: 24rem;
+}
+
+.menu-icon {
+    font-size: 1.7rem;
+    color: var(--light-blue);
+    transition: color .1s;
+}
+
+.menu-icon:hover {
+    color: var(--pink);
+}
+.menu-icon:focus {
+    color: white;
+}
+
+.menu-link{
+     transition: border .2s;
+}
+
+.menu-link:hover {
+    border-bottom: 1px solid var(--pink);
+    border-top: 1px solid var(--pink);
+}
+
+.menu-link:focus {
+    padding: 1.3rem;
+    color: white;
+}
+
+/* Layout Breakpoints *****/
+
+/* Larger devices */
+@media (min-width: 1020px) {
+    .menu-icon {
+        display: none;
+        font-size: 7px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .nav__link{
+        display: none;
+    }
+}

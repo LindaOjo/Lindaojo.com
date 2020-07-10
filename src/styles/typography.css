@@ -1,0 +1,24 @@
+@import url(/Users/admin/Documents/Lindaojo.com/src/styles/variables.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.h1 {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.h2 {
+  font-size: 1.5rem;
+  background-size: cover;
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 1.5rem;
+  }
+  .h2 {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=typography.css.map */

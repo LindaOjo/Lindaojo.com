@@ -8,40 +8,25 @@
 
 
 body {
-    box-sizing: border-box !important; 
+    box-sizing: border-box !important;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-    overflow: hidden;
     height: auto;
     /* for desktop mode  */
-    background-image: linear-gradient(43deg, #1f0d3d 0%, #C850C0 30%, #020758 66%);
     background-image: var(--light-theme-overall-background);
-   
+    background-image: var(--dark-theme-overall-background);
+
     background-size: cover;
     height: 100vh;
     line-height: 1.5;
 
 }
 
-.header {
-    @apply p-4;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    height: auto;
-  }
-
-.nav__link {
-    margin-left: 40px;
-    
-}
-
 
 /* containers */
 .container {
     background: transparent;
-    @apply h-screen w-screen mx-auto p-8;
+    @apply h-screen w-screen mx-auto p-4;
 }
 
 .lg-container {
@@ -50,7 +35,7 @@ body {
     border-radius: 3rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     @apply p-8 h-full w-full;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 /* Cards */
@@ -59,7 +44,7 @@ body {
     @apply h-32 p-4 m-4 border-2 rounded-lg border-solid border-gray-200 flex items-center
            cursor-pointer justify-between;
     :hover {
-     @apply h-40;
+        @apply h-40 ;
     }
 }
 
@@ -82,10 +67,16 @@ body {
     .lg-container{
         @apply px-8;
     }
+
+    .icon {
+        display: none;
+        font-size: 7px;
+    }
+
 }
 
 /* Mobile */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
 
     .lg-container {
         border-radius: 2rem;

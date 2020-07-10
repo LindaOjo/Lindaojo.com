@@ -18,8 +18,11 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@iconify/icons-gg": "^1.0.0",
+    "@iconify/vue": "^1.0.2",
     "gridsome-plugin-tailwindcss": "^3.0.1",
     "node-sass": "^4.14.1",
-    "sass-loader": "^9.0.2"
+    "sass-loader": "^9.0.2",
+    "vue-svg-loader": "^0.16.0"
   }
 }
