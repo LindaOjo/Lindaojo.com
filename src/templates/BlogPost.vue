@@ -1,8 +1,8 @@
 <template>
     <Layout>
         <article>
-                <h1>{{$page.blogPost.title}}</h1>
-                <div v-html="$page.blogPost.content"></div>
+            <h2 class="h2 text-center">{{$page.blogPost.title}}</h2>
+            <div v-html="$page.blogPost.content"></div>
         </article>  
     </Layout>   
 </template>

@@ -1,8 +1,8 @@
 <template>
     <Layout>
-        <article>
-                <h1>{{$page.blogPost.title}}</h1>
-                <div v-html="$page.blogPost.content"></div>
+        <article class="bg-red-800">
+            <h2 class="h2 text-center">{{$page.blogPost.title}}</h2>
+            <div v-html="$page.blogPost.excerpt"></div>
         </article>  
     </Layout>   
 </template>
@@ -12,7 +12,7 @@
         blogPost (id: $id) {
             isBlogPost
             title
-            content
+            excerpt
         }
     }
 </page-query>

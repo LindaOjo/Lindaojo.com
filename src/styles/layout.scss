@@ -14,8 +14,9 @@ body {
     overflow: hidden;
     height: auto;
     /* for desktop mode  */
-    background: url(./../../content/images/profilepng.png);
+    background-image: linear-gradient(43deg, #1f0d3d 0%, #C850C0 30%, #020758 66%);
     background-image: var(--light-theme-overall-background);
+   
     background-size: cover;
     height: 100vh;
     line-height: 1.5;
@@ -26,14 +27,16 @@ body {
     @apply p-4;
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     margin-bottom: 20px;
     height: auto;
   }
 
 .nav__link {
     margin-left: 40px;
+    
 }
+
 
 /* containers */
 .container {
@@ -47,6 +50,17 @@ body {
     border-radius: 3rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     @apply p-8 h-full w-full;
+    overflow-y: scroll;
+}
+
+/* Cards */
+
+.post-card{
+    @apply h-32 p-4 m-4 border-2 rounded-lg border-solid border-gray-200 flex items-center
+           cursor-pointer justify-between;
+    :hover {
+     @apply h-40;
+    }
 }
 
 /* Profile Picture */
@@ -82,5 +96,9 @@ body {
     }
     .profile-picture {
         @apply h-24 w-24;
+    }
+
+    .post-card{
+        @apply h-24;
     }
 }

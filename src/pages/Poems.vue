@@ -1,12 +1,12 @@
 <template>
   <Layout>
+    <h2 class="h2 text-center">Poems</h2>
       <span v-for="post in $page.allBlogPost.edges" :key="post.node.id">
-          <div v-if="!post.node.isBlogPost">
-                <g-link :to="post.node.path">
-                <h1>{{post.node.title}}</h1>
-                <span>posted on: {{post.node.date}}</span>
-                </g-link>`
-          </div>
+          <g-link v-if="!post.node.isBlogPost"
+                    class="post-card hover:border-pink-600"
+                    :to="post.node.path">
+                <h2 class="h2">{{post.node.title}}</h2>
+            </g-link>
 
       </span>   
   </Layout>
