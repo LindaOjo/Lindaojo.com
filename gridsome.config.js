@@ -7,7 +7,7 @@ if (process.env.NODE_ENV === "production")
   postcssPlugins.push(purgecss(require("./purgecss.config.js")));
 
 module.exports = {
-  siteName: 'LindaOjo',
+  siteName: 'Linda Ojo',
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
