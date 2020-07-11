@@ -60,7 +60,7 @@ query {
 </style>
 
 <script>
-import ClickOutside from 'vue-click-outside'
+// import ClickOutside from 'vue-click-outside'
 
   export default {
     data () {
@@ -70,11 +70,8 @@ import ClickOutside from 'vue-click-outside'
     },
     methods: {
         hideMenu () {
-            this.isOpen = false
+            this.isOpen = false 
         }
-    },
-    directives: {
-        ClickOutside
     }
   }
 </script>

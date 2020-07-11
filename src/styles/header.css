@@ -1,6 +1,5 @@
 @import url(/Users/admin/Documents/Lindaojo.com/src/styles/variables.css);
 .header {
-  @apply p-4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +63,7 @@
 
 /* Layout Breakpoints *****/
 /* Larger devices */
-@media (min-width: 1020px) {
+@media (min-width: 769px) {
   .menu-icon {
     display: none;
     font-size: 7px;

@@ -6,11 +6,13 @@
 
 @import "./variables.css";
 
+* {
+    font-family: 'Spectral', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
 
 body {
     box-sizing: border-box !important;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
     height: auto;
     /* for desktop mode  */
     background-image: var(--light-theme-overall-background);
@@ -48,31 +50,24 @@ body {
     }
 }
 
-/* Profile Picture */
+/* Images and Profile Picture */
 
 .profile-picture {
-    @apply h-48 w-48;
+    @apply h-48 w-48 mx-auto object-cover;
     border: 2px solid pink;
     border-radius: 50%;
-
 }
 
 /* Layout Breakpoints *****/
 
 /* Larger devices */
-@media (min-width: 1020px) {
+@media (min-width: 769px) {
     .container {
         @apply px-0;
     }
     .lg-container{
         @apply px-8;
     }
-
-    .icon {
-        display: none;
-        font-size: 7px;
-    }
-
 }
 
 /* Mobile */
@@ -86,7 +81,7 @@ body {
         display: none;
     }
     .profile-picture {
-        @apply h-24 w-24;
+        @apply h-24 w-24 my-4;
     }
 
     .post-card{
