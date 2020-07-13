@@ -7,7 +7,7 @@
             </h3>
         </div>
         <div class="bio lg:w-1/2 lg:text-xl sm:w-3/4 mx-auto py-4" data-aos="fade-right" >
-            <p>Hi there! I'm Linda, a Lagos based developer and designer. I enjoy solving problems by creating beautiful
+            <p>Hi there! I'm Linda, a developer and designer in Lagos, Nigeria. I enjoy solving problems by creating beautiful
                and functional products. I also write and speak about web technologies. </p>          
         </div>
         <div>
@@ -16,7 +16,12 @@
     </Layout>
 </template>
 
-<script>
-export default {};
+<script> 
+import Layout from '~/layouts/Default.vue' 
+export default {
+     components:
+      { Layout },
+       metaInfo: { title: 'Home' }
+}
 </script>
 

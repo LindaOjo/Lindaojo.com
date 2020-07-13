@@ -34,8 +34,13 @@
     }
 </page-query>
 
-<script>
-export default {};
+<script> 
+import Layout from '~/layouts/Default.vue' 
+export default {
+     components:
+      { Layout },
+       metaInfo: { title: 'Blog' }
+}
 </script>
 
 <style lang="scss">

@@ -1,79 +1,79 @@
 @import url(/Users/admin/Documents/Lindaojo.com/src/styles/variables.css);
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 20px;
-  height: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	margin-bottom: 20px;
+	height: auto;
 }
 
 .nav__link {
-  margin-left: 40px;
-  @apply py-2;
-  -webkit-transition: border .2s;
-  transition: border .2s;
+	margin-left: 40px;
+	@apply py-2;
+	-webkit-transition: border 0.2s;
+	transition: border 0.2s;
 }
 
 .nav__link:hover {
-  position: relative;
-  border-bottom: 1px solid var(--pink);
-  border-top: 1px solid var(--pink);
+	position: relative;
+	border-bottom: 1px solid var(--pink);
+	border-top: 1px solid var(--pink);
 }
 
 .menu {
-  background-color: var(--dark-menu-background);
-  height: 24rem;
+	background-color: var(--dark-menu-background);
+	height: 24rem;
 }
 
 .menu-icon {
-  font-size: 1.7rem;
-  color: var(--light-blue);
-  -webkit-transition: color .1s;
-  transition: color .1s;
+    font-size: 1.7rem;
+	color: var(--light-blue);
+	-webkit-transition: color 0.1s;
+	transition: color 0.1s;
 }
 
 .menu-icon:hover {
-  color: var(--pink);
+	color: var(--pink);
 }
 
 .menu-icon:focus {
-  color: white;
+	color: white;
 }
 
 .menu-link {
-  -webkit-transition: border .2s;
-  transition: border .2s;
+	-webkit-transition: border 0.2s;
+	transition: border 0.2s;
 }
 
 .menu-link:hover {
-  border-bottom: 1px solid var(--pink);
-  border-top: 1px solid var(--pink);
+	border-bottom: 1px solid var(--pink);
+	border-top: 1px solid var(--pink);
 }
 
 .menu-link:focus {
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
 }
 
 /* Layout Breakpoints *****/
 /* Larger devices */
 @media (min-width: 769px) {
-  .menu-icon {
-    display: none;
-    font-size: 7px;
-  }
+	.menu-icon {
+		display: none;
+		font-size: 7px;
+	}
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .nav__link {
-    display: none;
-  }
+	.nav__link {
+		display: none;
+	}
 }
 /*# sourceMappingURL=header.css.map */

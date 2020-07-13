@@ -1,11 +1,7 @@
 @import "./variables.css";
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    height: auto;
+    @apply flex justify-between items-center h-auto mb-5;
   }
 
 .nav__link {
@@ -39,6 +35,7 @@
 }
 
 .menu-link{
+    @apply p-4 m-4 font-bold block;
      transition: border .2s;
 }
 

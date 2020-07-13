@@ -16,7 +16,7 @@
     --light-text-color:rgba(16, 8, 18, 0.9);
 
     /* Dark */
-    --dark-theme-overall-background: linear-gradient(43deg, #1f0d3d 0%, #C850C0 30%, #020758 66%);
+    --dark-theme-overall-background: linear-gradient(43deg, #1f0d3d 0%, #8d2786 30%, #020758 66%);
     --dark-theme-lg-container-background: rgba(16, 8, 18, 0.9);
     --dark-menu-background: rgba(6, 11, 40, 0.9);
     --dark-theme-text-color: rgba(255, 255, 255, 0.816);

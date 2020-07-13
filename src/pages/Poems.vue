@@ -28,9 +28,12 @@
     }
 </page-query>
 
-<script>
+<script> 
+import Layout from '~/layouts/Default.vue' 
 export default {
-
+     components:
+      { Layout },
+       metaInfo: { title: 'Poems' }
 }
 </script>
 

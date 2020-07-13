@@ -2,9 +2,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-* {
-  font-family: 'Spectral', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
 
 body {
   -webkit-box-sizing: border-box !important;
