@@ -1,44 +1,87 @@
 <template>
-  <div class="container">
-    <div class="lg-container">
-      <header class="header">
-        <h1 class="h1">
-          <strong>
-            <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-          </strong>
-        </h1>
-        <nav class="nav">
-          <g-link class="nav__link" to="/">Home</g-link>
-          <g-link class="nav__link" to="/blog/">Blog</g-link>
-          <g-link class="nav__link" to="/poems/">Poems</g-link>
-          <g-link class="nav__link" to="/contact/">Contact Me</g-link>
+	<div :class="theme">
+		<div class="container">
+			<div class="lg-container">
+				<header class="header">
+					<h1 class="h1">
+						<strong>
+							<g-link to="/">{{
+								$static.metadata.siteName
+							}}</g-link>
+						</strong>
+					</h1>
+					<nav class="nav">
+						<g-link class="nav__link" to="/">Home</g-link>
+						<g-link class="nav__link" to="/blog/">Blog</g-link>
+						<g-link class="nav__link" to="/poems/">Poems</g-link>
+						<g-link class="nav__link" to="/contact/"
+							>Contact Me</g-link
+						>
+						<span @click="toggleTheme">
+							<i
+								v-show="this.theme == 'darkMode'"
+								class="nav__link fa fa-lightbulb-o"
+								aria-hidden="true"
+							></i>
+							<i
+								v-show="this.theme != 'darkMode'"
+								class="nav__link fa fa-moon-o"
+								aria-hidden="true"
+							></i>
+						</span>
+<!-- Menu Icon -->
+						<span @click="isOpen = !isOpen">
+							<i
+								v-show="isOpen"
+								class="fa fa-times menu-icon"
+							></i>
+							<i
+								v-show="!isOpen"
+								class="fas fa-bars menu-icon"
+							></i>
+						</span>
+					</nav>
+				</header>
 
-            <span @click="isOpen = !isOpen">
-                <i v-show="isOpen" class="fa fa-times menu-icon"></i>
-                <i v-show="!isOpen" class="fas fa-bars menu-icon"></i>
-            </span>
+				<div
+					:class="isOpen ? 'block' : 'hidden'"
+					class="relative h-auto py-2"
+				>
+					<div
+						class="menu block text-center absolute w-full z-10 py-2 rounded-lg"
+					>
+						<g-link class=" menu-link" to="/">Home</g-link>
+						<g-link class=" menu-link" to="/blog/">Blog</g-link>
+						<g-link class=" menu-link" to="/poems/">Poems</g-link>
+						<g-link class=" menu-link" to="/contact/"
+							>Contact</g-link
+						>
+						
+                        <span @click="toggleTheme">
+							<i
+								v-show="this.theme == 'darkMode'"
+								class="menu_link fa fa-lightbulb-o"
+								aria-hidden="true"
+							></i>
+							<i
+								v-show="this.theme != 'darkMode'"
+								class="menu_link fa fa-moon-o"
+								aria-hidden="true"
+							></i>
+						</span>
+					</div>
+				</div>
 
-        </nav>
-      </header>
-
-      <div :class="isOpen ? 'block' : 'hidden'" class="relative h-auto py-2">
-        <div class="menu block text-center absolute w-full z-10 py-2 rounded-lg">
-            <g-link class=" menu-link" to="/">Home</g-link>
-            <g-link class=" menu-link" to="/blog/">Blog</g-link>
-            <g-link class=" menu-link" to="/poems/">Poems</g-link>
-            <g-link class=" menu-link" to="/contact/">Contact</g-link>
-
-        </div>
-      </div>
-
-
-      <transition name="fade" appear>
-        <main> <!-- a wrapper for slot is needed -->
-          <slot /> <!-- the content -->
-        </main>
-      </transition>
-    </div>
-  </div>
+				<transition name="fade" appear>
+					<main>
+						<!-- a wrapper for slot is needed -->
+						<slot />
+						<!-- the content -->
+					</main>
+				</transition>
+			</div>
+		</div>
+	</div>
 </template>
 
 <static-query>
@@ -49,31 +92,43 @@ query {
 }
 </static-query>
 
-<style lang ="scss" scoped>
-
+<style lang="scss" scoped>
 .fade-enter-active {
-  transition: opacity .9s;
+	transition: opacity 0.9s;
 }
 
 .fade-enter {
-  opacity: 0;
+	opacity: 0;
 }
-
+.themer {
+    
+}
 </style>
 
 <script>
 // import ClickOutside from 'vue-click-outside'
 
-  export default {
-    data () {
-        return {
-            isOpen: false
+export default {
+    
+    created() {
+        if (process.isClient) {
+            this.theme = localStorage.getItem('theme') || 'lightMode';
         }
     },
-    methods: {
-        hideMenu () {
-            this.isOpen = false 
+	data() {
+		return {
+            isOpen: false,
+			theme: 'darkMode'
+		};
+	},
+	methods: {
+		hideMenu() {
+			this.isOpen = false;
+        },
+        toggleTheme() {
+            this.theme = this.theme == 'darkMode' ? 'lightMode' : 'darkMode'
+            localStorage.setItem('theme', this.theme);
         }
-    }
-  }
+	},
+};
 </script>

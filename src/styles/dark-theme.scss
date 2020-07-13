@@ -6,12 +6,10 @@
 
 @import "./variables.css";
 
-.dark {
-    background-color: var(--dark-theme-lg-container-background);
-    color: var(--dark-theme-text-color);
+.darkMode {
+    background-image: var(--dark-theme-overall-background);
 }
 
-.dark.body {
-    background-color: #1f0d3d;
-    background-image: linear-gradient(43deg, #1f0d3d 0%, #C850C0 30%, #020758 66%);
+.lightMode{
+    background-image: var(--light-theme-overall-background);
 }

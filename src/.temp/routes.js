@@ -3,7 +3,7 @@ const c2 = () => import(/* webpackChunkName: "page--src--pages--poems-vue" */ "/
 const c3 = () => import(/* webpackChunkName: "page--src--pages--contact-vue" */ "/Users/admin/Documents/Lindaojo.com/src/pages/Contact.vue")
 const c4 = () => import(/* webpackChunkName: "page--src--pages--blog-vue" */ "/Users/admin/Documents/Lindaojo.com/src/pages/Blog.vue")
 const c5 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/admin/Documents/Lindaojo.com/node_modules/gridsome/app/pages/404.vue")
-const c6 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/admin/Documents/Lindaojo.com/src/pages/Index.vue")
+const c6 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/admin/Documents/Lindaojo.com/src/pages/index.vue")
 
 export default [
   {
