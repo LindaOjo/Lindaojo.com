@@ -1,5 +1,5 @@
 <template>
-	<div :class="theme" name="fade">
+	<div class="themer" :class="theme">
 		<div class="container">
 			<div class="lg-container">
 				<header class="header">
@@ -28,33 +28,20 @@
 								aria-hidden="true"
 							></i>
 						</span>
-<!-- Menu Icon -->
-						<span @click="isOpen = !isOpen">
-							<i
-								v-show="isOpen"
-								class="fa fa-times menu-icon"
-							></i>
-							<i
-								v-show="!isOpen"
-								class="fas fa-bars menu-icon"
-							></i>
-						</span>
+                <!-- Menu Icon -->
+                        <div>
+                            <span @click="toggleMenu" v-click-outside="hideMenu">
+							<i class="fas fa-bars menu-icon"></i></span>
+                        </div>					
 					</nav>
 				</header>
-
-				<div
-					:class="isOpen ? 'block' : 'hidden'"
-					class="relative h-auto py-2"
-				>
-					<div
-						class="menu block text-center absolute w-full z-10 py-2 rounded-lg"
-					>
+                <!-- Mobile Menu -->
+				<div v-show="isOpen" class="relative h-auto py-2">
+					<div class="menu block text-center absolute w-full z-10 py-2 rounded-lg">
 						<g-link class="menu-link" to="/">Home</g-link>
 						<g-link class="menu-link" to="/blog/">Blog</g-link>
 						<g-link class="menu-link" to="/poems/">Poems</g-link>
-						<g-link class="menu-link" to="/contact/"
-							>Contact</g-link
-						>
+						<g-link class="menu-link" to="/contact/">Contact</g-link>
 						
                         <span class="menu_link py-4 px-16" @click.prevent="toggleTheme" aria-label="Toggle light/dark mode">
 							<i
@@ -93,6 +80,7 @@ query {
 </static-query>
 
 <style lang="scss" scoped>
+
 .fade-enter-active {
 	transition: opacity 0.7s;
 }
@@ -101,11 +89,21 @@ query {
 	opacity: 0;
 }
 
+.themer {
+     -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
 </style>
 
 <script>
+import ClickOutside from 'vue-click-outside';
 
 export default {
+    directives: {
+        ClickOutside
+    },
     created() {
         if (process.isClient) {
             this.theme = localStorage.getItem('theme') || 'lightMode';
@@ -118,8 +116,11 @@ export default {
 		};
 	},
 	methods: {
-		hideMenu() {
-			this.isOpen = false;
+        hideMenu() {
+            this.isOpen = false
+        },
+		toggleMenu() {
+			this.isOpen = true
         },
         toggleTheme() {
             this.theme = this.theme == 'darkMode' ? 'lightMode' : 'darkMode'
