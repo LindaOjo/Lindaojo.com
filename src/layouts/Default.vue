@@ -30,13 +30,13 @@
 						</span>
                 <!-- Menu Icon -->
                         <div>
-                            <span @click="toggleMenu" v-click-outside="hideMenu">
+                            <span @click="toggleMenu">
 							<i class="fas fa-bars menu-icon"></i></span>
                         </div>					
 					</nav>
 				</header>
                 <!-- Mobile Menu -->
-				<div v-show="isOpen" class="relative h-auto py-2">
+				<div v-show="isOpen" class="relative h-auto py-2" v-click-outside="hideMenu">
 					<div class="menu block text-center absolute w-full z-10 py-2 rounded-lg">
 						<g-link class="menu-link" to="/">Home</g-link>
 						<g-link class="menu-link" to="/blog/">Blog</g-link>
