@@ -11,7 +11,7 @@
                and functional products. I also write and speak about web technologies. </p>          
         </div>
         <div>
-            <h2 class="md:p-8 h2 font-semibold" data-aos="fade-right">Latest Posts</h2>
+            <h2 class="md:p-8 h2 font-semibold">Latest Posts</h2>
         </div>
         <Latest/>
         <span class="flex justify-center">
