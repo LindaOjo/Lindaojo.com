@@ -6,8 +6,7 @@
       <p class="sm:w-3/4 lg:w-1/2 my-5 mx-auto lg:text-xl">Feel free to get in touch with me. I am open to discussing new projects, creative ideas or oppurtunies.</p>
       <div class="flex justify-center mx-auto mt-2 p-5 relative">
            <button data-aos="fade-right" class="button bg-pink-700 hover:bg-pink-600 text-white font-bold py-2 px-4 border-b-4 border-pink-900 hover:border-pink-500 rounded">
-               <a>Send an email</a>
-               <!-- href="mailto:lindaojof@gmail.com" -->
+               <a href="mailto:lindaojof@gmail.com">Send an email</a>
            </button>
       </div>
       <div class="links sm:w-3/4 lg:w-1/2 my-5 mx-auto" >
