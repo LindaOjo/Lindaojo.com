@@ -1,5 +1,5 @@
 <template>
-	<div :class="theme">
+	<div :class="theme" name="fade">
 		<div class="container">
 			<div class="lg-container">
 				<header class="header">
@@ -14,18 +14,17 @@
 						<g-link class="nav__link" to="/">Home</g-link>
 						<g-link class="nav__link" to="/blog/">Blog</g-link>
 						<g-link class="nav__link" to="/poems/">Poems</g-link>
-						<g-link class="nav__link" to="/contact/"
-							>Contact Me</g-link
+						<g-link class="nav__link" to="/contact/">Contact</g-link
 						>
-						<span @click="toggleTheme">
+						<span class="nav__link" @click.prevent="toggleTheme" aria-label="Toggle light/dark mode">
 							<i
 								v-show="this.theme == 'darkMode'"
-								class="nav__link fa fa-lightbulb-o"
+								class="p-1 fa fa-lightbulb"
 								aria-hidden="true"
 							></i>
 							<i
 								v-show="this.theme != 'darkMode'"
-								class="nav__link fa fa-moon-o"
+								class="p-1 fa fa-moon-o"
 								aria-hidden="true"
 							></i>
 						</span>
@@ -50,22 +49,22 @@
 					<div
 						class="menu block text-center absolute w-full z-10 py-2 rounded-lg"
 					>
-						<g-link class=" menu-link" to="/">Home</g-link>
-						<g-link class=" menu-link" to="/blog/">Blog</g-link>
-						<g-link class=" menu-link" to="/poems/">Poems</g-link>
-						<g-link class=" menu-link" to="/contact/"
+						<g-link class="menu-link" to="/">Home</g-link>
+						<g-link class="menu-link" to="/blog/">Blog</g-link>
+						<g-link class="menu-link" to="/poems/">Poems</g-link>
+						<g-link class="menu-link" to="/contact/"
 							>Contact</g-link
 						>
 						
-                        <span @click="toggleTheme">
+                        <span class="menu_link py-4 px-16" @click.prevent="toggleTheme" aria-label="Toggle light/dark mode">
 							<i
 								v-show="this.theme == 'darkMode'"
-								class="menu_link fa fa-lightbulb-o"
+								class="fa fa-lightbulb"
 								aria-hidden="true"
 							></i>
 							<i
 								v-show="this.theme != 'darkMode'"
-								class="menu_link fa fa-moon-o"
+								class="fa fa-moon-o"
 								aria-hidden="true"
 							></i>
 						</span>
@@ -79,6 +78,7 @@
 						<!-- the content -->
 					</main>
 				</transition>
+            
 			</div>
 		</div>
 	</div>
@@ -94,22 +94,18 @@ query {
 
 <style lang="scss" scoped>
 .fade-enter-active {
-	transition: opacity 0.9s;
+	transition: opacity 0.7s;
 }
 
 .fade-enter {
 	opacity: 0;
 }
-.themer {
-    
-}
+
 </style>
 
 <script>
-// import ClickOutside from 'vue-click-outside'
 
 export default {
-    
     created() {
         if (process.isClient) {
             this.theme = localStorage.getItem('theme') || 'lightMode';

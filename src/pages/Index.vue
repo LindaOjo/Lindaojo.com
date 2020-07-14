@@ -13,14 +13,23 @@
         <div>
             <h2 class="md:p-8 h2 font-semibold" data-aos="fade-right">Latest Posts</h2>
         </div>
+        <Latest/>
+        <span class="flex justify-center">
+            <p class="mx-auto mt-5">Created by Linda Ojo </p>
+        </span>
+        
     </Layout>
 </template>
 
 <script> 
-import Layout from '~/layouts/Default.vue' 
+import Layout from '~/layouts/Default.vue';
+import Latest from './../components/Latest';
+
 export default {
      components:
-      { Layout },
+      { Layout,
+        Latest
+       },
        metaInfo: { title: 'Home' }
 }
 </script>

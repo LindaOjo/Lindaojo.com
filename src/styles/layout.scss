@@ -9,33 +9,14 @@
 body {
     box-sizing: border-box !important;
     height: auto;
-    scrollbar-color: var(--pink) !important;
-    /* for desktop mode  */
 
+    /* for desktop mode  scrollbar-color: var(--pink) !important; */
 
     background-size: cover;
     height: 100vh;
     line-height: 1.5;
 
 }
-
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--pink);
-    border-radius: 10px;
-  }
-
 
 /* containers */
 .container {
@@ -89,9 +70,6 @@ body {
         border-radius: 2rem;
     }
 
-    .nav__link{
-        display: none;
-    }
     .profile-picture {
         @apply h-24 w-24 my-5;
     }

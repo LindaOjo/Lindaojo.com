@@ -10,7 +10,7 @@
                <!-- href="mailto:lindaojof@gmail.com" -->
            </button>
       </div>
-      <div class="links sm:w-3/4 lg:w-1/2 lg:mx-auto" >
+      <div class="links sm:w-3/4 lg:w-1/2 my-5 mx-auto" >
               <p class="my-5 pr-5">
                   <a href="https://twitter.com/LindaOjo_" title="Twitter">
                     <i class="fa fa-twitter fa-2x pr-2" aria-hidden="true"></i> Twitter
@@ -42,7 +42,7 @@ export default {
 @import "./../styles/variables.css";
 
 .links {
-    @apply w-48;
+    
 }
 
 .links > a:hover{
