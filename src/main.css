@@ -9,7 +9,7 @@
 @import "./styles/dark-theme.scss";
 @import "./styles/layout.scss";
 @import "./styles/typography.scss";
-@import "./styles/effects.scss";
+@import "./styles/effects.css";
 @import "./styles/header.scss";
 @import "./styles/markdown.scss";
 

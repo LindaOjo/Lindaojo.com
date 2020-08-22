@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h2 class="h2 text-center m-5" data-aos="fade-down-right">Poems</h2>
+    <h2 class="h2 text-center m-5" data-aos="flip-right" data-aos-duration="1500">Poems</h2>
       <span v-for="post in $page.allBlogPost.edges" :key="post.node.id">
           <g-link  v-if="!post.node.isBlogPost"
                     class="post-card hover:border-pink-600 hover:-translate-y-1 hover:scale-105 transition delay-100 duration-300 ease-in-out transform"

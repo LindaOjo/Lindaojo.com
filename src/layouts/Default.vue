@@ -15,9 +15,8 @@
                         <g-link class="nav__link" to="/portfolio">Portfolio</g-link>
 						<g-link class="nav__link" to="/blog/">Blog</g-link>
 						<g-link class="nav__link" to="/poems/">Poems</g-link>
-						<g-link class="nav__link" to="/contact/">Contact</g-link
-						>
-						<span class=" nav__link mx-5" @click.prevent="toggleTheme" aria-label="Toggle light/dark mode">
+						<g-link class="nav__link" to="/contact/">Contact</g-link>
+						<span class=" nav__link" @click.prevent="toggleTheme" aria-label="Toggle light/dark mode">
 							<i
 								v-show="this.theme == 'darkMode'"
 								class="p-1 fa fa-lightbulb"
@@ -29,21 +28,9 @@
 								aria-hidden="true"
 							></i>
 						</span>
-                <!-- Menu Icon -->
+<!-- Menu Icon -->
                         
                         <div class="flex p-1 lg:hidden">
-                            <span class="mx-5" @click="toggleTheme" aria-label="Toggle light/dark mode">
-                                <i
-                                    v-show="this.theme == 'darkMode'"
-                                    class="p-1 fa fa-lightbulb text-xl"
-                                    aria-hidden="true"
-                                ></i>
-                                <i
-                                    v-show="this.theme != 'darkMode'"
-                                    class="p-1 fa fa-moon-o text-xl"
-                                    aria-hidden="true"
-                                ></i>
-                            </span>
                             <span @click="toggleMenu">
 							    <i class="fas fa-bars menu-icon"></i>
                             </span>
@@ -88,11 +75,15 @@ query {
 <style lang="scss" scoped>
 
 .fade-enter-active {
-	transition: opacity 0.7s;
+	transition: opacity 1s;
 }
 
 .fade-enter {
 	opacity: 0;
+}
+
+.safari > .nav__link:last-child { 
+ border: 1px solid aquamarine;
 }
 
 .themer {
@@ -105,6 +96,10 @@ query {
 
 <script>
 import ClickOutside from 'vue-click-outside';
+
+    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+        document.body.className += " safari";
+    }
 
 export default {
     directives: {

@@ -1,6 +1,6 @@
 <template>
   <Layout class="">
-      <h1 class="h2 text-center m-5 " data-aos="fade-down-right">
+      <h1 class="h2 text-center m-5 " data-aos="flip-right" data-aos-duration="1500">
           Portfolio
       </h1>
         <g-link class="project-card hover:border-blue-500 hover:-translate-y-1 hover:scale-105 transition delay-100 duration-300 ease-in-out transform">
