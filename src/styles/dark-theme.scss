@@ -7,28 +7,17 @@
 @import "./variables.css";
 
 .darkMode {
-    /* 
-    background-size: 400% 400%;
-    animation: gradient 3s ease;
-    animation-iteration-count: 1;
-    */
     height: auto;
     background: var(--dark-theme-overall-background);
     color: rgba(255, 255, 255, 0.897);
     transition: all 0.5s linear;
+    .post-card{
+        :hover {
+            @apply h-40 ;
+            background-color: aquamarine;
+        }
+    }
 }
-
-/*@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-} */
 
 .lightMode{
     height: auto;

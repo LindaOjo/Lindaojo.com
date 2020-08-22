@@ -36,7 +36,3 @@ export default {
        metaInfo: { title: 'Poems' }
 }
 </script>
-
-<style>
-
-</style>

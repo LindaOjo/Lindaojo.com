@@ -4,18 +4,79 @@
     @apply flex justify-between items-center h-auto mb-5;
   }
 
-.nav__link {
+.nav__link{
     margin-left: 40px;
-    @apply py-2;
-    transition: border .7s;
+    @apply p-2;
+    border-radius: 5px;
+    position: relative;
+    transition: all .3s;
+    
+}
+
+.nav__link:after,
+.nav__link:before {
+    transition: all 1s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: var(--pink);
+    height: 1px;
+    border-radius: 5px;
 }
 
 .nav__link:hover {
+    color: #fff;
+    z-index: 1;
+
+}
+
+.nav__link:hover:after {
     cursor: pointer;
-    position: relative;
+    width: 100%;
+    z-index: -10;
+    animation: fill .5s forwards;
+    -webkit-animation: fill .5s forwards;
+    -moz-animation: fill .5s forwards;
+    opacity: 1;
+    border-radius: 5px;
+
+
+}
+
+.nav__link:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+.nav__link:hover:after {
     border-bottom: 1px solid var(--pink);
     border-top: 1px solid var(--pink);
 }
+
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+    0% {
+      width: 0%;
+      height: 1px;
+    }
+    50% {
+      width: 100%;
+      height: 1px;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+      background: var(--pink);
+    }
+  }
 
 .menu { /* Mobile Menu*/
     background-color: var(--dark-menu-background);

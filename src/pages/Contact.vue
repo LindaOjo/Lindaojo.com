@@ -40,10 +40,6 @@ export default {
 <style scoped>
 @import "./../styles/variables.css";
 
-.links {
-    
-}
-
 .links > a:hover{
     cursor: pointer;
     color: var(--light-blue);
