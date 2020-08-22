@@ -6,6 +6,10 @@ date: 4th, December 2019
 isBlogPost: true
 ---
 
+![Nerd Zone](https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif)
+
+
+
 I am Linda, a Frontend Developer at BuyCoins, you can call me Linda too.
 Before getting into programming, I thought it was magic, something you couldn’t just learn. I assumed you had to be extraordinarily smart to speak the ‘language of computers’. Don’t worry if you feel that way.
 
@@ -73,8 +77,6 @@ The table below gives a brief description of the popular types of programmers.
     </tbody>
 </table>
 </div>
-
-<!-- ![types of programmers](./../images/types_of_programmers.png) -->
 
 The most popular programmers are web programmers (Frontend and Backend). Most newbies think they have to be one or the other. I suggest you research the various careers in programming and make a decision on what you want to explore.
 

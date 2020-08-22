@@ -16,6 +16,9 @@ article>div>p {
     margin: 16px 0;
 }
 
+p > img {
+    margin: 0 auto;
+}
 
 /* Table */
 .table-container {
@@ -56,6 +59,7 @@ article>div>p {
 }
 
 .tg .tg-0pky {
+    font-size: 1rem;
     border-color: inherit;
     text-align: left;
     vertical-align: top;
@@ -76,6 +80,9 @@ article>div>p {
 
     table {
         margin: 0 -16px;
+    }
+    .tg .tg-0pky {
+        font-size: .8rem;
     }
 
 }
