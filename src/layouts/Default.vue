@@ -97,10 +97,6 @@ query {
 <script>
 import ClickOutside from 'vue-click-outside';
 
-    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-        document.body.className += " safari";
-    }
-
 export default {
     directives: {
         ClickOutside
