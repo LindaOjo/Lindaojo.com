@@ -30,7 +30,19 @@
 						</span>
 <!-- Menu Icon -->
                         
-                        <div class="flex p-1 lg:hidden">
+                        <div class="flex p-1 lg:hidden"> <!--Hidden for large devices-->
+                            <span class=" mx-5 " @click.prevent="toggleTheme" aria-label="Toggle light/dark mode">
+                                <i
+                                    v-show="this.theme == 'darkMode'"
+                                    class="p-1 fa fa-lightbulb"
+                                    aria-hidden="true"
+                                ></i>
+                                <i
+                                    v-show="this.theme != 'darkMode'"
+                                    class="p-1 fa fa-moon-o"
+                                    aria-hidden="true"
+                                ></i>
+                            </span>
                             <span @click="toggleMenu">
 							    <i class="fas fa-bars menu-icon"></i>
                             </span>
