@@ -7,10 +7,34 @@
 @import "./variables.css";
 
 .darkMode {
-    background-image: var(--dark-theme-overall-background);
+    /* 
+    background-size: 400% 400%;
+    animation: gradient 3s ease;
+    animation-iteration-count: 1;
+    */
+    height: auto;
+    background: var(--dark-theme-overall-background);
     color: rgba(255, 255, 255, 0.897);
+    transition: all 0.5s linear;
 }
 
+/*@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
+
 .lightMode{
+    height: auto;
     background-image: var(--light-theme-overall-background);
+    background-image: 400% 400%;
+	-webkit-animation: gradientBG 10s ease infinite;
+	        animation: gradientBG 10s ease infinite;
+    transition: all 0.5s linear;
 }

@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <h2 class="h2 text-center" data-aos="fade-down-right">Blog</h2>
-    <span class="post-container"
+    <h2 class="h2 text-center m-5" data-aos="fade-down-right">Blog</h2>
+    <span 
           v-for="post in $page.allBlogPost.edges" 
           :key="post.node.id">
         <g-link v-if="post.node.isBlogPost" class="post-card hover:border-blue-500 hover:-translate-y-1 hover:scale-105 transition delay-100 duration-300 ease-in-out transform"
@@ -10,7 +10,7 @@
                 <h2 class="h2">{{post.node.title}}</h2>
                 <p class="excerpt">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corrupti animi debitis modi officia autem
-                velit excepturi, asperiores exercitationem consequuntur aperiam libero iusto nostrum cum reprehenderit! In ut maxime accusamus?
+                velit excepturi, asperiores exercitationem
                 </p>
             </div>
         </g-link>
@@ -42,11 +42,3 @@ export default {
        metaInfo: { title: 'Blog' }
 }
 </script>
-
-<style lang="scss">
-@media (max-width: 767px) {
-  .excerpt {
-    display: none;
-  }
-}
-</style>

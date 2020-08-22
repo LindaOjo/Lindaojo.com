@@ -1,23 +1,26 @@
 <template>
     <Layout>
-        <g-image class="profile-picture" src="./../../content/images/profile-pic.jpg"></g-image>
+        <picture>
+            <source alt="" srcset="./../../static/images/profile-pic.webp" type="image/webp">
+            <g-image class="profile-picture" src="./../../static/images/profile-pic.jpg" alt="profile picture"></g-image>
+        </picture>
+        
         <div>
-            <h3 class="text-center p-3 h3 font-bold" data-aos="fade-right">
-                Software Developer and Product Designer
+            <h3 class="text-center p-3 h3">
+                Software Developer and User Interface Designer
             </h3>
         </div>
-        <div class="bio lg:w-1/2 lg:text-xl sm:w-3/4 mx-auto py-4" data-aos="fade-right" >
+        <div class="bio lg:w-1/2 lg:text-xl sm:w-3/4 mx-auto my-5">
             <p>Hi there! I'm Linda, a developer and designer in Lagos, Nigeria. I enjoy solving problems by creating beautiful
                and functional products. I also write and speak about web technologies. </p>          
         </div>
         <div>
-            <h2 class="md:p-8 h2 font-semibold">Latest Posts</h2>
+            <h2 class="md:m-8 h2 sm:m-5">Latest Posts</h2>
         </div>
         <Latest/>
-        <span class="flex justify-center">
-            <p class="mx-auto mt-5">Created by Linda Ojo </p>
-        </span>
-        
+        <div class="footer">
+            <p class="mx-auto">Created by Linda Ojo </p>
+        </div>   
     </Layout>
 </template>
 
@@ -30,7 +33,19 @@ export default {
       { Layout,
         Latest
        },
-       metaInfo: { title: 'Home' }
+       metaInfo: { title: 'Home' },
+
+    data() {
+        return {
+           
+        }
+    },
 }
 </script>
 
+<style scoped>
+ .footer {
+     @apply w-full h-10 flex items-end text-center;
+     margin-bottom: -1.5rem;
+ }
+</style>

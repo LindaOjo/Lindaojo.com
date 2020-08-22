@@ -12,11 +12,12 @@
 					</h1>
 					<nav class="nav">
 						<g-link class="nav__link" to="/">Home</g-link>
+                        <g-link class="nav__link" to="/portfolio">Portfolio</g-link>
 						<g-link class="nav__link" to="/blog/">Blog</g-link>
 						<g-link class="nav__link" to="/poems/">Poems</g-link>
 						<g-link class="nav__link" to="/contact/">Contact</g-link
 						>
-						<span class="nav__link" @click.prevent="toggleTheme" aria-label="Toggle light/dark mode">
+						<span class=" nav__link mx-5" @click.prevent="toggleTheme" aria-label="Toggle light/dark mode">
 							<i
 								v-show="this.theme == 'darkMode'"
 								class="p-1 fa fa-lightbulb"
@@ -29,34 +30,39 @@
 							></i>
 						</span>
                 <!-- Menu Icon -->
-                        <div>
+                        
+                        <div class="flex p-1 lg:hidden">
+                            <span class="mx-5" @click="toggleTheme" aria-label="Toggle light/dark mode">
+                                <i
+                                    v-show="this.theme == 'darkMode'"
+                                    class="p-1 fa fa-lightbulb text-xl"
+                                    aria-hidden="true"
+                                ></i>
+                                <i
+                                    v-show="this.theme != 'darkMode'"
+                                    class="p-1 fa fa-moon-o text-xl"
+                                    aria-hidden="true"
+                                ></i>
+                            </span>
                             <span @click="toggleMenu">
-							<i class="fas fa-bars menu-icon"></i></span>
+							    <i class="fas fa-bars menu-icon"></i>
+                            </span>
                         </div>					
 					</nav>
 				</header>
                 <!-- Mobile Menu -->
-				<div v-show="isOpen" class="relative h-auto py-2" v-click-outside="hideMenu">
-					<div class="menu block text-center absolute w-full z-10 py-2 rounded-lg">
-						<g-link class="menu-link" to="/">Home</g-link>
-						<g-link class="menu-link" to="/blog/">Blog</g-link>
-						<g-link class="menu-link" to="/poems/">Poems</g-link>
-						<g-link class="menu-link" to="/contact/">Contact</g-link>
-						
-                        <span class="menu_link py-4 px-16" @click.prevent="toggleTheme" aria-label="Toggle light/dark mode">
-							<i
-								v-show="this.theme == 'darkMode'"
-								class="fa fa-lightbulb"
-								aria-hidden="true"
-							></i>
-							<i
-								v-show="this.theme != 'darkMode'"
-								class="fa fa-moon-o"
-								aria-hidden="true"
-							></i>
-						</span>
-					</div>
-				</div>
+
+                    <div v-show="isOpen" class="menu absolute text-center w-4/5 z-10 py-2 rounded-lg">
+                        <div v-click-outside="hideMenu">
+                            <g-link class="menu-link" to="/">Home</g-link>
+                            <g-link class="menu-link" to="/portfolio">Portfolio</g-link>
+                            <g-link class="menu-link" to="/blog/">Blog</g-link>
+                            <g-link class="menu-link" to="/poems/">Poems</g-link>
+                            <g-link class="menu-link" to="/contact/">Contact</g-link>
+                        </div>
+                    </div>
+                
+				
 
 				<transition name="fade" appear>
 					<main>
@@ -90,9 +96,9 @@ query {
 }
 
 .themer {
-     -webkit-transition: all 0.5s linear;
-  -moz-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+    -webkit-transition: all 0.7s linear;
+    -moz-transition: all 0.7s linear;
+    transition: all 0.7s linear;
 }
 
 </style>
@@ -106,21 +112,22 @@ export default {
     },
     created() {
         if (process.isClient) {
-            this.theme = localStorage.getItem('theme') || 'lightMode';
+            this.theme = localStorage.getItem('theme' || 'lightMode');
         }
     },
 	data() {
 		return {
             isOpen: false,
-			theme: 'darkMode'
+            theme: 'darkMode'
 		};
 	},
 	methods: {
         hideMenu() {
+            if(!this.isOpen) return
             this.isOpen = false
         },
 		toggleMenu() {
-			this.isOpen = true
+            this.isOpen = !this.isOpen
         },
         toggleTheme() {
             this.theme = this.theme == 'darkMode' ? 'lightMode' : 'darkMode'

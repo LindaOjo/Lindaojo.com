@@ -33,19 +33,19 @@ body {
 
 /* Cards */
 .post-card {
-  @apply h-32 p-4 m-4 border-2 rounded-lg border-solid border-gray-200 flex items-center
+    @apply h-32 p-4 m-4 border-2 rounded-lg border-solid border-gray-200 flex items-center
            cursor-pointer justify-between;
 }
 
 .post-card :hover {
-  @apply h-40;
+    @apply h-40;
 }
 
 /* Images and Profile Picture */
 .profile-picture {
-  @apply h-48 w-48 mx-auto object-cover;
-  border: 2px solid pink;
-  border-radius: 50%;
+    @apply h-48 w-48 mx-auto object-cover;
+    border: 2px solid pink;
+    border-radius: 50%;
 }
 
 /* Layout Breakpoints *****/

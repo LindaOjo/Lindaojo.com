@@ -7,7 +7,7 @@
 .nav__link {
     margin-left: 40px;
     @apply py-2;
-    transition: border .2s;
+    transition: border .7s;
 }
 
 .nav__link:hover {
@@ -17,15 +17,21 @@
     border-top: 1px solid var(--pink);
 }
 
-.menu {
+.menu { /* Mobile Menu*/
     background-color: var(--dark-menu-background);
     height: 24rem;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+     /* Need a specific value to work, width is specified inline */
 }
+
 
 .menu-icon {
     font-size: 1.7rem;
     color: var(--light-blue);
-    transition: color .1s;
+    transition: color .5s;
 }
 
 .menu-icon:hover {
