@@ -30,11 +30,11 @@
                and functional products. I also write and speak about web technologies. </p>          
         </div>
         <div>
-            <h2 class="md:m-8 h2 sm:m-5">Latest Posts</h2>
+            <h2 class="my-8 md:my-8 h2 sm:my-5">Latest Posts</h2>
         </div>
         <Latest/>
         <div class="footer">
-            <p class="mx-auto text-center">Created by Linda Ojo </p>
+            <p class="mx-auto mt-6 text-center">Created by Linda Ojo </p>
         </div> 
     </Layout>
 </template>

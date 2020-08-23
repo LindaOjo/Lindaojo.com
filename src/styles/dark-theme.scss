@@ -8,18 +8,28 @@
 
 .darkMode {
     height: auto;
-    background-image: linear-gradient(43deg, #1f0d3d 0%, #8d2786 30%, #020758 66%);
-    color: rgba(255, 255, 255, 0.897);
-    transition:  1s ease-in-out;
-    .container {
-        background-color: transparentize($color: #000000, $amount: 0);
-        transition:  1s ease-in-out;
-    }
+    background: linear-gradient(43deg, #1f0d3d 0%, #8d2786 30%, #020758 66%);
+    color: rgba(255, 255, 255, 0.897);  
+    -webkit-animation: gradient 1.5s ; /* Chrome, Safari, Opera */
+    animation: gradient 1.5s ;
 
 }
 
 .lightMode {
     height: auto;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 28%, #8ec5fc 87%);
-    transition: all 1s ease-in-out;
+    background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 28%, #8ec5fc 87%);
+    -webkit-animation: gradient 1.5s ; /* Chrome, Safari, Opera */
+    animation: gradient 1.5s ;
 }
+
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes gradient {
+    from {opacity: 0.95;}
+    to {opacity: 1;}
+  }
+
+  /* Standard syntax */
+  @keyframes myfirst {
+    from {opacity: 0.95;}
+    to {opacity: 1;}
+  }
