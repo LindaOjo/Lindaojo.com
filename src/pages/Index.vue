@@ -1,5 +1,14 @@
 <template>
     <Layout>
+                <div class="background container">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div data-aos="flip-right" data-aos-duration="1500">
             <picture>
                 <source alt="" srcset="./../../static/images/profile-pic.webp" type="image/webp">
@@ -22,17 +31,8 @@
         </div>
         <Latest/>
         <div class="footer">
-            <p class="mx-auto">Created by Linda Ojo </p>
+            <p class="mx-auto text-center">Created by Linda Ojo </p>
         </div> 
-        <div class="background">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
     </Layout>
 </template>
 
@@ -57,25 +57,25 @@ export default {
 
 <style lang="scss" scoped>
 
-body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  height: 0px;
-  width: 0px;
+:root, html, body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .background {
- margin: 0;
- padding: 0;
- position: static;
- background: transparent;
- overflow: hidden;
- height: 0px;
- width: 0px;
+    position: static;
+    height: 1px;
+    padding: 0;
+    margin: 0 -40px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: 1px solid rgb(0, 255, 153)!important;
 }
 
-$particleSize: 20vmin;
+$particleSize: 10vmin;
 $animationDuration: 6s;
 $amount: 7;
 .background span {
