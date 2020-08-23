@@ -112,7 +112,7 @@ export default {
     },
     created() {
         if (process.isClient) {
-            this.theme = localStorage.getItem('theme' || 'darkMode');
+            this.theme = localStorage.getItem('theme' || 'lightMode');
         }
     },
 	data() {

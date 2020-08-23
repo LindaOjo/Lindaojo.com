@@ -1,6 +1,9 @@
 <template>
     <Layout>
-                <div class="background container">
+            <div class="background container">
+            <span></span>
+            <span></span>
+            <span></span>
             <span></span>
             <span></span>
             <span></span>
@@ -57,8 +60,7 @@ export default {
 
 <style lang="scss" scoped>
 
-:root, html, body {
-    background: black;
+:root, body, .background {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -68,22 +70,17 @@ export default {
 .background {
     position: static;
     height: 1px;
-    padding: 0;
-    margin: 0 -40px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    border: 1px solid rgb(0, 255, 153)!important;
 }
 
 $particleSize: 10vmin;
 $animationDuration: 6s;
-$amount: 7;
+$amount: 10;
 .background span {
   width: $particleSize;
   height: $particleSize;
   border-radius: $particleSize;
   backface-visibility: hidden;
-  position: absolute;
+  position: fixed; /* don't change, fixes scroll bug*/
   animation-name: move;
   animation-duration: $animationDuration;
   animation-timing-function: linear;
