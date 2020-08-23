@@ -1,5 +1,6 @@
 <template>
 	<div class="themer" :class="theme">
+        <div :class="fadingDiv" class="h-full w-full"></div>   <!-- GIve illusion of transitioon --> 
 		<div class="container">
 			<div class="lg-container">
 				<header class="header">
@@ -16,7 +17,7 @@
 						<g-link class="nav__link" to="/blog/">Blog</g-link>
 						<g-link class="nav__link" to="/poems/">Poems</g-link>
 						<g-link class="nav__link" to="/contact/">Contact</g-link>
-						<span class=" nav__link" @click.prevent="toggleTheme" aria-label="Toggle light/dark mode">
+						<span class=" nav__link  mx-5" @click.prevent="toggleTheme" aria-label="Toggle light/dark mode">
 							<i
 								v-show="this.theme == 'darkMode'"
 								class="p-1 fa fa-lightbulb"
@@ -94,10 +95,6 @@ query {
 	opacity: 0;
 }
 
-.safari > .nav__link:last-child { 
- border: 1px solid aquamarine;
-}
-
 .themer {
     -webkit-transition: all 0.7s linear;
     -moz-transition: all 0.7s linear;
@@ -115,13 +112,14 @@ export default {
     },
     created() {
         if (process.isClient) {
-            this.theme = localStorage.getItem('theme' || 'lightMode');
+            this.theme = localStorage.getItem('theme' || 'darkMode');
         }
     },
 	data() {
 		return {
             isOpen: false,
-            theme: 'darkMode'
+            theme: 'darkMode',
+            fadingDiv: false,
 		};
 	},
 	methods: {
@@ -133,7 +131,7 @@ export default {
             this.isOpen = !this.isOpen
         },
         toggleTheme() {
-            this.theme = this.theme == 'darkMode' ? 'lightMode' : 'darkMode'
+            this.theme = this.theme == 'darkMode' ? 'lightMode' : 'darkMode';
             localStorage.setItem('theme', this.theme);
         }
 	},

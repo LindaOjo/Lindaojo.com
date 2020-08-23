@@ -23,7 +23,16 @@
         <Latest/>
         <div class="footer">
             <p class="mx-auto">Created by Linda Ojo </p>
-        </div>   
+        </div> 
+        <div class="background">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </Layout>
 </template>
 
@@ -46,9 +55,70 @@ export default {
 }
 </script>
 
-<style scoped>
- .footer {
+<style lang="scss" scoped>
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 0px;
+  width: 0px;
+}
+
+.background {
+ margin: 0;
+ padding: 0;
+ position: static;
+ background: transparent;
+ overflow: hidden;
+ height: 0px;
+ width: 0px;
+}
+
+$particleSize: 20vmin;
+$animationDuration: 6s;
+$amount: 7;
+.background span {
+  width: $particleSize;
+  height: $particleSize;
+  border-radius: $particleSize;
+  backface-visibility: hidden;
+  position: absolute;
+  animation-name: move;
+  animation-duration: $animationDuration;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  $colors: (
+    #8ec5fc5e ,
+    #e45a832d,
+    #ffacac24
+  );
+  @for $i from 1 through $amount {
+    &:nth-child(#{$i}) {
+      color: nth($colors, random(length($colors)));
+      top: random(100) * 1%;
+      left: random(100) * 1%;
+      animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
+      animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
+      transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+      $blurRadius: (random() + 0.5) * $particleSize * 0.5;
+      $x: if(random() > 0.5, -1, 1);
+      box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+    }
+  }
+}
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+
+/* Particles background inspired by Louis Hoebregts (https://codepen.io/Mamboleoo/pen/BxMQYQ)*/
+
+.footer {
      @apply w-full h-10 flex items-end text-center;
      margin-bottom: -1.5rem;
  }
+
+}
 </style>

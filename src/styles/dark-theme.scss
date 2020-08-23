@@ -8,16 +8,18 @@
 
 .darkMode {
     height: auto;
-    background: var(--dark-theme-overall-background);
+    background-image: linear-gradient(43deg, #1f0d3d 0%, #8d2786 30%, #020758 66%);
     color: rgba(255, 255, 255, 0.897);
-    transition: all 0.5s linear;
+    transition:  1s ease-in-out;
+    .container {
+        background-color: transparentize($color: #000000, $amount: 0);
+        transition:  1s ease-in-out;
+    }
+
 }
 
-.lightMode{
+.lightMode {
     height: auto;
-    background-image: var(--light-theme-overall-background);
-    background-image: 400% 400%;
-	-webkit-animation: gradientBG 10s ease infinite;
-	        animation: gradientBG 10s ease infinite;
-    transition: all 0.5s linear;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 28%, #8ec5fc 87%);
+    transition: all 1s ease-in-out;
 }

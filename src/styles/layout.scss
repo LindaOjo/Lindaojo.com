@@ -13,11 +13,10 @@ html {
 body {
     box-sizing: border-box !important;
     height: auto;
-
     /* for desktop mode  scrollbar-color: var(--pink) !important; */
     @apply h-screen;
     background-size: cover;
-    height: 100vh;
+    max-height: 100vh;
     line-height: 1.5;
 
 }
@@ -26,6 +25,7 @@ body {
 .container {
     background: transparent;
     @apply h-screen w-screen mx-auto p-4;
+    max-height: 100vh;
 }
 
 .lg-container {

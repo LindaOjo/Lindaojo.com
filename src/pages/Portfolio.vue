@@ -47,12 +47,10 @@
 
 <script> 
 import Layout from '~/layouts/Default.vue';
-import Slider from './../components/Slider';
 
 export default {
      components:
-      { Layout,
-        Slider
+      { Layout
       },
        metaInfo: { title: 'Portfolio' }
 }
