@@ -85,8 +85,7 @@ export default {
             }),
             })
             .then(() => {
-               if (formData.name.length != 0 && formData.name.email != 0 && formData.name.message != 0) 
-               this.$router.push('/success')
+                if (this.formData.name.length != 0 && this.formData.name.email != 0 && this.formData.name.message != 0) this.$router.push('/success')
             } )
             .catch(error => alert(error))
         }
