@@ -3,7 +3,10 @@
       <h1 class="h2 text-center m-5 " data-aos="flip-right" data-aos-duration="1500">
            Don't be a stranger
       </h1>
-        <p class="sm:w-3/4 lg:w-1/2 my-5 mx-auto lg:text-xl">Feel free to get in touch with me. I am open to discussing creative ideas and oppurtunies or simply tell me how I changed your life.</p>
+        <p class="sm:w-3/4 lg:w-1/2 my-5 text-center mx-auto lg:text-xl">
+            I am open to discussing creative ideas and oppurtunies
+            <i class="fas fa-smile-wink"></i>
+        </p>
         <form class="lg:w-1/2 sm:w-3/4 shadow-2xl rounded px-8 pt-6 pb-8 mb-4 mx-auto"
             name="contact"
             method="post"
@@ -20,22 +23,22 @@
             </p>
             <div class="sender-info">
                 <div class="py-4">
-                <label for="name" class="label block text-pink-700 text-sm font-bold mb-2" >Your Name *</label>
-                <input type="text" class="w-full bg-gray-400  text-black p-2" name="name" v-model="formData.name" />
+                <label for="name" class="label block text-sm font-bold mb-2" >Your Name *</label>
+                <input required type="text" class="w-full bg-gray-400  text-black p-2" name="name" v-model="formData.name" />
                 </div>
                 <div class="py-4">
-                <label for="email" class=" block text-pink-700 text-sm font-bold mb-2">Your Email *</label>
-                <input type="email" class="w-full bg-gray-400  text-black p-2"  name="email" v-model="formData.email" />
+                <label for="email" class=" block text-sm font-bold mb-2">Your Email *</label>
+                <input required type="email" class="w-full bg-gray-400  text-black p-2"  name="email" v-model="formData.email" />
                 </div>
             </div>
 
             <div class="message-wrapper">
-                <label for="message" class="block text-pink-700 text-sm font-bold mb-2">Message*</label>
-                <textarea name="message" class="w-full bg-gray-400 text-black p-2"  v-model="formData.message"></textarea>
+                <label for="message" class="block text-sm font-bold mb-2">Message *</label>
+                <textarea required name="message" class="w-full bg-gray-400 text-black p-2"  v-model="formData.message"></textarea>
             </div>
 
             <div class="flex justify-center mx-auto m-8 relative">
-            <button type="submit" data-aos="fade-right" class="button bg-pink-700 hover:bg-pink-600 text-white font-bold py-2 px-4 border-b-4 border-pink-900 hover:border-pink-500 rounded">
+            <button type="submit" class="button bg-pink-700 hover:bg-pink-600 text-white font-bold py-2 px-4 border-b-4 border-pink-900 hover:border-pink-500 rounded">
                 Send Message
             </button>
             </div>
@@ -81,7 +84,10 @@ export default {
                 ...this.formData,
             }),
             })
-            .then(() => this.$router.push('/success'))
+            .then(() => {
+               if (formData.name.length != 0 && formData.name.email != 0 && formData.name.message != 0) 
+               this.$router.push('/success')
+            } )
             .catch(error => alert(error))
         }
     }
@@ -104,7 +110,7 @@ export default {
   transform: scale(0.9);
 }
 
-.fa-twitter:hover, .fa-github:hover, a:hover {
+.fa-twitter:hover, .fa-github:hover, .fa-smile-wink:hover, a:hover {
     color: var(--pink);
 }
 </style>

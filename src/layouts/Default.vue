@@ -135,12 +135,12 @@ export default {
             this.isOpen = !this.isOpen
         },
         toggleTheme() {
-            let real = this.theme;
-            this.theme = real === 'darkMode' ?  'lightTransition' : 'darkTransition';
+            let realTheme = this.theme;
+            this.theme = realTheme === 'darkMode' ?  'lightTransition' : 'darkTransition';
             setTimeout (() => {
-                this.theme = real == 'darkMode' ? 'lightMode' : 'darkMode';
+                this.theme = realTheme == 'darkMode' ? 'lightMode' : 'darkMode';
                 localStorage.setItem('theme', this.theme);
-            }, 1400 )
+            }, 1000 )
             
             
         }

@@ -25,7 +25,7 @@ p > img {
     min-width: 100%;
     position: relative;
     margin-right: 0!important;
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 
 .tg {
@@ -33,6 +33,7 @@ p > img {
     border-spacing: 0;
     margin-left: auto;
     margin-right: auto;
+    overflow-x: scroll;
 }
 
 .tg td {
