@@ -6,7 +6,7 @@
                 <div>
                     <g-link :to="post.node.path">
                         <div class="block">
-                            <h2 class="h2">{{post.node.title}}</h2>
+                            <h2 class="h3">{{post.node.title}}</h2>
                             <p class="excerpt">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corrupti animi debitis modi officia autem
                             velit excepturi, asperiores exercitationem
