@@ -8,6 +8,8 @@ isBlogPost: true
 
 ![Nerd Zone](https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif)
 
+
+
 I am Linda, a Frontend Developer at BuyCoins, you can call me Linda too.
 Before getting into programming, I thought it was magic, something you couldn’t just learn. I assumed you had to be extraordinarily smart to speak the ‘language of computers’. Don’t worry if you feel that way.
 

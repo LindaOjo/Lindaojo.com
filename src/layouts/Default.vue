@@ -138,11 +138,15 @@ export default {
             //We transition into a class whose background colour is the same as the primary color of the gradient.
             //Then replace it with gradient class after a second.
 
-            let realTheme = this.theme; //stores the mode user is transitioning OUT of.
-            this.theme = realTheme === 'darkMode' ?  'lightTransition' : 'darkTransition'; // transitions to a background color.
+            //stores the mode user is transitioning OUT of.
+            let formerTheme = this.theme;
 
-            setTimeout (() => { //add gradient class after transition.
-                this.theme = realTheme == 'darkMode' ? 'lightMode' : 'darkMode';
+            // transitions to a background color.
+            this.theme = formerTheme === 'darkMode' ?  'lightTransition' : 'darkTransition';
+
+            //add gradient class after transition.
+            setTimeout (() => { 
+                this.theme = formerTheme == 'darkMode' ? 'lightMode' : 'darkMode';
                 localStorage.setItem('theme', this.theme);
             }, 1000 ) 
         }
