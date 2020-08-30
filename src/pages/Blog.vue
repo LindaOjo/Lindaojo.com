@@ -1,13 +1,21 @@
 <template>
   <Layout>
-      <span v-for="post in $page.allBlogPost.edges" :key="post.node.id">
-            <div v-if="post.node.isBlogPost">
-                <g-link :to="post.node.path">
-                <h1>{{post.node.title}}</h1>
-                <span>posted on: {{post.node.date}}</span>
-                </g-link>
-            </div>
-      </span>   
+    <h2 class="h2 text-center m-5" data-aos="flip-right" data-aos-duration="1500">Blog</h2>
+        <span v-for="post in $page.allBlogPost.edges" :key="post.node.id">
+            <div v-if="post.node.isBlogPost" class="post-card hover:border-blue-500 hover:-translate-y-1 hover:scale-105 transition delay-100 duration-300 ease-in-out transform">
+                <div>
+                    <g-link :to="post.node.path">
+                        <div class="block">
+                            <h2 class="h3">{{post.node.title}}</h2>
+                            <p class="excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corrupti animi debitis modi officia autem
+                            velit excepturi, asperiores exercitationem
+                            </p>
+                        </div>
+                    </g-link>
+                </div>    
+            </div>    
+        </span>
   </Layout>
 </template>
 
@@ -27,12 +35,10 @@
     }
 </page-query>
 
-<script>
+<script> 
+import Layout from '~/layouts/Default.vue' 
 export default {
-
+     components:
+      { Layout },
+       metaInfo: { title: 'Blog' }
 }
-</script>
-
-<style>
-
-</style>

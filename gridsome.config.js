@@ -1,11 +1,9 @@
-// This is where project configuration and plugin options are located.
-// Learn more: https://gridsome.org/docs/config
+const tailwind = require("tailwindcss");
 
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
+const postcssPlugins = [tailwind()];
 
 module.exports = {
-  siteName: 'LindaOjo',
+  siteName: 'Linda Ojo',
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
@@ -16,6 +14,7 @@ module.exports = {
       ]
     }
   },
+  
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -31,7 +30,21 @@ module.exports = {
       }
     }
   ],
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: postcssPlugins
+      }
+    }
+  },
   templates: {
     BlogPost: '/blog/:title'
+  },
+  chainWebpack: config => {
+    const svgRule = config.module.rule('svg')
+    svgRule.uses.clear()
+    svgRule
+      .use('vue-svg-loader')
+      .loader('vue-svg-loader')
   }
 }

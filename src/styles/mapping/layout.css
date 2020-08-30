@@ -1,0 +1,77 @@
+@import url(/Users/admin/Documents/Lindaojo.com/src/styles/variables.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  height: auto;
+  /* for desktop mode  */
+  background-image: var(--light-theme-overall-background);
+  background-image: var(--dark-theme-overall-background);
+  background-size: cover;
+  height: 100vh;
+  line-height: 1.5;
+}
+
+/* containers */
+.container {
+  background: transparent;
+  @apply h-screen w-screen mx-auto p-4;
+}
+
+.lg-container {
+  background-color: rgba(16, 8, 18, 0.61);
+  color: var(--dark-theme-text-color);
+  border-radius: 3rem;
+  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  @apply p-8 h-full w-full;
+  overflow-y: auto;
+}
+
+/* Cards */
+.post-card {
+    @apply h-32 p-4 m-4 border-2 rounded-lg border-solid border-gray-200 flex items-center
+           cursor-pointer justify-between;
+}
+
+.post-card :hover {
+    @apply h-40;
+}
+
+/* Images and Profile Picture */
+.profile-picture {
+    @apply h-48 w-48 mx-auto object-cover;
+    border: 2px solid pink;
+    border-radius: 50%;
+}
+
+/* Layout Breakpoints *****/
+/* Larger devices */
+@media (min-width: 769px) {
+  .container {
+    @apply px-0;
+  }
+  .lg-container {
+    @apply px-8;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .lg-container {
+    border-radius: 2rem;
+  }
+  .nav__link {
+    display: none;
+  }
+  .profile-picture {
+    @apply h-24 w-24 my-4;
+  }
+  .post-card {
+    @apply h-24;
+  }
+}
+/*# sourceMappingURL=layout.css.map */

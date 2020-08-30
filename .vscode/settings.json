@@ -1,5 +1,19 @@
 {
     "cSpell.words": [
-        "gridsome"
-    ]
+        "gridsome",
+        "tailwind"
+    ],
+    "cSpell.ignoreWords": [
+        "full",
+        "h",
+        "h full",
+        "tailwind"
+    ],
+    "css.customData": [".vscode/css_custom_data.json"],
+    "scss.validate": true,
+    "editor.detectIndentation": false,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true,
+    "vetur.format.options.tabSize": 4,
+    "vetur.format.options.useTabs": true
 }

@@ -1,0 +1,46 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import "./variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Lato', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    font-kerning: normal;
+}
+
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, serif;
+    font-kerning: auto;
+}
+
+.h1 {
+    font-size: 2rem;
+    
+}
+
+.h2 {
+    font-size: 1.7rem;
+}
+
+.h3 {
+    font-size: 1.5rem;
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) { 
+    .h1{
+        font-size: 1.7rem;
+    }
+    .h2{
+        font-size: 1.5rem !important;
+    }
+    .h3 {
+        font-size: 1.3rem !important;
+    }
+}

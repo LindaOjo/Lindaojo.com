@@ -1,12 +1,12 @@
 <template>
   <Layout>
+    <h2 class="h2 text-center m-5" data-aos="flip-right" data-aos-duration="1500">Poems</h2>
       <span v-for="post in $page.allBlogPost.edges" :key="post.node.id">
-          <div v-if="!post.node.isBlogPost">
-                <g-link :to="post.node.path">
-                <h1>{{post.node.title}}</h1>
-                <span>posted on: {{post.node.date}}</span>
-                </g-link>`
-          </div>
+          <g-link  v-if="!post.node.isBlogPost"
+                    class="post-card hover:border-pink-600 hover:-translate-y-1 hover:scale-105 transition delay-100 duration-300 ease-in-out transform"
+                    :to="post.node.path">
+                <h2 class="h3">{{post.node.title}}</h2>
+            </g-link>
 
       </span>   
   </Layout>
@@ -28,12 +28,11 @@
     }
 </page-query>
 
-<script>
+<script> 
+import Layout from '~/layouts/Default.vue' 
 export default {
-
+     components:
+      { Layout },
+       metaInfo: { title: 'Poems' }
 }
 </script>
-
-<style>
-
-</style>

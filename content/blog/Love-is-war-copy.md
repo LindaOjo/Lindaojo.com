@@ -1,7 +1,7 @@
 ---
-title: Sample
+title: Love is War Copy
 excerpt: ""
-date: 4th, June 2020
+date: 1st, June 2020
 isBlogPost: true
 ---
 

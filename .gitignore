@@ -1,11 +1,11 @@
 *.log
 .cache
 .DS_Store
-src/.temp
+.src/.temp
 node_modules
 dist
 .env
 .env.*
-
 # Local Netlify folder
 .netlify
+package-lock.json

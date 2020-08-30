@@ -1,0 +1,172 @@
+@import "./variables.css";
+
+.header {
+    @apply flex justify-between items-center h-auto mb-5;
+}
+
+// Desktop Nav Bar
+
+.desktop-nav {
+    position: relative;
+    text-align: center;
+}
+
+.desktop-light-switch {
+}
+
+.nav__link {
+    margin-left: 25px;
+    @apply p-1;
+    border-radius: 5px;
+    position: relative;
+    transition: all .3s;
+    
+}
+
+.nav__link.active--exact {
+    color: var(--pink);
+    text-decoration: line-through;
+}
+
+.nav__link:first-child { 
+    margin-left: 25px;
+}
+
+.nav__link:after,
+.nav__link:before {
+    transition: all 1s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    height: 1px;
+}
+
+.nav__link:hover {
+    width: auto;
+    color: #fff;
+    z-index: 1;
+}
+
+.nav__link:hover:after {
+    cursor: pointer;
+    width: 100%;
+    z-index: -10;
+    animation: fill .5s forwards;
+    -webkit-animation: fill .5s forwards;
+    -moz-animation: fill .5s forwards;
+    opacity: 1;
+    border-radius: 5px;
+
+
+}
+
+.nav__link:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+.nav__link:hover:after {
+    border-bottom: 1px solid var(--pink);
+}
+
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+    0% {
+      width: 0%;
+      height: 1px;
+    }
+    50% {
+      width: 100%;
+      height: 1px;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+      background: var(--pink);
+    }
+  }
+
+/* Mobile Navigation*/
+.mobile-nav {
+    @apply p-1;
+    margin-bottom: 28px;
+}
+
+.menu { 
+    background-color: var(--dark-menu-background);
+    height: 20rem;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+     /* Need a specific value to work, width is specified inline */
+}
+
+.mobile-light-switch {
+    font-size: 1.5rem;
+}
+
+.menu-icon {
+    font-size: 1.7rem;
+    color: #4995e0;
+    transition: color .5s;
+}
+
+.menu-icon:hover {
+    color: var(--pink);
+}
+.menu-icon:focus {
+    color: white;
+}
+
+.menu-link{
+    @apply p-4 m-4 font-bold block;
+     transition: border .2s;
+}
+
+.menu-link.active--exact {
+    color: var(--pink);
+    text-decoration: line-through;
+}
+
+.menu-link:hover {
+    border-bottom: 1px solid var(--pink);
+    border-top: 1px solid var(--pink);
+}
+
+.menu-link:focus {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+/* Layout Breakpoints *****/
+
+/* Larger devices */
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none;
+        font-size: 7px;
+    }
+    .mobile-nav {
+        display: none;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .nav__link{
+        display: none;
+    }
+    .desktop-light-switch{
+        display: none;
+    }
+}
