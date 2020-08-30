@@ -8,28 +8,43 @@
 
 .darkMode {
     height: auto;
-    background: linear-gradient(43deg, #1f0d3d 0%, #8d2786 30%, #020758 66%);
+    background: linear-gradient(43deg, #1f0d3d 0%, #470843 30%, #020758 66%);
     color: rgba(255, 255, 255, 0.897);  
-    -webkit-animation: gradient 1.5s ; /* Chrome, Safari, Opera */
-    animation: gradient 1.5s ;
-
+    background-color: transparent;
+    transition: background-color all 1.5s;
 }
-
 .lightMode {
     height: auto;
     background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 28%, #8ec5fc 87%);
-    -webkit-animation: gradient 1.5s ; /* Chrome, Safari, Opera */
-    animation: gradient 1.5s ;
+    background-color: transparent;
+    transition: background-color all 1.5s;
 }
 
-  /* Chrome, Safari, Opera */
-  @-webkit-keyframes gradient {
-    from {opacity: 0.95;}
-    to {opacity: 1;}
-  }
+.darkTransition {
+    background-color: #020758;
+    transition: background-color all 1.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
-  /* Standard syntax */
-  @keyframes myfirst {
+.lightTransition {
+    background-color: #8EC5FC;
+    transition: background-color all 1.5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/*.lightMode .menu-icon{
+    color: #C850C0;
+    transition: color .5s;
+}*/
+
+  /* Chrome, Safari, Opera */
+@-webkit-keyframes gradient {
     from {opacity: 0.95;}
     to {opacity: 1;}
-  }
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    from {opacity: 0.95;}
+    to {opacity: 1;}
+}

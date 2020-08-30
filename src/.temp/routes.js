@@ -1,5 +1,5 @@
-const c1 = () => import(/* webpackChunkName: "page--src--pages--components--latest-vue" */ "/Users/admin/Documents/Lindaojo.com/src/pages/components/Latest.vue")
-const c2 = () => import(/* webpackChunkName: "page--src--templates--blog-post-vue" */ "/Users/admin/Documents/Lindaojo.com/src/templates/BlogPost.vue")
+const c1 = () => import(/* webpackChunkName: "page--src--templates--blog-post-vue" */ "/Users/admin/Documents/Lindaojo.com/src/templates/BlogPost.vue")
+const c2 = () => import(/* webpackChunkName: "page--src--pages--success-vue" */ "/Users/admin/Documents/Lindaojo.com/src/pages/Success.vue")
 const c3 = () => import(/* webpackChunkName: "page--src--pages--poems-vue" */ "/Users/admin/Documents/Lindaojo.com/src/pages/Poems.vue")
 const c4 = () => import(/* webpackChunkName: "page--src--pages--portfolio-vue" */ "/Users/admin/Documents/Lindaojo.com/src/pages/Portfolio.vue")
 const c5 = () => import(/* webpackChunkName: "page--src--pages--contact-vue" */ "/Users/admin/Documents/Lindaojo.com/src/pages/Contact.vue")
@@ -9,11 +9,11 @@ const c8 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/
 
 export default [
   {
-    path: "/components/latest/",
+    path: "/blog/:title/",
     component: c1
   },
   {
-    path: "/blog/:title/",
+    path: "/success/",
     component: c2
   },
   {

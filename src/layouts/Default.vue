@@ -3,7 +3,7 @@
         <div :class="fadingDiv" class="h-full w-full"></div>   <!-- GIve illusion of transitioon --> 
 		<div class="container">
 			<div class="lg-container">
-				<header class="header">
+				<header class="header h-12">
 					<h1 class="h1">
 						<strong>
 							<g-link to="/">{{
@@ -12,27 +12,31 @@
 						</strong>
 					</h1>
 					<nav class="nav">
-						<g-link class="nav__link" to="/">Home</g-link>
-                        <g-link class="nav__link" to="/portfolio">Portfolio</g-link>
-						<g-link class="nav__link" to="/blog/">Blog</g-link>
-						<g-link class="nav__link" to="/poems/">Poems</g-link>
-						<g-link class="nav__link" to="/contact/">Contact</g-link>
-						<span class=" nav__link  mx-5" @click.prevent="toggleTheme" aria-label="Toggle light/dark mode">
-							<i
-								v-show="this.theme == 'darkMode'"
-								class="p-1 fa fa-lightbulb"
-								aria-hidden="true"
-							></i>
-							<i
-								v-show="this.theme != 'darkMode'"
-								class="p-1 fa fa-moon-o"
-								aria-hidden="true"
-							></i>
-						</span>
-<!-- Menu Icon -->
+                        <div class="desktop-nav w-2/3 inline-flex">
+                            <span class="desktop-light-switch nav__link" @click="toggleTheme" aria-label="Toggle light/dark mode">
+                                <i
+                                    v-show="this.theme == 'darkMode'"
+                                    class="p-1 fa fa-lightbulb"
+                                    aria-hidden="true" >
+                                </i>
+                                <i
+                                    v-show="this.theme != 'darkMode'"
+                                    class="p-1 fa fa-moon-o"
+                                    aria-hidden="true">
+                                </i>
+                            </span>
+                            <g-link class="nav__link" to="/">Home</g-link>
+                            <!-- <g-link class="nav__link" to="/portfolio">Portfolio</g-link> -->
+                            <g-link class="nav__link" to="/blog/">Blog</g-link>
+                            <g-link class="nav__link" to="/poems/">Poems</g-link>
+                            <g-link class="nav__link" to="/contact/">Contact</g-link>
+                        </div>
                         
-                        <div class="flex p-1 lg:hidden"> <!--Hidden for large devices-->
-                            <span class=" mx-5 " @click.prevent="toggleTheme" aria-label="Toggle light/dark mode">
+						
+<!-- Mobile Navigation -->
+                        
+                        <div class="mobile-nav" > <!--Hidden for large devices-->
+                            <span class="mobile-light-switch mx-5 " @click="toggleTheme" aria-label="Toggle light/dark mode">
                                 <i
                                     v-show="this.theme == 'darkMode'"
                                     class="p-1 fa fa-lightbulb"
@@ -55,15 +59,14 @@
                     <div v-show="isOpen" class="menu absolute text-center w-4/5 z-10 py-2 rounded-lg">
                         <div v-click-outside="hideMenu">
                             <g-link class="menu-link" to="/">Home</g-link>
-                            <g-link class="menu-link" to="/portfolio">Portfolio</g-link>
+                            <!-- <g-link class="menu-link" to="/portfolio">Portfolio</g-link> -->
                             <g-link class="menu-link" to="/blog/">Blog</g-link>
                             <g-link class="menu-link" to="/poems/">Poems</g-link>
                             <g-link class="menu-link" to="/contact/">Contact</g-link>
                         </div>
                     </div>
                 
-				
-
+                <!-- Transition -->
 				<transition name="fade" appear>
 					<main>
 						<!-- a wrapper for slot is needed -->
@@ -112,7 +115,7 @@ export default {
     },
     created() {
         if (process.isClient) {
-            this.theme = localStorage.getItem('theme' || 'lightMode');
+            this.theme = localStorage.getItem('theme')  || 'darkMode';
         }
     },
 	data() {
@@ -131,8 +134,21 @@ export default {
             this.isOpen = !this.isOpen
         },
         toggleTheme() {
-            this.theme = this.theme == 'darkMode' ? 'lightMode' : 'darkMode';
-            localStorage.setItem('theme', this.theme);
+            //Hack for gradient transition below. 
+            //We transition into a class whose background colour is the same as the primary color of the gradient.
+            //Then replace it with gradient class after a second.
+
+            //stores the mode user is transitioning OUT of.
+            let formerTheme = this.theme;
+
+            // transitions to a background color.
+            this.theme = formerTheme === 'darkMode' ?  'lightTransition' : 'darkTransition';
+
+            //add gradient class after transition.
+            setTimeout (() => { 
+                this.theme = formerTheme == 'darkMode' ? 'lightMode' : 'darkMode'; //add gradient class after transition.
+                localStorage.setItem('theme', this.theme);
+            }, 1000 ) 
         }
 	},
 };

@@ -12,7 +12,8 @@
             <span></span>
             <span></span>
         </div>
-        <div data-aos="flip-right" data-aos-duration="1500">
+        <div class="profile-picture-container relative" data-aos="flip-right" data-aos-duration="1500">
+            <p class="abeg">Abeg, you are making me dizzy!</p>
             <picture>
                 <source alt="" srcset="./../../static/images/profile-pic.webp" type="image/webp">
                 <g-image class="profile-picture" src="./../../static/images/profile-pic.jpg" alt="profile picture"></g-image>
