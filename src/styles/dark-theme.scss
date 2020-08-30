@@ -38,13 +38,13 @@
 }*/
 
   /* Chrome, Safari, Opera */
-  @-webkit-keyframes gradient {
+@-webkit-keyframes gradient {
     from {opacity: 0.95;}
     to {opacity: 1;}
-  }
+}
 
-  /* Standard syntax */
-  @keyframes myfirst {
+/* Standard syntax */
+@keyframes myfirst {
     from {opacity: 0.95;}
     to {opacity: 1;}
-  }
+}

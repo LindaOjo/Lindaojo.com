@@ -13,7 +13,7 @@
 					</h1>
 					<nav class="nav">
                         <div class="desktop-nav w-2/3 inline-flex">
-                            <span class="desktop-light-switch nav__link" @click.prevent="toggleTheme" aria-label="Toggle light/dark mode">
+                            <span class="desktop-light-switch nav__link" @click="toggleTheme" aria-label="Toggle light/dark mode">
                                 <i
                                     v-show="this.theme == 'darkMode'"
                                     class="p-1 fa fa-lightbulb"
@@ -36,7 +36,7 @@
 <!-- Mobile Navigation -->
                         
                         <div class="mobile-nav" > <!--Hidden for large devices-->
-                            <span class="mobile-light-switch mx-5 " @click.prevent="toggleTheme" aria-label="Toggle light/dark mode">
+                            <span class="mobile-light-switch mx-5 " @click="toggleTheme" aria-label="Toggle light/dark mode">
                                 <i
                                     v-show="this.theme == 'darkMode'"
                                     class="p-1 fa fa-lightbulb"
@@ -66,8 +66,7 @@
                         </div>
                     </div>
                 
-				
-
+                <!-- Transition -->
 				<transition name="fade" appear>
 					<main>
 						<!-- a wrapper for slot is needed -->
@@ -135,14 +134,17 @@ export default {
             this.isOpen = !this.isOpen
         },
         toggleTheme() {
-            let realTheme = this.theme;
-            this.theme = realTheme === 'darkMode' ?  'lightTransition' : 'darkTransition';
-            setTimeout (() => {
+            //Hack for gradient transition below. 
+            //We transition into a class whose background colour is the same as the primary color of the gradient.
+            //Then replace it with gradient class after a second.
+
+            let realTheme = this.theme; //stores the mode user is transitioning OUT of.
+            this.theme = realTheme === 'darkMode' ?  'lightTransition' : 'darkTransition'; // transitions to a background color.
+
+            setTimeout (() => { //add gradient class after transition.
                 this.theme = realTheme == 'darkMode' ? 'lightMode' : 'darkMode';
                 localStorage.setItem('theme', this.theme);
-            }, 1000 )
-            
-            
+            }, 1000 ) 
         }
 	},
 };
