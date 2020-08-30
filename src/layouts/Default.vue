@@ -146,7 +146,7 @@ export default {
 
             //add gradient class after transition.
             setTimeout (() => { 
-                this.theme = formerTheme == 'darkMode' ? 'lightMode' : 'darkMode';
+                this.theme = formerTheme == 'darkMode' ? 'lightMode' : 'darkMode'; //add gradient class after transition.
                 localStorage.setItem('theme', this.theme);
             }, 1000 ) 
         }
