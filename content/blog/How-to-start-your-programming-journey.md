@@ -17,7 +17,7 @@ I studied Biomedical Engineering and graduated in 2017. I spent my service year 
 
 Six months after rounding up my service, I started my first day as a frontend developer intern at Buycoins in June 2019. I was very excited, it felt surreal. I realized instantly that I had not been learning how to code in the most effective way.
 
-This post aims to guide you as you start your programming journey.
+This post aims to guide you as you start your programming journey with fewer mistakes.
 
 <h3>Choose a specific career path</h3>
 
@@ -102,8 +102,4 @@ Learning a new skill isn’t easy and I am so proud of you for making this decis
 
 One of the best ways to learn fast is by building — work on projects as you grow. You should also surround yourself with the right content to keep you motivated. Participate in coding challenges, follow programmers who you admire and don’t be too hard on yourself.
 
-Lastly, I wanna say a big thank you to the founders of BuyCoins — Timi Ajiboye, Ire Aderinokun, and Aleph Pi for giving me this rare opportunity. Thank you for making my year.
-
-Song Recommendation: Be still by Hillsong. https://open.spotify.com/track/6OIzniRIlDqO4DQ6Way8P3 https://music.apple.com/ng/album/be-still/1347074675?i=1347075193
-
-If you have any questions or suggestions feel free to leave a response or reach me at @LindaOjo
+Lastly, I wanna say a big thank you to the founders of BuyCoins — <a href="https://twitter.com/timigod" class="pink-link">Timi Ajiboye</a>, <a href="https://twitter.com/ireaderinokun" class="pink-link">Ire Aderinokun</a>, and <a href="https://twitter.com/alephile" class="pink-link">Aleph Pi</a> for giving me this rare opportunity. Thank you for making my year.
