@@ -30,3 +30,4 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "isBlogPost", name: "isBlogPost", widget: "boolean", default: "false"}
       - {label: "songHref", name: "songHref", widget: "string"}
+      
