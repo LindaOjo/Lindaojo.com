@@ -7,7 +7,7 @@
             I am open to discussing creative ideas and oppurtunies
             <i class="fas fa-smile-wink"></i>
         </p>
-        <form class="lg:w-1/2 sm:w-3/4 shadow-2xl rounded px-8 pt-6 pb-8 mb-4 mx-auto"
+        <form class="lg:w-1/2 sm:w-full shadow-2xl rounded px-4 py-6 mb-4 mx-auto"
             name="contact"
             method="post"
             v-on:submit.prevent="handleSubmit"
@@ -37,22 +37,22 @@
                 <textarea required name="message" class="w-full bg-gray-400 text-black p-2"  v-model="formData.message"></textarea>
             </div>
 
-            <div class="flex justify-center mx-auto m-8 relative">
+            <div class="flex justify-center mx-auto mx-8 mt-5 relative">
             <button type="submit" class="button bg-pink-700 hover:bg-pink-600 text-white font-bold py-2 px-4 border-b-4 border-pink-900 hover:border-pink-500 rounded">
                 Send Message
             </button>
             </div>
-            <div class="links sm:w-3/4 lg:w-1/2 mx-auto flex justify-start" >
-                <p class=" inline-flex w-full justify-between">
-                        <a href="https://twitter.com/LindaOjo_" title="Twitter">
-                            <i class="fa fa-twitter fa-2x pr-2" aria-hidden="true"></i> Twitter
-                        </a>  
-                        <a href="https://github.com/LindaOjo" title="Github">
-                            <i class="fa fa-github fa-2x pr-2" aria-hidden="true"></i> Github
-                        </a>   
-                </p>
-            </div>
         </form>
+        <div class="links sm:w-3/4 lg:w-1/2 mx-auto flex" >
+            <p class=" inline-flex w-full justify-center mt-5">
+                    <a class="mr-10" href="https://twitter.com/LindaOjo_" title="Twitter">
+                        <i class="fa fa-twitter fa-2x pr-2" aria-hidden="true"></i> Twitter
+                    </a>  
+                    <a href="https://github.com/LindaOjo" title="Github">
+                        <i class="fa fa-github fa-2x pr-2" aria-hidden="true"></i> Github
+                    </a>   
+            </p>
+        </div>
   </Layout>
 </template>
 
