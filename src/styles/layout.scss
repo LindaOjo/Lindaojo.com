@@ -43,7 +43,7 @@ body {
 /* Cards */
 
 .post-card{
-    @apply h-32 p-4 my-4 mx-2 border-2 rounded-lg border-solid border-gray-200 flex items-center
+    @apply h-32 my-4 p-2 border-2 rounded-lg border-solid border-gray-200 flex items-center
            cursor-pointer justify-between;
     :hover {
         @apply h-40 ;
@@ -122,7 +122,9 @@ body {
     }
 
     .post-card{
-        @apply h-24 p-2;
+        @apply h-32 p-2;
+        min-height: 6rem;
+        max-height: 8rem;
 
     }
     .project-card {

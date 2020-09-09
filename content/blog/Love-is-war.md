@@ -1,7 +1,7 @@
 ---
 title: Love is War
 excerpt: ""
-date: 1st, June 2020
+date: 01-06-2020
 isBlogPost: true
 ---
 

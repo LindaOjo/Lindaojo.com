@@ -1,7 +1,7 @@
 ---
 title: Crying
 excerpt: ""
-date: 9th, October 2018
+date: 09-07-2018
 isBlogPost: false
 ---
 

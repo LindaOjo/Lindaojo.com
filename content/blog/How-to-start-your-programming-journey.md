@@ -2,8 +2,9 @@
 title: How to Start Your Programming Journey
 
 excerpt: "Before getting into programming, I thought it was magic, something you couldn’t just learn. I assumed you had to  be extraordinarily smart to speak the ‘language of computers’. Don’t worry if you feel that way."
-date: 4th, December 2019
+date: 04-12-2020
 isBlogPost: true
+songHref: "https://www.youtube.com/watch?v=FtUNQpu2b7Q" 
 ---
 
 ![Nerd Zone](https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif)
