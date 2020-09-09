@@ -13,9 +13,9 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime", dateformat: "DD-MM-YYYY", format: "MMM-YYYY"}
+      - {label: "Date", name: "date", widget: "datetime", dateformat: "DD-MM-YYYY", format: "MMM-YYYY"}
       - {label: "Excerpt", name: "excerpt", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Content", name: "content", widget: "markdown"}
       - {label: "isBlogPost", name: "isBlogPost", widget: "boolean"}
       - {label: "songHref", name: "songHref", widget: "string"}
   - name: "poem"
@@ -25,9 +25,9 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime", dateformat: "DD-MM-YYYY", format: "MMM-YYYY"}
+      - {label: "Date", name: "date", widget: "datetime", dateformat: "DD-MM-YYYY", format: "MMM-YYYY"}
       - {label: "Excerpt", name: "excerpt", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Content", name: "content", widget: "markdown"}
       - {label: "isBlogPost", name: "isBlogPost", widget: "boolean", default: "false"}
       - {label: "songHref", name: "songHref", widget: "string"}
       
