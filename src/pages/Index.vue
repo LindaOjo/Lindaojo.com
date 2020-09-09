@@ -23,7 +23,7 @@
         
         <div>
             <h3 class="text-center p-3 h3">
-                Software Developer and User Interface Designer
+                Frontend Developer
             </h3>
         </div>
         <div class="bio lg:w-1/2 lg:text-xl sm:w-3/4 mx-auto my-5" >

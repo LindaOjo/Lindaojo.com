@@ -1,9 +1,9 @@
 <template>
   <div class="button-container inline-flex flex-wrap w-full justify-start">
-      <a :href="songhref" class="pink-button my-2 bg-pink-700 hover:bg-pink-600 border-pink-900 hover:border-pink-500 mr-10">
+      <a href="/contact" class="pink-button my-2 bg-pink-700 hover:bg-pink-600 border-pink-900 hover:border-pink-500  mr-10">Contact me</a> 
+      <a :href="songHref" class="pink-button my-2 bg-pink-700 hover:bg-pink-600 border-pink-900 hover:border-pink-500">
         Song Recommendation <i class="fas fa-music ml-2"></i>
       </a>
-      <a href="/contact" class="pink-button my-2 bg-pink-700 hover:bg-pink-600 border-pink-900 hover:border-pink-500">Contact me</a> 
   </div>
 </template>
 
@@ -28,7 +28,7 @@
 <script>
 export default {
     props: {
-    songhref: String,
+    songHref: String,
   }
 }
 </script>
