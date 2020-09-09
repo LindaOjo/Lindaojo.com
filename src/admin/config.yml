@@ -16,7 +16,7 @@ collections:
       - {label: "Date", name: "date", widget: "datetime", dateformat: "DD-MM-YYYY", format: "MMM-YYYY"}
       - {label: "Excerpt", name: "excerpt", widget: "string"}
       - {label: "Content", name: "content", widget: "markdown"}
-      - {label: "isBlogPost", name: "isBlogPost", widget: "boolean"}
+      - {label: "isBlogPost", name: "isBlogPost", widget: "boolean", required: "true"}
       - {label: "songHref", name: "songHref", widget: "string"}
   - name: "poem"
     label: "poem"
