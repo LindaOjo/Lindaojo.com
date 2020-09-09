@@ -6,7 +6,7 @@
                 :to="post.node.path">
             <div class="block">
                 <h3 class="h3">{{post.node.title}}</h3>
-                <p class="excerpt">]{{post.node.excerpt}} </p>
+                <p class="excerpt">{{post.node.excerpt}} </p>
             </div>
         </g-link>
     </span>
