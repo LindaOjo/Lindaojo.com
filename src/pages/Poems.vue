@@ -19,7 +19,7 @@
 
 <page-query>
     query {
-        allBlogPost (sortBy: "date", order: ASC) {
+        allBlogPost (sort: [{ by: "date", order: DESC }, { by: "title", order: ASC }]) {
           edges {
             node {
                 isBlogPost

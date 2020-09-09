@@ -1,6 +1,6 @@
 ---
 title: testing date
-date: Sep-2020
+date: 02-08-2020
 excerpt: I will work.
 content: Nice
 isBlogPost: true

@@ -13,7 +13,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", dateformat: "DD-MM-YYYY", format: "MMM-YYYY"}
+      - {label: "Date", name: "date", widget: "datetime", dateformat: "DD-MM-YYYY", format: "DD-MM-YYYY"}
       - {label: "Excerpt", name: "excerpt", widget: "string"}
       - {label: "Content", name: "content", widget: "markdown"}
       - {label: "isBlogPost", name: "isBlogPost", widget: "boolean", required: true}
@@ -21,11 +21,12 @@ collections:
   - name: "poem"
     label: "poem"
     folder: "content/blog/poem"
+
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", dateformat: "DD-MM-YYYY", format: "MMM-YYYY"}
+      - {label: "Date", name: "date", widget: "datetime", dateformat: "DD-MM-YYYY", format: "DD-MM-YYYY"}
       - {label: "Excerpt", name: "excerpt", widget: "string"}
       - {label: "Content", name: "content", widget: "markdown"}
       - {label: "isBlogPost", name: "isBlogPost", widget: "boolean", default: "false"}
