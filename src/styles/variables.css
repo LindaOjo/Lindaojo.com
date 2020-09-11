@@ -7,7 +7,6 @@
 :root {
     --dark-blue: #020758;
     --light-blue:  #8EC5FC;
-    --pink: #C850C0;
 
 
     /* Light */
@@ -23,4 +22,15 @@
 
     --link-hover-timing: all 0.25s ease-in-out;
     --theme-change-timing: all 1s ease-in-out;
+}
+
+[data-theme="dark"] {
+    --code-background-color: #61137e80;
+    --primary: #C850C0;
+    
+}
+
+[data-theme="light"] {
+    --code-background-color: #12539482;
+    --primary:  #3e8fe0;
 }

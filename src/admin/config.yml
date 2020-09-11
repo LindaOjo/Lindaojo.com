@@ -8,25 +8,25 @@ public_folder: "/uploads"
 collections:
   - name: "blog"
     label: "blog"
-    folder: "content/blog"
+    folder: "content/blog/articles"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", dateformat: "DD-MM-YYYY", format: "DD-MM-YYYY"}
+      - {label: "Date", name: "date", widget: "datetime", dateformat: ""YYYY-MM-DD", format: "YYYY-MM-DD"}
       - {label: "Excerpt", name: "excerpt", widget: "string"}
       - {label: "Content", name: "content", widget: "markdown"}
       - {label: "isBlogPost", name: "isBlogPost", widget: "boolean", required: true}
       - {label: "songHref", name: "songHref", widget: "string"}
   - name: "poem"
     label: "poem"
-    folder: "content/blog/poem"
+    folder: "content/blog/poems"
 
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", dateformat: "DD-MM-YYYY", format: "DD-MM-YYYY"}
+      - {label: "Date", name: "date", widget: "datetime", dateformat: "YYYY-MM-DD", format: "YYYY-MM-DD"}
       - {label: "Excerpt", name: "excerpt", widget: "string"}
       - {label: "Content", name: "content", widget: "markdown"}
       - {label: "isBlogPost", name: "isBlogPost", widget: "boolean", default: "false"}

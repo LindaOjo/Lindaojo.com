@@ -38,7 +38,7 @@
             </div>
 
             <div class="flex justify-center mx-auto mx-8 mt-5 relative">
-            <button type="submit" class="button bg-pink-700 hover:bg-pink-600 text-white font-bold py-2 px-4 border-b-4 border-pink-900 hover:border-pink-500 rounded">
+            <button type="submit" class="button font-bold py-2 px-4 rounded">
                 Send Message
             </button>
             </div>
@@ -102,14 +102,26 @@ export default {
 }
 
 .button {
+    background-color: var(--primary);
     transition: all ease 0.3s;
+    box-shadow: 0 4px #fff;
 }
 
 .button:focus {
   transform: scale(0.9);
 }
 
-.fa-twitter:hover, .fa-github:hover, .fa-smile-wink:hover, a:hover {
-    color: var(--pink);
+.button:hover {
+  opacity: 0.8;
 }
+
+.button:active {
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+.fa-twitter:hover, .fa-github:hover, .fa-smile-wink:hover, a:hover {
+    color: var(--primary);
+}
+
 </style>

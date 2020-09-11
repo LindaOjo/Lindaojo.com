@@ -20,7 +20,6 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'BlogPost',
-        sort: { by: "date", order: "ASC" },
         path: './content/blog/**/*.md',
       }
     },
