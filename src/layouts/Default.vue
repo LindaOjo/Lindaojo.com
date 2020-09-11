@@ -115,12 +115,14 @@ export default {
     },
     created() {
         if (process.isClient) {
-            this.theme = localStorage.getItem('theme')  || 'darkMode';
-           if (this.theme == "darkMode") {
-               document.documentElement.setAttribute('data-theme', 'dark')
+            let localTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+           if (localTheme == "dark") {
+               this.theme = "darkMode";
+               document.documentElement.setAttribute('data-theme', 'dark');
            } 
            else {
-               document.documentElement.setAttribute('data-theme', 'light')
+               this.theme = "light";
+               document.documentElement.setAttribute('data-theme', 'light');
            }
         }
     },
@@ -159,7 +161,7 @@ export default {
                     this.theme = 'darkMode';
                     document.documentElement.setAttribute('data-theme', 'dark');
                 }
-                localStorage.setItem('theme', this.theme);
+                localStorage.setItem('theme');
             }, 900 ) 
         }
 	},
