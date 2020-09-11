@@ -7,13 +7,14 @@
                     class="post-card w-full hover:-translate-y-1 hover:scale-105 transition delay-100 duration-300 ease-in-out transform">
                 <div class="inline-block w-full">
                     <div>
-                        <h2 class="h3">{{post.node.title}}</h2>
+                        <h2 class="h3 my-2">{{post.node.title}}</h2>
                         <p class="excerpt w-5/6">
                         {{post.node.excerpt}}
                         </p>
                     </div>
                     <div class="text-right">
-                        <p >{{post.node.date}}</p>  
+                        <!-- <p ></p> //replace with duration -->
+                        <p>1 minute</p>
                     </div>
                 </div>               
             </g-link>
