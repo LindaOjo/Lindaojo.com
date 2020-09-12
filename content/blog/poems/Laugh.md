@@ -1,7 +1,7 @@
 ---
-title: Laugh
+title: "Laugh"
 excerpt: ""
-date: 05-10-2018
+date: "2018-09-05"
 isBlogPost: false
 ---
 

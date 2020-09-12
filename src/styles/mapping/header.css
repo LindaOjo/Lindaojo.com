@@ -22,8 +22,8 @@
 
 .nav__link:hover {
 	position: relative;
-	border-bottom: 1px solid var(--pink);
-	border-top: 1px solid var(--pink);
+	border-bottom: 1px solid var(--primary);
+	border-top: 1px solid var(--primary);
 }
 
 .menu {
@@ -39,7 +39,7 @@
 }
 
 .menu-icon:hover {
-	color: var(--pink);
+	color: var(--primary);
 }
 
 .menu-icon:focus {
@@ -52,8 +52,8 @@
 }
 
 .menu-link:hover {
-	border-bottom: 1px solid var(--pink);
-	border-top: 1px solid var(--pink);
+	border-bottom: 1px solid var(--primary);
+	border-top: 1px solid var(--primary);
 }
 
 .menu-link:focus {

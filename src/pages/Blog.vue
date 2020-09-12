@@ -4,16 +4,16 @@
         <span v-for="post in $page.allBlogPost.edges" :key="post.node.id">
             <g-link v-if="post.node.isBlogPost" 
                     :to="post.node.path"
-                    class="post-card w-full hover:border-blue-500 hover:-translate-y-1 hover:scale-105 transition delay-100 duration-300 ease-in-out transform">
+                    class="post-card w-full hover:-translate-y-1 hover:scale-105 transition delay-100 duration-300 ease-in-out transform">
                 <div class="inline-block w-full">
                     <div>
-                        <h2 class="h3">{{post.node.title}}</h2>
+                        <h2 class="h3 my-2">{{post.node.title}}</h2>
                         <p class="excerpt w-5/6">
                         {{post.node.excerpt}}
                         </p>
                     </div>
                     <div class="text-right">
-                        <p >{{post.node.date}}</p>  
+                        <p>{{post.node.duration}}/p>
                     </div>
                 </div>               
             </g-link>
@@ -23,12 +23,13 @@
 
 <page-query>
     query {
-        allBlogPost (sortBy: "date", order: ASC) {
+        allBlogPost (sortBy: "date", order: DESC){
           edges {
             node {
                 isBlogPost
                 path
                 title
+                duration
                 excerpt
                 date
             }

@@ -113,9 +113,15 @@ export default {
     directives: {
         ClickOutside
     },
-    created() {
-        if (process.isClient) {
-            this.theme = localStorage.getItem('theme')  || 'darkMode';
+    mounted() {
+        let localTheme = localStorage.getItem('theme') || 'darkMode';
+        if (localTheme == "darkMode") {
+            this.theme = "darkMode";
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } 
+        else {
+            this.theme = "lightMode";
+            document.documentElement.setAttribute('data-theme', 'light');
         }
     },
 	data() {
@@ -146,9 +152,15 @@ export default {
 
             //add gradient class after transition.
             setTimeout (() => { 
-                this.theme = formerTheme == 'darkMode' ? 'lightMode' : 'darkMode'; //add gradient class after transition.
+                if (formerTheme == 'darkMode') {
+                    this.theme = "lightMode";
+                    document.documentElement.setAttribute('data-theme', 'light');
+                } else {
+                    this.theme = 'darkMode';
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                }
                 localStorage.setItem('theme', this.theme);
-            }, 1000 ) 
+            }, 900 ) 
         }
 	},
 };

@@ -13,7 +13,7 @@ html {
 body {
     box-sizing: border-box !important;
     height: auto;
-    /* for desktop mode  scrollbar-color: var(--pink) !important; */
+    /* for desktop mode  scrollbar-color: var(--primary) !important; */
     @apply h-screen;
     background-size: cover;
     max-height: 100vh;
@@ -42,9 +42,12 @@ body {
 
 /* Cards */
 
-.post-card{
-    @apply h-32 my-4 p-2 border-2 rounded-lg border-solid border-gray-200 flex items-center
+.post-card {
+    min-height: 8rem;
+    max-height: auto;
+    @apply  my-4 p-2 border-2 rounded-lg border-solid border-gray-200 flex items-center
            cursor-pointer justify-between;
+    border-color: var(--primary);
     :hover {
         @apply h-40 ;
     }
@@ -78,7 +81,7 @@ body {
 
 .profile-picture {
     @apply h-48 w-48 mx-auto object-cover my-5;
-    border: 2px solid pink;
+    border: 2px solid var(--primary);
     border-radius: 50%;
     -webkit-transition: -webkit-transform .8s ease-in-out;
     transition: transform 2s ease-in-out;
@@ -121,19 +124,10 @@ body {
         @apply h-24 w-24 my-5;
     }
 
-    .post-card{
-        @apply h-32 p-2;
-        min-height: 6rem;
-        max-height: 8rem;
-
-    }
     .project-card {
         display: block;
     }
     .project-picture{
         @apply h-56 w-56; 
     }
-    .excerpt {
-        display: none;
-      }
 }
