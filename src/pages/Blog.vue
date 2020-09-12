@@ -13,8 +13,7 @@
                         </p>
                     </div>
                     <div class="text-right">
-                        <!-- <p ></p> //replace with duration -->
-                        <p>1 minute</p>
+                        <p>{{post.node.duration}}/p>
                     </div>
                 </div>               
             </g-link>
@@ -30,6 +29,7 @@
                 isBlogPost
                 path
                 title
+                duration
                 excerpt
                 date
             }

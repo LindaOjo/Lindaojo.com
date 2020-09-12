@@ -14,7 +14,8 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime", dateformat: ""YYYY-MM-DD", format: "YYYY-MM-DD"}
-      - {label: "Excerpt", name: "excerpt", widget: "string"}
+      - {label: "Duration", name: "duration", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "string"} 
       - {label: "Content", name: "content", widget: "markdown"}
       - {label: "isBlogPost", name: "isBlogPost", widget: "boolean", required: true}
       - {label: "songHref", name: "songHref", widget: "string"}

@@ -1,9 +1,10 @@
 ---
 title: "Angular — How to display one component within another"
+duration: "2 minutes"
 excerpt: "Let's begin with an Angular project which has a container component. We are going to display another component..."
 date: "2020-04-15"
 isBlogPost: true
-songHref: "https://music.youtube.com/watch?v=fDm1Q_Dd2SE&feature=share" 
+songHref: "https://music.youtube.com/watch?v=JpGGta_R8IM&feature=share" 
 ---
 
 <div class="w-64 h-56 mx-auto">
@@ -39,3 +40,27 @@ Open <span class="code-word">child.module.ts</span> file and import the child co
 Note: Always import your component or modules using JavaScript before using them in the NgModule decorator.
 
 Next, declare and export your child component within the NgModule in child.module.ts so it's made available to other components including the container component. child.module.ts should look a lot like this 👇🏾
+
+![Child Module](./article-images/child-module.png)
+
+<h3>Import Child Module into Container Module</h3>
+
+Next, head on to <span class="code-word">cointainer.module.ts</span> and import the child Module within the NgModule.
+
+<span class="pink-hint">Hint:</span> you can create a container module same way we made the child module if it doesn’t exist. This is what my <span class="code-word">cointainer.module.ts</span> looks like.
+
+![Container Module](./article-images/container-module.png)
+
+<h3>Display Child Component in Container Component using Selector</h3>
+
+This is the easiest part. Open <span class="code-word">container.component.html</span> and display the child component using its selector as shown below. You can find the selector within the <strong>@Component Decorator</strong> in <span class="code-word">child.component.ts</span>
+
+<div class="code-block">
+    &lt;h1&gt; I am a Container &lt;/h1&gt; 
+    <br><br>
+    &lt;app-child&gt; &lt;/app-child&gt;  <span class="comment">//child component selector</span>
+</div>
+
+That’s all.
+
+Thank you <a href="https://twitter.com/uxFeranmi" class="pink-link">Feranmi Akinlade</a> for reviewing drafts.

@@ -1,6 +1,6 @@
 ---
 title: "How to host a website with a custom domain name on Github"
-
+duration: "3 minutes"
 excerpt: "Not too long after becoming a developer, an urge comes upon you to create a personal website. you can only resist for so long..."
 date: "2020-01-04"
 isBlogPost: true

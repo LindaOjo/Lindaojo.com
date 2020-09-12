@@ -1,6 +1,6 @@
 ---
 title: How to Start Your Programming Journey
-
+duration: "3 minutes"
 excerpt: "Before getting into programming, I thought it was magic, something you couldn’t just learn. I assumed you had to  be extraordinarily smart..."
 date: "2019-12-04"
 isBlogPost: true

@@ -22,15 +22,20 @@ article>div>p {
     color: var(--primary);
 }
 
+.pink-hint {
+    color: var(--primary);
+    font-weight: bold;
+}
+
 p > img {
-    margin: 0 auto;
+    margin: 20px auto;
     height: 20rem;
     width: 20rem;
 }
 
 div > p > img.g-image {
     @apply mx-auto w-full h-auto;
-    margin: 16px 0;
+    margin: 20px 0;
 }
 
 hr {
@@ -40,21 +45,30 @@ hr {
 /* Code styles*/
 
 .code-word, .code-block {
+    font-family: monospace;
     background-color: var(--code-background-color);
+    word-break: break-all;
     color: white;
     padding: 0.3rem;
     border-radius: 10px;
     font-size: 1.3rem;
     transition: all .7s ease-in;
 
+    p {
+        white-space: pre-wrap
+    }
+
 }
 
 .code-block {
     background-color: var(--code-background-color);
     font-size: 1.3rem;
-    font-weight: bold;
     padding: 1rem;
     border-radius: 15px;
+}
+
+.code-block > .comment {
+    color: var(--code-comment);
 }
 
 
