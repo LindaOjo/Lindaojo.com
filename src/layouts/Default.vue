@@ -113,7 +113,7 @@ export default {
     directives: {
         ClickOutside
     },
-    created() {
+    mounted() {
         let localTheme = localStorage.getItem('theme') || 'darkMode';
         if (localTheme == "darkMode") {
             this.theme = "darkMode";
@@ -123,7 +123,7 @@ export default {
             this.theme = "lightMode";
             document.documentElement.setAttribute('data-theme', 'light');
         }
-},
+    },
 	data() {
 		return {
             isOpen: false,
