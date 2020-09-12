@@ -13,7 +13,7 @@
                         </p>
                     </div>
                     <div class="text-right">
-                        <p>{{post.node.duration}}/p>
+                        <p>{{post.node.duration}}</p>
                     </div>
                 </div>               
             </g-link>
