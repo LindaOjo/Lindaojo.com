@@ -1,8 +1,8 @@
-<template>
+<template v-on:scroll.native="handleScroll">
 	<div class="themer" :class="theme">
         <div :class="fadingDiv" class="h-full w-full"></div>   <!-- GIve illusion of transitioon --> 
 		<div class="container">
-			<div class="lg-container">
+			<div class="lg-container" @scroll="handleScroll">
 				<header class="header h-12">
 					<h1 class="h1">
 						<strong>
@@ -36,7 +36,7 @@
 <!-- Mobile Navigation -->
                         
                         <div class="mobile-nav" > <!--Hidden for large devices-->
-                            <span class="mobile-light-switch mx-5 " @click="toggleTheme" aria-label="Toggle light/dark mode">
+                            <span class="mobile-light-switch mr-5 " @click="toggleTheme" aria-label="Toggle light/dark mode">
                                 <i
                                     v-show="this.theme == 'darkMode'"
                                     class="p-1 fa fa-lightbulb"
@@ -65,6 +65,10 @@
                             <g-link class="menu-link" to="/contact/">Contact</g-link>
                         </div>
                     </div>
+
+                    <button @click="topScroll()" v-show="showButton" class="scrollButton" title="Go to top">
+                        <i class="fas fa-chevron-up"></i>
+                    </button>
                 
                 <!-- Transition -->
 				<transition name="fade" appear>
@@ -104,6 +108,26 @@ query {
     transition: all 0.7s linear;
 }
 
+.scrollButton {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 5%; /* Place the button at the bottom of the page */
+  right: 10%; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--primary); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+.scrollButton:active {
+ transform: translateY(4px);
+}
+
+
 </style>
 
 <script>
@@ -129,9 +153,17 @@ export default {
             isOpen: false,
             theme: 'darkMode',
             fadingDiv: false,
+            showButton: false,
 		};
-	},
+    },
 	methods: {
+        handleScroll(event) {
+            this.showButton = window.onscroll;
+            // setTimeout(() => {this.showButton = false}, 5000)
+        },
+        topScroll() {
+            console.log('I want go top');
+        },
         hideMenu() {
             if(!this.isOpen) return
             this.isOpen = false

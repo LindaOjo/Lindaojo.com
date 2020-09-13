@@ -12,7 +12,7 @@
             <span></span>
             <span></span>
         </div>
-        <div class="profile-picture-container relative" data-aos="flip-right" data-aos-duration="1500">
+        <div class="fade-in profile-picture-container relative" data-aos="flip-right" data-aos-duration="1500">
             <p class="abeg">Abeg, you are making me dizzy!</p>
             <picture>
                 <source alt="" srcset="./../../static/images/profile-pic.webp" type="image/webp">
@@ -21,20 +21,21 @@
         </div>
         
         
-        <div>
+        <div class="fade-in" >
             <h3 class="text-center p-3 h3">
                 Frontend Developer
             </h3>
         </div>
-        <div class="bio lg:w-1/2 lg:text-xl sm:w-3/4 mx-auto my-5" >
+        <div class="bio fade-in lg:w-1/2 lg:text-xl sm:w-3/4 mx-auto my-5" >
             <p>Hi there! I'm Linda, a developer and designer in Lagos, Nigeria. I enjoy solving problems by creating beautiful
                and functional products. I also write and speak about web technologies. </p>          
         </div>
-        <div>
+        <div class="fade-in inline-flex w-full justify-between">
             <h2 class="my-8 md:my-8 h2 sm:my-5">Latest Posts</h2>
+            <a class="primary-color h3 my-auto" href="/blog" >View all</a>
         </div>
         <Latest/>
-        <div class="footer">
+        <div class="footer fade-in">
             <p class="mx-auto mt-6 text-center">Created by Linda Ojo </p>
         </div> 
     </Layout>

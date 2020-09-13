@@ -16,7 +16,7 @@ body {
     /* for desktop mode  scrollbar-color: var(--primary) !important; */
     @apply h-screen;
     background-size: cover;
-    max-height: 100vh;
+    min-height: 100vh;
     background-color: transparent;
     line-height: 1.5;
 
@@ -25,17 +25,17 @@ body {
 /* containers */
 .container {
     background: transparent;
-    @apply h-screen w-screen mx-auto p-4;
-    max-height: 100vh;
+    @apply h-auto w-screen mx-auto p-4;
 }
 
 .lg-container {
+    position: relative;
     background-color: rgba(16, 8, 18, 0.61);
     color: var(--dark-theme-text-color);
     border-radius: 3rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    @apply p-8  h-full w-full;
-    overflow-y: auto;
+    @apply p-8 w-full;
+    min-height: 100vh;
     overflow-x: hidden;
     z-index: 5;
 }

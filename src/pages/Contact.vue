@@ -1,8 +1,9 @@
 <template>
-  <Layout class="">
-      <h1 class="h2 text-center m-5 " data-aos="flip-right" data-aos-duration="1500">
-           Don't be a stranger
-      </h1>
+  <Layout>
+    <h1 class="h2 text-center m-5 " data-aos="flip-right" data-aos-duration="1500">
+            Don't be a stranger
+    </h1>
+    <div class="fade-in">
         <p class="sm:w-3/4 lg:w-1/2 my-5 text-center mx-auto lg:text-xl">
             I am open to discussing creative ideas and oppurtunies
             <i class="fas fa-smile-wink"></i>
@@ -53,6 +54,8 @@
                     </a>   
             </p>
         </div>
+      </div>
+      
   </Layout>
 </template>
 

@@ -32,6 +32,9 @@ body {
     font-size: 1.5rem;
 }
 
+.primary-color{
+    color: var(--primary);
+}
 /* Mobile Devices */
 @media (max-width: 768px) { 
     .h1{
