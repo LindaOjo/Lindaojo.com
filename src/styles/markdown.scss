@@ -38,6 +38,10 @@ div > p > img.g-image {
     margin: 20px 0;
 }
 
+.centered-image {
+    @apply w-56 mx-auto;
+}
+
 hr {
     border-top: 1px dashed var(--primary) !important;
 }

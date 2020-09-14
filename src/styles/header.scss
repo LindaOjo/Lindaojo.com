@@ -11,8 +11,30 @@
     text-align: center;
 }
 
-.desktop-light-switch {
+.desktop-light-switch > i {
+    font-size: 1.4rem;
 }
+.desktop-light-switch, .mobile-light-switch {
+    cursor: pointer;
+    padding: 0 10px;
+    transition: all 1s ease;
+    animation: ani 4s infinite;
+}
+
+
+@keyframes ani {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 6px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  
+  
 
 .nav__link {
     margin-left: 25px;
@@ -98,6 +120,7 @@
 .mobile-nav {
     @apply p-1;
     margin-bottom: 28px;
+    position: relative;
 }
 
 .menu { 
@@ -109,6 +132,7 @@
     margin-right: auto; 
      /* Need a specific value to work, width is specified inline */
 }
+
 
 .mobile-light-switch {
     font-size: 1.5rem;

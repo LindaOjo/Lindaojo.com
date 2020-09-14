@@ -35,8 +35,13 @@
             <a class="primary-color h3 my-auto" href="/blog" >View all</a>
         </div>
         <Latest/>
-        <div class="footer fade-in">
-            <p class="mx-auto mt-6 text-center">Created by Linda Ojo </p>
+         
+        <div class="footer w-full flex justify-center fade-in">
+            <div class="mx-auto mt-6 ">
+                <a href="/contact" class="button px-20 text-lg my-6 border-opacity-25 ">Get in touch</a> 
+                <p class=" mt-6 text-center mx-5">Designed and Built by Linda Ojo </p>
+            </div>
+            
         </div> 
     </Layout>
 </template>
@@ -51,11 +56,6 @@ export default {
         Latest
        },
        metaInfo: { title: 'Home' },
-
-    data() {
-        return {
-        }
-    },
 }
 </script>
 

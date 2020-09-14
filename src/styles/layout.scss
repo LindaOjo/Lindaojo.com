@@ -86,6 +86,9 @@ body {
     -webkit-transition: -webkit-transform .8s ease-in-out;
     transition: transform 2s ease-in-out;
 }
+.profile-picture:hover {
+    border: 2px solid rgb(224, 87, 7);
+}
 
 .profile-picture:hover, .profile-picture:focus {
     transform: rotate(720deg);

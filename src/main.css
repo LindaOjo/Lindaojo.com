@@ -12,6 +12,7 @@
 @import "./styles/effects.css";
 @import "./styles/header.scss";
 @import "./styles/markdown.scss";
+@import "./styles/button.scss";
 
 #app {
     transition: background-color 1s ease-in-out;

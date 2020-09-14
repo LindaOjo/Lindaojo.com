@@ -14,16 +14,11 @@
 					<nav class="nav">
                         <div class="desktop-nav w-2/3 inline-flex">
                             <span class="desktop-light-switch nav__link" @click="toggleTheme" aria-label="Toggle light/dark mode">
-                                <i
-                                    v-show="this.theme == 'darkMode'"
-                                    class="p-1 fa fa-lightbulb"
-                                    aria-hidden="true" >
-                                </i>
-                                <i
-                                    v-show="this.theme != 'darkMode'"
-                                    class="p-1 fa fa-moon-o"
-                                    aria-hidden="true">
-                                </i>
+                                 <i class="p-1"
+                                    :class="this.themeIcon"
+                                    aria-hidden="true"
+                                ></i>
+                                
                             </span>
                             <g-link class="nav__link" to="/">Home</g-link>
                             <!-- <g-link class="nav__link" to="/portfolio">Portfolio</g-link> -->
@@ -36,15 +31,9 @@
 <!-- Mobile Navigation -->
                         
                         <div class="mobile-nav" > <!--Hidden for large devices-->
-                            <span class="mobile-light-switch mr-5 " @click="toggleTheme" aria-label="Toggle light/dark mode">
-                                <i
-                                    v-show="this.theme == 'darkMode'"
-                                    class="p-1 fa fa-lightbulb"
-                                    aria-hidden="true"
-                                ></i>
-                                <i
-                                    v-show="this.theme != 'darkMode'"
-                                    class="p-1 fa fa-moon-o"
+                            <span class="mobile-light-switch  mr-5 " @click="toggleTheme" aria-label="Toggle light/dark mode">
+                                <i class="p-1"
+                                    :class="this.themeIcon"
                                     aria-hidden="true"
                                 ></i>
                             </span>
@@ -141,10 +130,12 @@ export default {
         let localTheme = localStorage.getItem('theme') || 'darkMode';
         if (localTheme == "darkMode") {
             this.theme = "darkMode";
+            this.themeIcon = 'fas fa-cloud-sun';
             document.documentElement.setAttribute('data-theme', 'dark');
         } 
         else {
             this.theme = "lightMode";
+            this.themeIcon = 'fas fa-cloud-moon';
             document.documentElement.setAttribute('data-theme', 'light');
         }
     },
@@ -154,6 +145,7 @@ export default {
             theme: 'darkMode',
             fadingDiv: false,
             showButton: false,
+            themeIcon: 'fas fa-cloud-sun'
 		};
     },
 	methods: {
@@ -181,14 +173,17 @@ export default {
 
             // transitions to a background color.
             this.theme = formerTheme === 'darkMode' ?  'lightTransition' : 'darkTransition';
+            this.themeIcon = formerTheme === 'darkMode' ?  'fas fa-cloud-sun' : ' fas fa-cloud-moon';
 
             //add gradient class after transition.
             setTimeout (() => { 
                 if (formerTheme == 'darkMode') {
                     this.theme = "lightMode";
+                    this.themeIcon = 'fas fa-cloud-moon';
                     document.documentElement.setAttribute('data-theme', 'light');
                 } else {
                     this.theme = 'darkMode';
+                    this.themeIcon = 'fas fa-cloud-sun';
                     document.documentElement.setAttribute('data-theme', 'dark');
                 }
                 localStorage.setItem('theme', this.theme);
