@@ -1,17 +1,17 @@
 P<template>
   <Layout>
     <h2 class="h2 text-center m-5" data-aos="flip-right" data-aos-duration="1500">Blog</h2>
-    <div class="inline-flex justify-between w-full">
+    <div class="inline-flex justify-between items-center w-full">
         <div>
             <h3 class="h3" v-if="this.noOfBlogPost > 1">{{this.noOfBlogPost}} Posts</h3>
             <h3 class="h3" v-if="this.noOfBlogPost == 1">{{this.noOfBlogPost}} Post</h3>
         </div>
-        <div>
-            <a href="/contact" class="button mr-8"> Subscribe</a>
+        <div class="h-auto">
+            <a href="/contact" class="button mr-5"> Subscribe</a>
             <a  href="https://twitter.com/LindaOjo_?ref_src=twsrc%5Etfw"
-                class="button twitter-follow-button"
+                class="button twitter-button twitter-follow-button"
                 data-show-count="false">
-                    <i class="fab fa-twitter mr-2"></i> Follow @LindaOjo_
+                    <i class="fab fa-twitter mr-2"></i> Follow
             </a>
         </div>   
     </div>

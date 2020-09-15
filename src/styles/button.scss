@@ -29,3 +29,9 @@
         @apply justify-center; 
     }
 }
+/* Mobile */
+@media (max-width: 500px) {
+	.twitter-button {
+        display: none;
+    }
+}

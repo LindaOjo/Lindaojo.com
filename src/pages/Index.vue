@@ -38,8 +38,8 @@
          
         <div class="footer w-full flex justify-center fade-in">
             <div class="mx-auto mt-6 ">
-                <div class="button-container inline-flex flex-wrap w-full justify-start">
-                    <a href="/contact" class="button my-2 px-10 text-lg border-opacity-25 mr-8 ">Get in touch</a> 
+                <div class="button-container inline-flex justify-center flex-wrap w-full">
+                    <a href="/contact" class="button my-2 px-10 text-lg border-opacity-25 mx-8">Get in touch</a> 
                     <a href="/contact" class="button my-2 px-10 text-lg"> Subscribe</a>
                 </div>
                 <p class=" mt-6 text-center mx-5">Designed and Built by Linda Ojo </p>
