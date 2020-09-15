@@ -15,14 +15,18 @@
     font-size: 1.4rem;
 }
 .desktop-light-switch, .mobile-light-switch {
+    position: relative;
+    color: var(--primary-light);
     cursor: pointer;
     padding: 0 10px;
     transition: all 1s ease;
     animation: ani 4s infinite;
+    -webkit-animation: ani 4s infinite;
+    -moz-animation: ani 4s infinite;
 }
 
 
-@keyframes ani {
+@-webkit-keyframes ani {
     0% {
       left: 0;
     }

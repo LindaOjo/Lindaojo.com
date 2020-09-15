@@ -28,6 +28,7 @@
     --code-comment: #d65fce;
     --code-background-color: #61137e80;
     --primary: #C850C0;
+    --primary-light: #fabcf6;
     
 }
 
@@ -35,4 +36,5 @@
     --code-comment: #4d9cec;
     --code-background-color: #12539482;
     --primary:  #3e8fe0;
+    --primary-light:  #bedcfa;
 }
