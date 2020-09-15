@@ -7,7 +7,7 @@
             <h3 class="h3" v-if="this.noOfBlogPost == 1">{{this.noOfBlogPost}} Post</h3>
         </div>
         <div class="h-auto">
-            <a href="/contact" class="button mr-5"> Subscribe</a>
+            <a href="/contact" class="button subscribe-button mr-5"> Subscribe</a>
             <a  href="https://twitter.com/LindaOjo_?ref_src=twsrc%5Etfw"
                 class="button twitter-button twitter-follow-button" data-show-count="false">
                 <i class="fab fa-twitter mr-2"></i> Follow
