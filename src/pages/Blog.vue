@@ -1,8 +1,21 @@
-<template>
+P<template>
   <Layout>
     <h2 class="h2 text-center m-5" data-aos="flip-right" data-aos-duration="1500">Blog</h2>
-    <h3 class="h3" v-if="this.noOfBlogPost > 1">{{this.noOfBlogPost}} Posts</h3>
-    <h3 class="h3" v-if="this.noOfBlogPost == 1">{{this.noOfBlogPost}} Post</h3>
+    <div class="inline-flex justify-between w-full">
+        <div>
+            <h3 class="h3" v-if="this.noOfBlogPost > 1">{{this.noOfBlogPost}} Posts</h3>
+            <h3 class="h3" v-if="this.noOfBlogPost == 1">{{this.noOfBlogPost}} Post</h3>
+        </div>
+        <div>
+            <a href="/contact" class="button mr-8"> Subscribe</a>
+            <a  href="https://twitter.com/LindaOjo_?ref_src=twsrc%5Etfw"
+                class="button twitter-follow-button"
+                data-show-count="false">
+                    <i class="fab fa-twitter mr-2"></i> Follow @LindaOjo_
+            </a>
+        </div>   
+    </div>
+    <div>
         <span data-aos="slide-up" v-for="post in $page.allBlogPost.edges" :key="post.node.id">
             <g-link v-if="post.node.isBlogPost" 
                     :to="post.node.path"
@@ -42,6 +55,7 @@
     }
 </page-query>
 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script> 
 
 import Layout from '~/layouts/Default.vue' 
@@ -58,10 +72,6 @@ export default {
             noOfBlogPost: 0
         }
     },
-    methods: {
-        getPostnumber() {
-        }
-    }
 
 }
 </script>

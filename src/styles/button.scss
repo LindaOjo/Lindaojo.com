@@ -5,7 +5,7 @@
     font-size: 0.8rem;
     transition: all ease 0.5s;
     background-color: var(--primary);
-     box-shadow: 0 4px #fff;
+    box-shadow: 0 4px #fff;
 }
 
 .button:focus {
@@ -27,11 +27,5 @@
 
 	.button-container {
         @apply justify-center; 
-    }
-
-    .big-button {
-        @apply my-0 mt-2;
-        font-size: 1rem;
-        background-color: var(--primary);
     }
 }
