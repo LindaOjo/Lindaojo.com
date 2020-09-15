@@ -43,11 +43,18 @@ body {
 /* Cards */
 
 .post-card {
+    background-color: var(--postcard-background);
     min-height: 8rem;
     max-height: auto;
-    @apply  my-4 p-2 border-2 rounded-lg border-solid border-gray-200 flex items-center
+    @apply  my-8 p-2 mx-auto border-2 w-full flex items-center
            cursor-pointer justify-between;
     border-color: var(--primary);
+    border-right: none;
+    border-left: none;
+    -webkit-box-shadow: 1px 19px 15px -6px rgba(0,0,0,0.28);
+    -moz-box-shadow: 1px 19px 15px -6px rgba(0,0,0,0.28);
+    box-shadow: 1px 19px 15px -6px rgba(0,0,0,0.28);
+    
     :hover {
         @apply h-40 ;
     }
@@ -65,18 +72,6 @@ body {
     border-radius: 50%;
     transition: 0s display;
     text-align: center;
-}
-
-.abeg {
-    display: none;
-    @apply w-56 text-center absolute mx-auto px-1;
-    margin-top: -30px;
-    transition: 0s display;
-}
-
-.profile-picture-container:hover .abeg {
-    display: block;
-    transition-delay: .8s;
 }
 
 .profile-picture {
@@ -124,7 +119,7 @@ body {
     }
 
     .profile-picture {
-        @apply h-24 w-24 my-5;
+        @apply h-40 w-40 my-5;
     }
 
     .project-card {

@@ -5,8 +5,9 @@
 @tailwind utilities;
 
 :root {
-    --dark-blue: #020758;
-    --light-blue:  #8EC5FC;
+    /*General*/
+    --dark-menu-background: rgba(3, 7, 31, 0.938);
+    --postcard-background: #10081270;
 
 
     /* Light */
@@ -16,12 +17,7 @@
 
     /* Dark */
     --dark-theme-overall-background: linear-gradient(43deg, #1f0d3d 0%, #8d2786 30%, #020758 66%);
-    --dark-theme-lg-container-background: rgba(16, 8, 18, 0.9);
-    --dark-menu-background: rgba(3, 7, 31, 0.938);
     --dark-theme-text-color: rgba(255, 255, 255, 0.816);
-
-    --link-hover-timing: all 0.25s ease-in-out;
-    --theme-change-timing: all 1s ease-in-out;
 }
 
 [data-theme="dark"] {

@@ -2,7 +2,7 @@
   <section>
     <span data-aos="slide-up" v-for="post in $static.allBlogPost.edges" 
           :key="post.node.id">
-        <g-link class="fade-in post-card hover:-translate-y-1 hover:scale-105 transition delay-100 duration-300 ease-in-out transform"
+        <g-link class="post-card"
                 :to="post.node.path">
             <div class="inline-block w-full">
                 <div>

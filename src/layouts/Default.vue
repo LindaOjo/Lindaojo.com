@@ -14,11 +14,10 @@
 					<nav class="nav">
                         <div class="desktop-nav w-2/3 inline-flex">
                             <span class="desktop-light-switch nav__link" @click="toggleTheme" aria-label="Toggle light/dark mode">
-                                 <i class="p-1"
+                                <i class="p-1"
                                     :class="this.themeIcon"
-                                    aria-hidden="true"
-                                ></i>
-                                
+                                    aria-hidden="true">
+                                </i>    
                             </span>
                             <g-link class="nav__link" to="/">Home</g-link>
                             <!-- <g-link class="nav__link" to="/portfolio">Portfolio</g-link> -->
@@ -37,15 +36,16 @@
                                     aria-hidden="true"
                                 ></i>
                             </span>
+                            <!-- Mobile Menu Icon -->
                             <span @click="toggleMenu">
 							    <i class="fas fa-bars menu-icon"></i>
                             </span>
                         </div>					
 					</nav>
 				</header>
-                <!-- Mobile Menu -->
+                <!-- Mobile Menu List -->
 
-                    <div v-show="isOpen" class="menu absolute text-center w-4/5 z-10 py-2 rounded-lg">
+                    <div v-if="isOpen" class="menu absolute text-center w-4/5 z-10 py-2 rounded-lg">
                         <div v-click-outside="hideMenu">
                             <g-link class="menu-link" to="/">Home</g-link>
                             <!-- <g-link class="menu-link" to="/portfolio">Portfolio</g-link> -->
@@ -161,6 +161,7 @@ export default {
             this.isOpen = false
         },
 		toggleMenu() {
+            console.log("i am clicked");
             this.isOpen = !this.isOpen
         },
         toggleTheme() {

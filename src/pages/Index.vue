@@ -13,7 +13,6 @@
             <span></span>
         </div>
         <div class="fade-in profile-picture-container relative" data-aos="flip-right" data-aos-duration="1500">
-            <p class="abeg">Abeg, you are making me dizzy!</p>
             <picture>
                 <source alt="" srcset="./../../static/images/profile-pic.webp" type="image/webp">
                 <g-image class="profile-picture" src="./../../static/images/profile-pic.jpg" alt="profile picture"></g-image>
@@ -30,17 +29,19 @@
             <p>Hi there! I'm Linda, a developer and designer in Lagos, Nigeria. I enjoy solving problems by creating beautiful
                and functional products. I also write and speak about web technologies. </p>          
         </div>
+
         <div class="fade-in inline-flex w-full justify-between">
             <h2 class="my-8 md:my-8 h2 sm:my-5">Latest Posts</h2>
             <a class="primary-color h3 my-auto" href="/blog" >View all</a>
         </div>
+
         <Latest/>
          
         <div class="footer w-full flex justify-center fade-in">
             <div class="mx-auto mt-6 ">
                 <div class="button-container inline-flex justify-center flex-wrap w-full">
-                    <a href="/contact" class="button my-2 px-10 text-lg border-opacity-25 mx-8">Get in touch</a> 
-                    <a href="/contact" class="button my-2 px-10 text-lg"> Subscribe</a>
+                    <a href="/contact" class="button my-2 px-10 text-lg border-opacity-25 mx-8">Hire Me</a> 
+                    <a href="/contact" class="button my-2 px-10 text-lg"> Subscribe to Newsletter</a>
                 </div>
                 <p class=" mt-6 text-center mx-5">Designed and Built by Linda Ojo </p>
             </div>

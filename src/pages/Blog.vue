@@ -1,12 +1,12 @@
 P<template>
   <Layout>
     <h2 class="h2 text-center m-5" data-aos="flip-right" data-aos-duration="1500">Blog</h2>
-    <div class="inline-flex justify-between items-center w-full">
-        <div>
+    <div class="inline-flex justify-end items-center w-full">
+        <div hidden>
             <h3 class="h3" v-if="this.noOfBlogPost > 1">{{this.noOfBlogPost}} Posts</h3>
             <h3 class="h3" v-if="this.noOfBlogPost == 1">{{this.noOfBlogPost}} Post</h3>
         </div>
-        <div class="h-auto">
+        <div class="h-auto mb-5">
             <a href="/contact" class="button subscribe-button mr-5"> Subscribe</a>
             <a  href="https://twitter.com/LindaOjo_?ref_src=twsrc%5Etfw"
                 class="button twitter-button twitter-follow-button"
@@ -19,7 +19,7 @@ P<template>
         <span data-aos="slide-up" v-for="post in $page.allBlogPost.edges" :key="post.node.id">
             <g-link v-if="post.node.isBlogPost" 
                     :to="post.node.path"
-                    class="post-card w-full hover:-translate-y-1 hover:scale-105 transition delay-100 duration-300 ease-in-out transform">
+                    class="post-card w-full">
                 <div class="inline-block w-full">
                     <div>
                         <h2 class="h3 my-2">{{post.node.title}}</h2>
