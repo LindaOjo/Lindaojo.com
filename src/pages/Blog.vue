@@ -1,12 +1,12 @@
 P<template>
   <Layout>
     <h2 class="h2 text-center m-5" data-aos="flip-right" data-aos-duration="1500">Blog</h2>
-    <div class="inline-flex justify-end items-center w-full">
+    <div class="inline-flex h-8 justify-end w-full">
         <div hidden>
             <h3 class="h3" v-if="this.noOfBlogPost > 1">{{this.noOfBlogPost}} Posts</h3>
             <h3 class="h3" v-if="this.noOfBlogPost == 1">{{this.noOfBlogPost}} Post</h3>
         </div>
-        <div class="h-auto mb-5">
+        <div class="h-auto">
             <a href="/contact" class="button subscribe-button mr-5"> Subscribe</a>
             <a  href="https://twitter.com/LindaOjo_?ref_src=twsrc%5Etfw"
                 class="button twitter-button twitter-follow-button"

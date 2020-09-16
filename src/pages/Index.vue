@@ -41,7 +41,7 @@
             <div class="mx-auto mt-6 ">
                 <div class="button-container inline-flex justify-center flex-wrap w-full">
                     <a href="/contact" class="button my-2 px-10 text-lg border-opacity-25 mx-8">Hire Me</a> 
-                    <a href="/contact" class="button my-2 px-10 text-lg"> Subscribe to Newsletter</a>
+                    <a href="/contact" class="button my-2 px-5 text-lg"> Subscribe to Newsletter</a>
                 </div>
                 <p class=" mt-6 text-center mx-5">Designed and Built by Linda Ojo </p>
             </div>
