@@ -8,10 +8,11 @@
 
 .darkMode {
     height: auto;
-    background: linear-gradient(62deg, #1f0d3d 0%, #470843 30%, #15054b 66%);
+    background: linear-gradient(62deg, #000000fe 0%, #470843 30%, #000000fe 86%);
     color: rgba(255, 255, 255, 0.897);  
     background-color: transparent;
     transition: background-color all 1.5s;
+    background-attachment: fixed;
 }
 
 .lightMode {
@@ -19,10 +20,11 @@
     background: linear-gradient(62deg, #0855a1 0%, #ad93c5 28%, #0855a1 87%);
     background-color: transparent;
     transition: background-color all 1.5s;
+    background-attachment: fixed;
 }
 
 .darkTransition {
-    background-color: #15054b ;
+    background-color: #000000fe ;
     transition: background-color all 1.5s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
