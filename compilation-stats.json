@@ -1,0 +1,180 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.43.0",
+  "hash": "41210d5c0d24cd5d9d61",
+  "time": 76,
+  "builtAt": 1600874041424,
+  "publicPath": "",
+  "outputPath": "/Users/admin/Documents/Lindaojo.com/dist",
+  "assetsByChunkName": {
+    "app": "main.js"
+  },
+  "assets": [
+    {
+      "name": "main.js",
+      "size": 3922,
+      "chunks": [
+        "app"
+      ],
+      "chunkNames": [
+        "app"
+      ],
+      "info": {},
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "app": {
+      "chunks": [
+        "app"
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "app": {
+      "chunks": [
+        "app"
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": "app",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 58,
+      "names": [
+        "app"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "hash": "3c5d071e8d5fac07e5ed",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": "./src/main.js",
+          "identifier": "/Users/admin/Documents/Lindaojo.com/src/main.js",
+          "name": "./src/main.js",
+          "index": 0,
+          "index2": 0,
+          "size": 58,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "app"
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 25,
+            "building": 13
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src/main.js",
+              "loc": "app"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "const test = ( ) => {\n    console.log('Test');\n};\n\ntest();"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "app",
+          "request": "./src/main.js",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "./src/main.js",
+      "identifier": "/Users/admin/Documents/Lindaojo.com/src/main.js",
+      "name": "./src/main.js",
+      "index": 0,
+      "index2": 0,
+      "size": 58,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "app"
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "profile": {
+        "factory": 25,
+        "building": 13
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src/main.js",
+          "loc": "app"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "const test = ( ) => {\n    console.log('Test');\n};\n\ntest();"
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": []
+}

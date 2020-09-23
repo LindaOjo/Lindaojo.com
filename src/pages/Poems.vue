@@ -1,20 +1,19 @@
 <template>
   <Layout>
     <h2 class="h2 text-center m-5" data-aos="flip-right" data-aos-duration="1500">Poems</h2>
-    <div class="inline-flex h-8 justify-end w-full">
-        <div hidden>
+    <!-- <div class="inline-flex h-8 justify-end w-full">
+        <div>
             <h3 class="h3" v-if="this.noOfBlogPost > 1">{{this.noOfBlogPost}} Posts</h3>
             <h3 class="h3" v-if="this.noOfBlogPost == 1">{{this.noOfBlogPost}} Post</h3>
         </div>
         <div>
-            <a href="/contact" class="button subscribe-button mr-8"> Subscribe</a>
+            <a href="#contact" class="button subscribe-button mr-8"> Subscribe</a>
             <a  href="https://twitter.com/LindaOjo_?ref_src=twsrc%5Etfw"
                 class="button twitter-button twitter-follow-button" data-show-count="false">
                 <i class="fab fa-twitter mr-2"></i> Follow
             </a>
-        </div>
-        
-    </div>
+        </div> 
+    </div> -->
       <span v-for="post in $page.allBlogPost.edges" :key="post.node.id">
             <g-link  v-if="!post.node.isBlogPost"
                     class="post-card hover:-translate-y-1 hover:scale-105 transition delay-100 duration-300 ease-in-out transform"
@@ -26,7 +25,11 @@
                 </div>
                 
             </g-link>
-      </span>   
+      </span>
+    <div id="subscribe">
+        <SubscriptionForm></SubscriptionForm>
+    </div>
+    
   </Layout>
 </template>
 
@@ -48,6 +51,7 @@
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script> 
+import SubscriptionForm from './../components/SubscriptionForm';
 import Layout from '~/layouts/Default.vue' 
 export default {
     created () {
@@ -55,7 +59,10 @@ export default {
             if (!post.node.isBlogPost) this.noOfBlogPost++;
         });
     },
-    components: { Layout },
+    components: { 
+        Layout,
+        SubscriptionForm
+    },
     metaInfo: { title: 'Poems' },
     data () {
         return {

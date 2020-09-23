@@ -127,7 +127,7 @@ export default {
         ClickOutside
     },
     mounted() {
-        let localTheme = localStorage.getItem('theme') || 'darkMode';
+        let localTheme = localStorage.getItem('theme') || 'lightMode';
         if (localTheme == "darkMode") {
             this.theme = "darkMode";
             this.themeIcon = 'fas fa-cloud-sun';
@@ -161,7 +161,6 @@ export default {
             this.isOpen = false
         },
 		toggleMenu() {
-            console.log("i am clicked");
             this.isOpen = !this.isOpen
         },
         toggleTheme() {

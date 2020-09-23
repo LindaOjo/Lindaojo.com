@@ -29,7 +29,7 @@
                 </div>
                 <div class="py-4">
                 <label for="email" class=" block text-sm font-bold mb-2">Your Email *</label>
-                <input required type="email" class="w-full bg-gray-400  text-black p-2"  name="email" v-model="formData.email" />
+                <input required type="email" class="w-full bg-gray-400 text-black p-2"  name="email" v-model="formData.email" />
                 </div>
             </div>
 

@@ -1,0 +1,19 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import "./variables.css";
+
+@import
+	'dark-theme',
+	'layout',
+	'typography',
+	'header',
+	'markdown',
+	'button'
+;
+/* * {
+    border: 1px solid red;
+} */

@@ -4,9 +4,12 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "start": "webpack-dev-server --host 0.0.0.0",
+    "watch": "webpack --watch"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "github:fullhuman/postcss-purgecss",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.1",
     "aos": "^3.0.0-beta.6",
@@ -16,6 +19,7 @@
     "netlify-cms": "^2.10.52",
     "netlify-cms-lib-widgets": "^1.3.0",
     "npm": "^6.14.8",
+    "postcss": "^8.0.9",
     "scrollreveal": "^4.0.7",
     "tailwindcss": "^1.4.6",
     "vue-click-outside": "^1.1.0",
@@ -24,9 +28,15 @@
   "devDependencies": {
     "@iconify/icons-gg": "^1.0.0",
     "@iconify/vue": "^1.0.2",
+    "compression-webpack-plugin": "^6.0.2",
+    "gridsome-plugin-purgecss": "^1.0.12",
     "gridsome-plugin-tailwindcss": "^3.0.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^9.0.2",
-    "vue-svg-loader": "^0.16.0"
+    "vue-svg-loader": "^0.16.0",
+    "webpack": "^4.44.2",
+    "webpack-bundle-analyzer": "^3.9.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }

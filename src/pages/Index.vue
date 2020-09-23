@@ -21,9 +21,9 @@
         
         
         <div class="fade-in" >
-            <h3 class="text-center p-3 h3">
+            <h2 class="text-center p-3 h2">
                 Frontend Developer
-            </h3>
+            </h2>
         </div>
         <div class="bio fade-in lg:w-1/2 lg:text-xl sm:w-3/4 mx-auto my-5" >
             <p>Hi there! I'm Linda, a developer and designer in Lagos, Nigeria. I enjoy solving problems by creating beautiful
@@ -38,12 +38,11 @@
         <Latest/>
          
         <div class="footer w-full flex justify-center fade-in">
-            <div class="mx-auto mt-6 ">
+            <div class="mx-auto">
                 <div class="button-container inline-flex justify-center flex-wrap w-full">
-                    <a href="/contact" class="button my-2 px-10 text-center text-lg border-opacity-25 mx-8">Contact Me</a> 
-                    <a href="/contact" class="button my-2 px-5 text-center text-lg"> Subscribe to Newsletter</a>
+                    <a href="/contact" class="button my-2 px-5 text-center text-lg border-opacity-25 mx-8">Contact Me</a> 
                 </div>
-                <p class=" mt-6 text-center mx-5">Designed and Built by Linda Ojo </p>
+                <p class=" mt-6 text-center mx-5">Designed and Developed by Linda Ojo </p>
             </div>
         </div> 
     </Layout>

@@ -2,6 +2,8 @@ const tailwind = require("tailwindcss");
 
 const postcssPlugins = [tailwind()];
 
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+
 module.exports = {
   siteName: 'Linda Ojo',
   transformers: {
@@ -26,8 +28,22 @@ module.exports = {
     {
       use: `gridsome-plugin-netlify-cms`,
       options: {
-        publicPath: `/admin`
+        publicPath: `/cms`
       }
+    },
+    {
+        use: 'gridsome-plugin-purgecss',
+        // default options, the following will be included if you don't provide anything
+        options: {
+          content: [
+            './src/**/*.vue',
+            './src/**/*.js',
+            './src/**/*.jsx',
+            './src/**/*.pug',
+            './src/**/*.md'
+          ],
+          defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
+        }
     }
   ],
   css: {
@@ -40,11 +56,19 @@ module.exports = {
   templates: {
     BlogPost: '/blog/:title'
   },
+  configureWebpack: {
+    // merged with the internal config
+  },
   chainWebpack: config => {
     const svgRule = config.module.rule('svg')
     svgRule.uses.clear()
     svgRule
       .use('vue-svg-loader')
       .loader('vue-svg-loader')
+
+    //   Adding code below to visualize size of output files with ai to improve lighthouse performance
+    //   config
+    //   .plugin('BundleAnalyzerPlugin')
+    //   .use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }]);
   }
 }
