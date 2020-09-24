@@ -2,6 +2,7 @@
 :root {
     /*General*/
     --dark-menu-background: rgba(3, 7, 31, 0.938);
+    --pink: #C850C0;
 
     /* Light */
     --light-theme-overall-background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 28%, #8ec5fc 87%);
@@ -28,6 +29,6 @@
     --postcard-background: #10081270;
     --code-comment: #4d9cec;
     --code-background-color: #12539482;
-    --primary:  #3e8fe0;
+    --primary:  #3e8fe0cf;
     --primary-light:  #bedcfa;
 }
