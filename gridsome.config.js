@@ -1,6 +1,6 @@
 const tailwind = require("tailwindcss");
 
-// const postcssPlugins = [tailwind()];
+const postcssPlugins = [tailwind()];
 
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
@@ -46,13 +46,13 @@ module.exports = {
         }
     }
   ],
-//   css: {
-//     loaderOptions: {
-//       postcss: {
-//         plugins: postcssPlugins
-//       }
-//     }
-//   },
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: postcssPlugins
+      }
+    }
+  },
   templates: {
     BlogPost: '/blog/:title'
   },
