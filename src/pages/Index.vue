@@ -12,8 +12,7 @@
             <span></span>
             <span></span>
         </div>
-        <div class="profile-picture-container relative" data-aos="flip-right" data-aos-duration="1500">
-            <p class="abeg">Abeg, you are making me dizzy!</p>
+        <div class="fade-in profile-picture-container relative" data-aos="flip-right" data-aos-duration="1500">
             <picture>
                 <source alt="" srcset="./../../static/images/profile-pic.webp" type="image/webp">
                 <g-image class="profile-picture" src="./../../static/images/profile-pic.jpg" alt="profile picture"></g-image>
@@ -21,21 +20,30 @@
         </div>
         
         
-        <div>
-            <h3 class="text-center p-3 h3">
+        <div class="fade-in" >
+            <h2 class="text-center p-3 h2">
                 Frontend Developer
-            </h3>
+            </h2>
         </div>
-        <div class="bio lg:w-1/2 lg:text-xl sm:w-3/4 mx-auto my-5" >
+        <div class="bio fade-in lg:w-1/2 lg:text-xl sm:w-3/4 mx-auto my-5" >
             <p>Hi there! I'm Linda, a developer and designer in Lagos, Nigeria. I enjoy solving problems by creating beautiful
                and functional products. I also write and speak about web technologies. </p>          
         </div>
-        <div>
+
+        <div class="fade-in inline-flex w-full justify-between">
             <h2 class="my-8 md:my-8 h2 sm:my-5">Latest Posts</h2>
+            <a class="primary-color h3 my-auto" href="/blog" >View all</a>
         </div>
+
         <Latest/>
-        <div class="footer">
-            <p class="mx-auto mt-6 text-center">Created by Linda Ojo </p>
+         
+        <div class="footer w-full flex justify-center fade-in">
+            <div class="mx-auto">
+                <div class="button-container inline-flex justify-center flex-wrap w-full">
+                    <a href="/contact" class="button my-2 px-5 text-center text-lg mx-8">Contact Me</a> 
+                </div>
+                <p class=" mt-6 text-center mx-5">Designed and Developed by Linda Ojo </p>
+            </div>
         </div> 
     </Layout>
 </template>
@@ -50,11 +58,6 @@ export default {
         Latest
        },
        metaInfo: { title: 'Home' },
-
-    data() {
-        return {
-        }
-    },
 }
 </script>
 

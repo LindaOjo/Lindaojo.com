@@ -1,11 +1,3 @@
-@tailwind base;
-
-@tailwind components;
-
-@tailwind utilities;
-
-@import "./variables.css";
-
 html {
     scroll-behavior: smooth;
 }
@@ -16,7 +8,7 @@ body {
     /* for desktop mode  scrollbar-color: var(--primary) !important; */
     @apply h-screen;
     background-size: cover;
-    max-height: 100vh;
+    min-height: 100vh;
     background-color: transparent;
     line-height: 1.5;
 
@@ -25,17 +17,17 @@ body {
 /* containers */
 .container {
     background: transparent;
-    @apply h-screen w-screen mx-auto p-4;
-    max-height: 100vh;
+    @apply h-auto w-screen mx-auto p-8;
 }
 
 .lg-container {
+    position: relative;
     background-color: rgba(16, 8, 18, 0.61);
     color: var(--dark-theme-text-color);
     border-radius: 3rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    @apply p-8  h-full w-full;
-    overflow-y: auto;
+    @apply p-8 w-full;
+    min-height: 100vh;
     overflow-x: hidden;
     z-index: 5;
 }
@@ -43,13 +35,20 @@ body {
 /* Cards */
 
 .post-card {
+    background-color: var(--postcard-background);
     min-height: 8rem;
-    max-height: auto;
-    @apply  my-4 p-2 border-2 rounded-lg border-solid border-gray-200 flex items-center
+    max-height: 20rem;
+    @apply  my-8 p-2 mx-auto border-2 w-full flex items-center
            cursor-pointer justify-between;
     border-color: var(--primary);
+    border-right: none;
+    border-left: none;
+    -webkit-box-shadow: 1px 19px 15px -6px rgba(0,0,0,0.28);
+    -moz-box-shadow: 1px 19px 15px -6px rgba(0,0,0,0.28);
+    box-shadow: 1px 19px 15px -6px rgba(0,0,0,0.28);
+    
     :hover {
-        @apply h-40 ;
+        border-color: white;
     }
 }
 
@@ -61,22 +60,10 @@ body {
 
 /* Images and Profile Picture */
 .profile-picture-container {
-    @apply w-56 mx-auto object-cover my-5;
+    @apply w-48 mx-auto object-cover my-5;
     border-radius: 50%;
     transition: 0s display;
     text-align: center;
-}
-
-.abeg {
-    display: none;
-    @apply w-56 text-center absolute mx-auto px-1;
-    margin-top: -30px;
-    transition: 0s display;
-}
-
-.profile-picture-container:hover .abeg {
-    display: block;
-    transition-delay: .8s;
 }
 
 .profile-picture {
@@ -85,6 +72,9 @@ body {
     border-radius: 50%;
     -webkit-transition: -webkit-transform .8s ease-in-out;
     transition: transform 2s ease-in-out;
+}
+.profile-picture:hover {
+    border: 2px solid rgb(224, 87, 7);
 }
 
 .profile-picture:hover, .profile-picture:focus {
@@ -121,7 +111,7 @@ body {
     }
 
     .profile-picture {
-        @apply h-24 w-24 my-5;
+        @apply h-40 w-40 my-5;
     }
 
     .project-card {

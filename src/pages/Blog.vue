@@ -1,10 +1,25 @@
-<template>
+P<template>
   <Layout>
     <h2 class="h2 text-center m-5" data-aos="flip-right" data-aos-duration="1500">Blog</h2>
-        <span v-for="post in $page.allBlogPost.edges" :key="post.node.id">
+    <!-- <div class="inline-flex h-8 justify-end w-full">
+        <div>
+            <h3 class="h3" v-if="this.noOfBlogPost > 1">{{this.noOfBlogPost}} Posts</h3>
+            <h3 class="h3" v-if="this.noOfBlogPost == 1">{{this.noOfBlogPost}} Post</h3>
+        </div>
+        <div class="h-auto">
+            <a href="#subscribe" class="button subscribe-button mr-5"> Subscribe</a>
+            <a  href="https://twitter.com/LindaOjo_?ref_src=twsrc%5Etfw"
+                class="button twitter-button twitter-follow-button"
+                data-show-count="false">
+                    <i class="fab fa-twitter mr-2"></i> Follow
+            </a>
+        </div>   
+    </div> -->
+    <div>
+        <span data-aos="slide-up" v-for="post in $page.allBlogPost.edges" :key="post.node.id">
             <g-link v-if="post.node.isBlogPost" 
                     :to="post.node.path"
-                    class="post-card w-full hover:-translate-y-1 hover:scale-105 transition delay-100 duration-300 ease-in-out transform">
+                    class="post-card w-full">
                 <div class="inline-block w-full">
                     <div>
                         <h2 class="h3 my-2">{{post.node.title}}</h2>
@@ -18,12 +33,19 @@
                 </div>               
             </g-link>
         </span>
+    </div>
+    <div id="subscribe">
+        <SubscriptionForm></SubscriptionForm>
+    </div>
+    
+    
   </Layout>
 </template>
 
 <page-query>
     query {
         allBlogPost (sortBy: "date", order: DESC){
+          totalCount
           edges {
             node {
                 isBlogPost
@@ -38,12 +60,28 @@
     }
 </page-query>
 
-<script> 
-import Layout from '~/layouts/Default.vue' 
+<script defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script defer> 
+
+import Layout from '~/layouts/Default.vue';
+import SubscriptionForm from './../components/SubscriptionForm';
 export default {
-     components:
-      { Layout },
-       metaInfo: { title: 'Blog' }
+    created () {
+        this.$page.allBlogPost.edges.forEach(post => {
+            if (post.node.isBlogPost) this.noOfBlogPost++;
+        });
+    },
+    components: { 
+        Layout,
+        SubscriptionForm
+    },
+    metaInfo: { title: 'Blog' },
+    data () {
+        return {
+            noOfBlogPost: 0
+        }
+    },
+
 }
 </script>
 
