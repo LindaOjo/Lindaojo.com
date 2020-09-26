@@ -22,11 +22,11 @@
         
         <div class="fade-in" >
             <h2 class="text-center p-3 h2">
-                Frontend Developer
+                Frontend Engineer
             </h2>
         </div>
-        <div class="bio fade-in lg:w-1/2 lg:text-xl sm:w-3/4 mx-auto my-5" >
-            <p>Hi there! I'm Linda, a developer and designer in Lagos, Nigeria. I enjoy solving problems by creating beautiful
+        <div class="bio fade-in lg:w-3/4 lg:text-2xl sm:w-3/4 mx-auto my-5" >
+            <p>Hi there! I'm Linda, an engineer and designer in Lagos, Nigeria. I enjoy solving problems by creating beautiful
                and functional products. I also write and speak about web technologies. </p>          
         </div>
 
@@ -37,13 +37,11 @@
 
         <Latest/>
          
-        <div class="footer w-full flex justify-center fade-in">
-            <div class="mx-auto">
-                <div class="button-container inline-flex justify-center flex-wrap w-full">
-                    <a href="/contact" class="button my-2 px-5 text-center text-lg mx-8">Contact Me</a> 
-                </div>
-                <p class=" mt-6 text-center mx-5">Designed and Developed by Linda Ojo </p>
+        <div class="footer mx-auto w-full fade-in">
+            <div class="flex justify-center">
+                <a href="/contact" class="button my-2 px-5 text-center text-lg">Contact Me</a> 
             </div>
+            <p class=" mt-6 text-center mx-5">Designed and Developed by Linda Ojo </p>
         </div> 
     </Layout>
 </template>

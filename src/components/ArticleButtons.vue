@@ -1,7 +1,8 @@
 <template>
     <div>
-       
-        <div class="button-container inline-flex flex-wrap w-full justify-start">
+        
+        <div class="button-container links">
+            <h3 class="mr-8 h3">Share:</h3>
             <a  href="https://twitter.com/share?ref_src=twsrc%5Etfw"
                 class="twitter-share-button mt-4 border-opacity-25 mr-8"
                 data-text="Hey, I enjoyed reading this article by @LindaOjo_"
@@ -16,7 +17,7 @@
                 <i class="fab fa-facebook fa-2x mr-2"></i>
             </a>
             <a  href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-                class="twitter-share-button mt-4 border-opacity-25 mr-8"
+                class="twitter-share-button mt-4 border-opacity-25"
                 data-text="Hey, I enjoyed reading this article by @LindaOjo_"
                 data-show-count="false">
                 <i class="fab fa-linkedin fa-2x mr-2"></i>
@@ -32,6 +33,9 @@
 </template>
 
 <style scoped>
+a:hover {
+    color: var(--primary);
+}
 
 </style>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

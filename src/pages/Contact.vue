@@ -101,33 +101,8 @@ export default {
 </script>
 
 <style scoped>
-@import "./../styles/variables.css";
 
-.links > a:hover{
-    cursor: pointer;
-    color: var(--light-blue);
-}
-
-.button {
-    background-color: var(--primary);
-    transition: all ease 0.3s;
-    box-shadow: 0 4px #fff;
-}
-
-.button:focus {
-  transform: scale(0.9);
-}
-
-.button:hover {
-  opacity: 0.8;
-}
-
-.button:active {
-  box-shadow: 0 3px #666;
-  transform: translateY(4px);
-}
-
-.fa-twitter:hover, .fa-github:hover, .fa-smile-wink:hover, a:hover {
+a:hover {
     color: var(--primary);
 }
 

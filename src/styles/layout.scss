@@ -4,7 +4,7 @@ html {
 
 body {
     box-sizing: border-box !important;
-    min-height: 100vh;
+    min-height: 120vh;
     background-color: rgb(255, 255, 255);
     line-height: 1.5;
 
@@ -17,12 +17,12 @@ body {
 }
 
 .lg-container {
-    position: static;
+    position: relative;
     background-color: rgba(16, 8, 18, 0.61);
     color: var(--dark-theme-text-color);
     border-radius: 3rem;
     @apply p-8 w-full;
-    min-height: 100vh;
+    min-height: 80vh;
     overflow-x: hidden;
     overflow-y: auto;
     z-index: 5;

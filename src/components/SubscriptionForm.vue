@@ -32,7 +32,7 @@
             </div>
 
 
-            <div class="py-2 flex w-full justify-end __field subscribe-form__field--submit clear">
+            <div class="py-2 flex w-full justify-center __field subscribe-form__field--submit clear">
                 <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
             </div>
 
