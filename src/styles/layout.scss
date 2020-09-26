@@ -4,7 +4,7 @@ html {
 
 body {
     box-sizing: border-box !important;
-    height: auto;
+    max-height: 100vh;
     /* for desktop mode  scrollbar-color: var(--primary) !important; */
     @apply h-screen;
     background-color: transparent;
@@ -15,6 +15,7 @@ body {
 /* containers */
 .container {
     background: transparent;
+    max-height: 100vh;
     @apply h-auto w-screen mx-auto p-8;
 }
 
