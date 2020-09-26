@@ -19,7 +19,7 @@ body {
 .lg-container {
     position: relative;
     background-color: rgba(16, 8, 18, 0.61);
-    color: var(--dark-theme-text-color);
+    color: var(--text-color);
     border-radius: 3rem;
     @apply p-8 w-full;
     min-height: 100vh;
