@@ -38,7 +38,7 @@
                 <textarea required name="message" class="w-full bg-gray-400 text-black p-2"  v-model="formData.message"></textarea>
             </div>
 
-            <div class="flex justify-center mx-auto mx-8 mt-5 relative">
+            <div class="flex justify-center mx-8 mt-5 relative">
             <button type="submit" class="button font-bold py-2 px-4 rounded">
                 Send Message
             </button>
@@ -49,9 +49,13 @@
                     <a class="mr-10" href="https://twitter.com/LindaOjo_" title="Twitter">
                         <i class="fa fa-twitter fa-2x pr-2" aria-hidden="true"></i> Twitter
                     </a>  
-                    <a href="https://github.com/LindaOjo" title="Github">
+                    <a class="mr-10" href="https://github.com/LindaOjo" title="Github">
                         <i class="fa fa-github fa-2x pr-2" aria-hidden="true"></i> Github
                     </a>   
+                    <a href='https://res.cloudinary.com/lindaojo/image/upload/v1601131597/Resume_Linda_Ojo_msdltz.png' target="_blank">
+                        <i class="fas fa-file-alt fa-2x pr-2" aria-hidden="true"></i>
+                        Resume
+                    </a> 
             </p>
         </div>
       </div>
