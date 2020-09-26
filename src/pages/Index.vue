@@ -31,7 +31,7 @@
         </div>
 
         <div class="fade-in inline-flex w-full justify-between">
-            <h2 class="my-8 md:my-8 h2 sm:my-5">Latest Posts</h2>
+            <h2 class="my-8 md:my-8 h2 sm:my-5"><i class="fas fa-arrow-down"></i> Latest Posts </h2>
             <a class="primary-color h3 my-auto" href="/blog" >View all</a>
         </div>
 
@@ -71,6 +71,13 @@ export default {
 .background {
     position: static;
     height: 1px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+	.fa-arrow-down {
+		display: none;
+	}
 }
 
 $particleSize: 10vmin;
