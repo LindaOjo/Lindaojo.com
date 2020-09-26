@@ -19,7 +19,7 @@ P<template>
         <span data-aos="slide-up" v-for="post in $page.allBlogPost.edges" :key="post.node.id">
             <g-link v-if="post.node.isBlogPost" 
                     :to="post.node.path"
-                    class="post-card w-full">
+                    class="post-card w-full hover:-translate-y-1 hover:scale-105 transition delay-100 duration-300 ease-in-out transform">
                 <div class="inline-block w-full">
                     <div>
                         <h2 class="h3 my-2">{{post.node.title}}</h2>
