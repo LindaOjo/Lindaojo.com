@@ -7,7 +7,7 @@ body {
     height: auto;
     /* for desktop mode  scrollbar-color: var(--primary) !important; */
     @apply h-screen;
-    background-size: cover;
+    background-size: auto;
     min-height: 100vh;
     background-color: transparent;
     line-height: 1.5;
@@ -40,9 +40,7 @@ body {
 .post-card {
     background-color: var(--postcard-background);
     min-height: 8rem;
-    max-height: 20rem;
-    @apply  my-8 p-2 mx-auto border-2 w-full flex items-center
-           cursor-pointer justify-between;
+    @apply  my-8 p-2 mx-auto border-2 w-full flex items-center cursor-pointer justify-between;
     border-color: var(--primary);
     border-right: none;
     border-left: none;
