@@ -27,17 +27,16 @@ article>div>p {
 
 p > img {
     margin: 20px auto;
-    height: 20rem;
-    width: 20rem;
+    height: auto;
+
 }
 
 div > p > img.g-image {
-    @apply mx-auto w-full h-auto;
-    margin: 20px 0;
+    @apply  w-full;
 }
 
 .centered-image {
-    @apply w-56 mx-auto;
+    @apply w-56;
 }
 
 hr {

@@ -7,7 +7,7 @@ isBlogPost: true
 songHref: "https://music.youtube.com/watch?v=LFWPotfn9Qo&feature=share" 
 ---
 
-<div class="w-64 h-64 mx-auto">
+<div class="w-64 h-64">
 
 ![Tic-Tac-Toe](./../../images/tic-tac-toe.jpg)
 

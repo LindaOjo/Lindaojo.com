@@ -7,11 +7,11 @@ isBlogPost: true
 songHref: "https://music.youtube.com/watch?v=JpGGta_R8IM&feature=share" 
 ---
 
-<div class="w-64 h-56 mx-auto">
+<span class="centered-image">
 
 ![Nested Components](./article-images/nested-components.png)
 
-</div>
+</span>
 
 Before we get started, all of the code for this tutorial can be found in my GitHub Repository.
 

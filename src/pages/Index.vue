@@ -50,46 +50,13 @@
 import Layout from '~/layouts/Default.vue';
 import Latest from './../components/Latest';
 
-let ROOT_PATH = 'https://deploy-preview-17--lindaojo.netlify.app'
-
 export default {
      components: { 
         Layout,
         Latest
     },
-      data() {
-        return {
-            logo: ROOT_PATH + require('./../../content/images/profile-pic.jpg')
-        }
-    },
-    metaInfo() {
-        return {
-            meta: [
-                {itle: 'Home' },
-                // Twitter Card
-                {name: "twitter:card", content: "summary_large_image"},
-                {name: "twitter:title", content: "Linda Ojo"},
-                {name: "twitter:description", content: "Written by Linda Ojo, Frontend Developer"},
-                {name: "twitter:url", content: "https://deploy-preview-17--lindaojo.netlify.app"},
-                {name: "twitter:image", content: "https://res.cloudinary.com/lindaojo/image/upload/v1601131597/Resume_Linda_Ojo_msdltz.png"},
-                {name: "twitter:label1", content: "Written by"},
-                {name: "twitter:data1", content: "Linda Ojo"},
-                {name: "twitter:site", content: "@LindaOjo"},
+    metaInfo: { title: 'Home' },
 
-                // image must be an absolute path
-                {name: 'twitter:image', content: this.logo},
-                // Facebook OpenGraph
-                {property: "og:title", content: 'Linda Ojo'},
-                {property: "og:locale", content: "en_US"},
-                {property: "og:type", content: "website"},
-                {property: "og:site_name", content: "LindaOjo"},
-                {property: "og:url", content: "https://deploy-preview-17--lindaojo.netlify.app"},
-                {property: "og:image", content: "https://res.cloudinary.com/lindaojo/image/upload/v1601131597/Resume_Linda_Ojo_msdltz.png"},
-                {property: "og:image:width", content: "260"},
-                {property: "og:image:height", content: "200"}
-            ]
-        }
-    }
 }
 </script>
 
@@ -151,7 +118,7 @@ $amount: 10;
   100% {
     transform: translate3d(0, 0, 1px) rotate(360deg);
   }
-
+}
 /* Particles background inspired by Louis Hoebregts (https://codepen.io/Mamboleoo/pen/BxMQYQ)*/
 
 .footer {
@@ -159,5 +126,4 @@ $amount: 10;
      margin-bottom: -1.5rem;
  }
 
-}
 </style>

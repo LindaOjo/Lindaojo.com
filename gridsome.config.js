@@ -6,6 +6,9 @@ const postcssPlugins = [tailwind()];
 
 module.exports = {
   siteName: 'Linda Ojo',
+  siteDescription: 'Articles on frontend development and poems written by Linda Ojo, Frontend Developer',
+  keywords: 'Frontend,Developer,Web,JavaScript,CSS,HTML,Angular,Software,Engineer,Blog,Nigeria,Lagos',
+
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
