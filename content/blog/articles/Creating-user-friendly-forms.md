@@ -76,7 +76,7 @@ The <strong>primary action</strong> (Purple button) allows the user to accomplis
 
 <h3>Disable buttons while a triggered process runs</h3>
 
-<div class="w-64 mx-auto">
+<div class="centered-image w-64 mx-auto">
 
 ![Confirm Purchase Page](./article-images/disabling-button.gif)
 
