@@ -127,7 +127,7 @@ export default {
         ClickOutside
     },
     mounted() {
-        let localTheme = localStorage.getItem('theme') || 'lightMode';
+        let localTheme = localStorage.getItem('theme') || 'darkMode';
         if (localTheme == "darkMode") {
             this.theme = "darkMode";
             this.themeIcon = 'fas fa-cloud-sun';
