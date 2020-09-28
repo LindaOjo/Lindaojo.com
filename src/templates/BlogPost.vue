@@ -48,7 +48,7 @@ export default {
                     {key: "og:url", property: "og:url", content: this.$page.blogPost.path},
 
                     {key: "twitter:description", name: "twitter:description", content: this.$page.blogPost.excerpt},
-                    {key: "twitter:url", name: "twitter:url", content: this.$page.blogPost.excerpt},
+                    {key: "twitter:url", name: "twitter:url", content: this.$page.blogPost.path},
                     {key: "twitter:image", name: "twitter:image", content: "https://res.cloudinary.com/lindaojo/image/upload/v1601131597/Resume_Linda_Ojo_msdltz.png"},
 
 
