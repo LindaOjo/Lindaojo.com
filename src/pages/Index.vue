@@ -50,7 +50,7 @@
 import Layout from '~/layouts/Default.vue';
 import Latest from './../components/Latest';
 
-let ROOT_PATH = 'http://localhost:8080'
+let ROOT_PATH = 'https://deploy-preview-17--lindaojo.netlify.app'
 
 export default {
      components: { 
@@ -70,7 +70,7 @@ export default {
                 {name: "twitter:card", content: "summary_large_image"},
                 {name: "twitter:title", content: "Linda Ojo"},
                 {name: "twitter:description", content: "Written by Linda Ojo, Frontend Developer"},
-                {name: "twitter:url", content: "https://lindaojo.com/"},
+                {name: "twitter:url", content: "https://deploy-preview-17--lindaojo.netlify.app"},
                 {name: "twitter:image", content: "https://res.cloudinary.com/lindaojo/image/upload/v1601131597/Resume_Linda_Ojo_msdltz.png"},
                 {name: "twitter:label1", content: "Written by"},
                 {name: "twitter:data1", content: "Linda Ojo"},
@@ -83,7 +83,7 @@ export default {
                 {property: "og:locale", content: "en_US"},
                 {property: "og:type", content: "website"},
                 {property: "og:site_name", content: "LindaOjo"},
-                {property: "og:url", content: "https://lindaojo.com"},
+                {property: "og:url", content: "https://deploy-preview-17--lindaojo.netlify.app"},
                 {property: "og:image", content: "https://res.cloudinary.com/lindaojo/image/upload/v1601131597/Resume_Linda_Ojo_msdltz.png"},
                 {property: "og:image:width", content: "260"},
                 {property: "og:image:height", content: "200"}

@@ -20,8 +20,7 @@
                 :url="prefixedUrl"
                 :title="title"
                 :description="excerpt"
-                twitter-user="LindaOjo_"
-                hashtags="Frontend,Programming">
+                twitter-user="LindaOjo_">
                 <span class="share-button mt-4  mr-8">
                     <i class="fab fa-twitter mr-2"></i>
                 </span>
