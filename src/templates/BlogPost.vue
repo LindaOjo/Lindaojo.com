@@ -34,17 +34,13 @@
 import ArticleButtons from "./../components/ArticleButtons";
 import SubscriptionForm from "./../components/SubscriptionForm";
 
-let ROOT_PATH = 'https://deploy-preview-17--lindaojo.netlify.app'
+let ROOT_PATH = 'https://lindaojo.netlify.app'
 export default {
     components: { 
         ArticleButtons,
         SubscriptionForm
     },
-      data() {
-        return {
-            logo: ROOT_PATH + require('./../../content/images/profile-pic.jpg')
-        }
-    },
+
     metaInfo()  {
             return {
                 title: this.$page.blogPost.title,
@@ -53,13 +49,11 @@ export default {
                     {key: "og:title", property:"og:title", content: this.$page.blogPost.title},
                     {key: "og:description", name:"og:description", content: this.$page.blogPost.excerpt},
                     {key: "og:url", property:"og:url", content: `${ROOT_PATH}${this.$page.blogPost.path}`},
-                    {key: "og:image", property:"og:image", content: this.logo},
 
                     {key: "twitter:title", name: "twitter:title", content: this.$page.blogPost.title},
                     {key: "twitter:card", name: "twitter:card", content:"summary"},
                     {key: "twitter:description", name:"twitter:description", content: this.$page.blogPost.excerpt},
                     {key: "twitter:url", name:"twitter:url", content: `${ROOT_PATH}${this.$page.blogPost.path}`},
-                    {key: "twitter:image", name:"twitter:image", content: this.logo},
 
 
                 ]

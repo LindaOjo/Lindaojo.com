@@ -37,7 +37,7 @@
 
         <Latest/>
          
-        <div class="footer mx-auto w-full fade-in">
+        <div class="footer fade-in">
             <div class="flex justify-center">
                 <a href="/contact" class="button my-2 px-5 text-center text-lg">Contact Me</a> 
             </div>
@@ -121,7 +121,7 @@ $amount: 10;
 /* Particles background inspired by Louis Hoebregts (https://codepen.io/Mamboleoo/pen/BxMQYQ)*/
 
 .footer {
-     @apply w-full h-10 flex items-end text-center;
+     @apply w-full h-auto flex flex-col items-center;
      margin-bottom: -1.5rem;
  }
 

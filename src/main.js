@@ -31,7 +31,7 @@ export default function (Vue, { router, head, isClient }) {
         {key: "og:image:height", property: "og:image:height", content: "200"},
 
                 // Twitter Card
-        {key: "twitter:card", name: "twitter:card", content: "summary_large_image"},
+        {key: "twitter:card", name: "twitter:card", content: "summary"},
         {key: "twitter:title", name: "twitter:title", content: "Linda Ojo"},
         {key: "twitter:description", name: "twitter:description", content: "Written by Linda Ojo, Frontend Developer"},
         {key: "twitter:url", name: "twitter:url", content: "https://lindaojo.com"},
