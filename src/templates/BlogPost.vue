@@ -33,23 +33,33 @@
 <script>
 import ArticleButtons from "./../components/ArticleButtons";
 import SubscriptionForm from "./../components/SubscriptionForm";
+
+let ROOT_PATH = 'https://deploy-preview-17--lindaojo.netlify.app'
 export default {
     components: { 
         ArticleButtons,
         SubscriptionForm
     },
+      data() {
+        return {
+            logo: ROOT_PATH + require('./../../content/images/profile-pic.jpg')
+        }
+    },
     metaInfo()  {
             return {
                 title: this.$page.blogPost.title,
                 meta: [
-                    {key: "og:type", property: "og:type", content: 'article'},
-                    {key: "og:title", property: "og:title", content: this.$page.blogPost.title},
-                    {key: "description", name: "description", content: this.$page.blogPost.excerpt},
-                    {key: "og:url", property: "og:url", content: this.$page.blogPost.path},
+                    {key: "og:type", property:"og:type", content:'article'},
+                    {key: "og:title", property:"og:title", content: this.$page.blogPost.title},
+                    {key: "og:description", name:"og:description", content: this.$page.blogPost.excerpt},
+                    {key: "og:url", property:"og:url", content: this.$page.blogPost.path},
+                    {key: "og:image", property:"og:image", content: this.logo},
 
-                    {key: "twitter:description", name: "twitter:description", content: this.$page.blogPost.excerpt},
-                    {key: "twitter:url", name: "twitter:url", content: this.$page.blogPost.path},
-                    {key: "twitter:image", name: "twitter:image", content: "https://res.cloudinary.com/lindaojo/image/upload/v1601131597/Resume_Linda_Ojo_msdltz.png"},
+
+                    {key: "twitter:card", name: "twitter:card", content: "summary"},
+                    {key: "twitter:description", name:"twitter:description", content: this.$page.blogPost.excerpt},
+                    {key: "twitter:url", name:"twitter:url", content: this.$page.blogPost.path},
+                    {key: "twitter:image", name:"twitter:image", content: this.logo},
 
 
                 ]
