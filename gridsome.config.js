@@ -5,7 +5,7 @@ const postcssPlugins = [tailwind()];
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
-  siteName: 'Linda Ojo',
+  siteName: 'Linda Ojo - Personal Website and Blog',
   siteDescription: 'Articles on frontend development and poems written by Linda Ojo, Frontend Developer',
   keywords: 'Frontend,Developer,Web,JavaScript,CSS,HTML,Angular,Software,Engineer,Blog,Nigeria,Lagos',
 

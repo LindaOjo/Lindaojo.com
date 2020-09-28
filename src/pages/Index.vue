@@ -56,7 +56,6 @@ export default {
         Latest
     },
     metaInfo: { title: 'Home' },
-
 }
 </script>
 

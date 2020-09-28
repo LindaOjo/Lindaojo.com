@@ -27,7 +27,7 @@ export default function (Vue, { router, head, isClient }) {
         {key: "og:site_name", property: "og:site_name", content: "LindaOjo"},
         {key: "og:url", property: "og:url", content: "https:/lindaojo.com"},
         {key: "og:image", property: "og:image", content: "https://res.cloudinary.com/lindaojo/image/upload/v1601131597/Resume_Linda_Ojo_msdltz.png"},
-        {key: "og:image:width",  content: "260"},
+        {key: "og:image:width", property: "og:image:weight",  content: "260"},
         {key: "og:image:height", property: "og:image:height", content: "200"},
 
                 // Twitter Card

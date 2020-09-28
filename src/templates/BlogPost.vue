@@ -38,18 +38,17 @@ export default {
         ArticleButtons,
         SubscriptionForm
     },
-    metaInfo ()  {
+    metaInfo()  {
             return {
-                title: this.$page.post.title,
+                title: this.$page.blogPost.title,
                 meta: [
                     {key: "og:type", property: "og:type", content: 'article'},
-                    {key: "og:title", property: "og:title", content: this.$page.post.title},
-                    {key: "description", name: "description", content: this.$page.post.excerpt},
-                    {key: "og:url", property: "og:url", content: this.$page.post.path},
-                            {key: "og:image", property: "og:image", content: "https://res.cloudinary.com/lindaojo/image/upload/v1601131597/Resume_Linda_Ojo_msdltz.png"},
+                    {key: "og:title", property: "og:title", content: this.$page.blogPost.title},
+                    {key: "description", name: "description", content: this.$page.blogPost.excerpt},
+                    {key: "og:url", property: "og:url", content: this.$page.blogPost.path},
 
-                    {key: "twitter:description", name: "twitter:description", content: this.$page.post.excerpt},
-                    {key: "twitter:url", name: "twitter:url", content: this.$page.post.path},
+                    {key: "twitter:description", name: "twitter:description", content: this.$page.blogPost.excerpt},
+                    {key: "twitter:url", name: "twitter:url", content: this.$page.blogPost.excerpt},
                     {key: "twitter:image", name: "twitter:image", content: "https://res.cloudinary.com/lindaojo/image/upload/v1601131597/Resume_Linda_Ojo_msdltz.png"},
 
 

@@ -6,9 +6,7 @@
 				<header class="header h-12">
 					<h1 class="h1">
 						<strong>
-							<g-link to="/">{{
-								$static.metadata.siteName
-							}}</g-link>
+							<g-link to="/">Linda Ojo</g-link>
 						</strong>
 					</h1>
 					<nav class="nav">
@@ -55,9 +53,9 @@
                         </div>
                     </div>
 
-                    <button @click="topScroll()" v-show="showButton" class="scrollButton" title="Go to top">
+                    <!-- <button @click="topScroll()" v-show="showButton" class="scrollButton" title="Go to top">
                         <i class="fas fa-chevron-up"></i>
-                    </button>
+                    </button> -->
                 
                 <!-- Transition -->
 				<transition name="fade" appear>
@@ -72,14 +70,6 @@
 		</div>
 	</div>
 </template>
-
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
 
 <style lang="scss" scoped>
 

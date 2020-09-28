@@ -6,7 +6,7 @@
 
             <ShareNetwork
                 network="facebook"
-                :url="prefixedUrl"
+                :url="path"
                 :title="title"
                 :description="excerpt"
                 hashtags="Frontend, Programming">
@@ -17,7 +17,7 @@
 
             <ShareNetwork
                 network="twitter"
-                :url="prefixedUrl"
+                :url="path"
                 :title="title"
                 :description="excerpt"
                 twitter-user="LindaOjo_">
@@ -28,7 +28,7 @@
 
             <ShareNetwork
                 network="whatsapp"
-                :url="prefixedUrl"
+                :url="path"
                 :title="title"
                 :description="excerpt"
                 hashtags="Frontend,Programming">
@@ -54,11 +54,6 @@ a, .share-button {
 
 <script>
 export default {
-    data() {
-        return {
-            prefixedUrl: `https://lindaojo.com${this.path}`
-        }
-    },
     props: {
         songHref: String,
         path: String,
