@@ -22,28 +22,26 @@
         
         <div class="fade-in" >
             <h2 class="text-center p-3 h2">
-                Frontend Developer
+                Frontend Engineer
             </h2>
         </div>
-        <div class="bio fade-in lg:w-1/2 lg:text-xl sm:w-3/4 mx-auto my-5" >
-            <p>Hi there! I'm Linda, a developer and designer in Lagos, Nigeria. I enjoy solving problems by creating beautiful
+        <div class="bio fade-in lg:w-3/4 lg:text-2xl sm:w-3/4 mx-auto my-5" >
+            <p>Hi there! I'm Linda, an engineer and designer in Lagos, Nigeria. I enjoy solving problems by creating beautiful
                and functional products. I also write and speak about web technologies. </p>          
         </div>
 
         <div class="fade-in inline-flex w-full justify-between">
-            <h2 class="my-8 md:my-8 h2 sm:my-5">Latest Posts</h2>
+            <h2 class="my-8 md:my-8 h2 sm:my-5"><i class="fas fa-arrow-down"></i> Latest Posts </h2>
             <a class="primary-color h3 my-auto" href="/blog" >View all</a>
         </div>
 
         <Latest/>
          
-        <div class="footer w-full flex justify-center fade-in">
-            <div class="mx-auto">
-                <div class="button-container inline-flex justify-center flex-wrap w-full">
-                    <a href="/contact" class="button my-2 px-5 text-center text-lg mx-8">Contact Me</a> 
-                </div>
-                <p class=" mt-6 text-center mx-5">Designed and Developed by Linda Ojo </p>
+        <div class="footer fade-in">
+            <div class="flex justify-center">
+                <a href="/contact" class="button my-2 px-5 text-center text-lg">Contact Me</a> 
             </div>
+            <p class=" mt-6 text-center mx-5">Designed and Developed by Linda Ojo </p>
         </div> 
     </Layout>
 </template>
@@ -53,11 +51,11 @@ import Layout from '~/layouts/Default.vue';
 import Latest from './../components/Latest';
 
 export default {
-     components:
-      { Layout,
+     components: { 
+        Layout,
         Latest
-       },
-       metaInfo: { title: 'Home' },
+    },
+    metaInfo: { title: 'Home' },
 }
 </script>
 
@@ -73,6 +71,13 @@ export default {
 .background {
     position: static;
     height: 1px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+	.fa-arrow-down {
+		display: none;
+	}
 }
 
 $particleSize: 10vmin;
@@ -112,13 +117,12 @@ $amount: 10;
   100% {
     transform: translate3d(0, 0, 1px) rotate(360deg);
   }
-
+}
 /* Particles background inspired by Louis Hoebregts (https://codepen.io/Mamboleoo/pen/BxMQYQ)*/
 
 .footer {
-     @apply w-full h-10 flex items-end text-center;
+     @apply w-full h-auto flex flex-col items-center;
      margin-bottom: -1.5rem;
  }
 
-}
 </style>

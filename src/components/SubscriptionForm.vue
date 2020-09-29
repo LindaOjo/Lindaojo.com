@@ -17,7 +17,7 @@
                 <label for="mce-FNAME" class="sr-only block text-sm font-bold mb-2">First Name </label>
                 <input  type="text" value=""
                         name="MERGE1" id="MERGE1" 
-                        class="required w-full bg-gray-400 text-black p-2" 
+                        class="required w-full bg-gray-200 text-black p-2" 
                         size="25" placeholder="First Name"
                         autocapitalize="off" autocorrect="off">
             </div>
@@ -26,13 +26,13 @@
                 <label for="mce-EMAIL" class="sr-only block text-sm font-bold mb-2">Email Address </label>
                 <input  type="email" value=""
                         name="MERGE0" id="MERGE0" 
-                        class="required email w-full bg-gray-400 text-black p-2" 
+                        class="required email w-full bg-gray-200 text-black p-2" 
                         size="25" placeholder="Email Address"
                         autocapitalize="off" autocorrect="off">
             </div>
 
 
-            <div class="py-2 flex w-full justify-end __field subscribe-form__field--submit clear">
+            <div class="py-2 flex w-full justify-center __field subscribe-form__field--submit clear">
                 <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
             </div>
 

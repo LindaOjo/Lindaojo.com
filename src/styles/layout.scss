@@ -4,10 +4,6 @@ html {
 
 body {
     box-sizing: border-box !important;
-    height: auto;
-    /* for desktop mode  scrollbar-color: var(--primary) !important; */
-    @apply h-screen;
-    background-size: cover;
     min-height: 100vh;
     background-color: transparent;
     line-height: 1.5;
@@ -23,13 +19,16 @@ body {
 .lg-container {
     position: relative;
     background-color: rgba(16, 8, 18, 0.61);
-    color: var(--dark-theme-text-color);
+    color: var(--text-color);
     border-radius: 3rem;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     @apply p-8 w-full;
     min-height: 100vh;
     overflow-x: hidden;
+    overflow-y: auto;
     z-index: 5;
+    -webkit-box-shadow: 1px 7px 15px -6px rgba(255,255,255,0.28);
+    -moz-box-shadow: 1px 7px 15px -6px rgba(255,255,255,0.28);
+    box-shadow: 1px 7px 15px -6px rgba(255,255,255,0.28);
 }
 
 /* Cards */
@@ -37,9 +36,7 @@ body {
 .post-card {
     background-color: var(--postcard-background);
     min-height: 8rem;
-    max-height: 20rem;
-    @apply  my-8 p-2 mx-auto border-2 w-full flex items-center
-           cursor-pointer justify-between;
+    @apply  my-8 p-2 mx-auto border-2 w-full flex items-center cursor-pointer justify-between;
     border-color: var(--primary);
     border-right: none;
     border-left: none;
