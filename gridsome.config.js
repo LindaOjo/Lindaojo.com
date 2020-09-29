@@ -36,7 +36,7 @@ module.exports = {
                 fileTypes: ["document", "script", "style", "image"],
             },
             cacheFirst: {
-                routes: ["/", "/contact"],
+                routes: ["/contact"],
                 fileTypes: ["document", "script", "style", "image"],
             },
         },
