@@ -25,6 +25,7 @@
             title
             excerpt
             content
+            date
             songHref
         }
     }
@@ -33,6 +34,7 @@
 <script>
 import ArticleButtons from "./../components/ArticleButtons";
 import SubscriptionForm from "./../components/SubscriptionForm";
+import getShareImage from '@jlengstorf/get-share-image';
 
 let ROOT_PATH = 'https://lindaojo.netlify.app'
 export default {
@@ -49,16 +51,40 @@ export default {
                     {key: "og:title", property:"og:title", content: this.$page.blogPost.title},
                     {key: "og:description", name:"og:description", content: this.$page.blogPost.excerpt},
                     {key: "og:url", property:"og:url", content: `${ROOT_PATH}${this.$page.blogPost.path}`},
+                    {key: "og:updated_time", property: "og:updated_time", content: this.$page.blogPost.date },
+                    {key: "og:image", property: "og:image", content: this.getImage()},
+                    {key: "og:image:width", property: "og:image:weight",  content: "260"},
+                    {key: "og:image:height", property: "og:image:height", content: "200"},
 
-                    {key: "twitter:title", name: "twitter:title", content: this.$page.blogPost.title},
                     {key: "twitter:card", name: "twitter:card", content:"summary"},
+                    {key: "twitter:title", name: "twitter:title", content: this.$page.blogPost.title},
                     {key: "twitter:description", name:"twitter:description", content: this.$page.blogPost.excerpt},
                     {key: "twitter:url", name:"twitter:url", content: `${ROOT_PATH}${this.$page.blogPost.path}`},
-
-
+                    {key: "twitter:image", property: "twitter:image", content: this.getImage()},
+                ],
+                link: [
+                    { rel: 'canonical', href: `https://lindaojo.com${this.$page.blogPost.path}`}
                 ]
             }
-        },
+    },
+    mounted() {
+        this.getImage();
+    },
+     methods: {
+    getImage() {
+      const socialImage = getShareImage({
+        title: this.$page.blogPost.title,
+        tagline: 'lindaojo.com.com',
+        cloudName: 'lindaojo',
+        imagePublicID: 'Resume_Linda_Ojo_msdltz.png',
+        titleFont: 'futura',
+        taglineFont: 'futura',
+        titleFontSize: 72,
+        textColor: '232129',
+      });
+      return socialImage;
+    }
+  }
 }
 </script>
 

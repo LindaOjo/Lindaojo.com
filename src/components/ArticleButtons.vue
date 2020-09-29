@@ -2,7 +2,7 @@
     <div>
         
         <div class="button-container mt-5 links">
-            <h2 class="mb-5 h3">📢 Share:</h2>
+            <h2 class="mb-5 h3">📢 Share</h2>
 
             <div>
                 <ShareNetwork
