@@ -18,13 +18,11 @@
                                 </i>    
                             </span>
                             <g-link class="nav__link" to="/">Home</g-link>
-                            <!-- <g-link class="nav__link" to="/portfolio">Portfolio</g-link> -->
                             <g-link class="nav__link" to="/blog/">Blog</g-link>
                             <g-link class="nav__link" to="/poems/">Poems</g-link>
                             <g-link class="nav__link" to="/contact/">Contact</g-link>
                         </div>
-                        
-						
+                        					
 <!-- Mobile Navigation -->
                         
                         <div class="mobile-nav" > <!--Hidden for large devices-->
@@ -46,17 +44,12 @@
                     <div v-if="isOpen" class="menu absolute text-center w-4/5 z-10 py-2 rounded-lg">
                         <div v-click-outside="hideMenu">
                             <g-link class="menu-link" to="/">Home</g-link>
-                            <!-- <g-link class="menu-link" to="/portfolio">Portfolio</g-link> -->
                             <g-link class="menu-link" to="/blog/">Blog</g-link>
                             <g-link class="menu-link" to="/poems/">Poems</g-link>
                             <g-link class="menu-link" to="/contact/">Contact</g-link>
                         </div>
                     </div>
 
-                    <!-- <button @click="topScroll()" v-show="showButton" class="scrollButton" title="Go to top">
-                        <i class="fas fa-chevron-up"></i>
-                    </button> -->
-                
                 <!-- Transition -->
 				<transition name="fade" appear>
 					<main>
@@ -85,25 +78,6 @@
     -webkit-transition: all 0.7s linear;
     -moz-transition: all 0.7s linear;
     transition: all 0.7s linear;
-}
-
-.scrollButton {
-  position: fixed; /* Fixed/sticky position */
-  bottom: 5%; /* Place the button at the bottom of the page */
-  right: 10%; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: var(--primary); /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-.scrollButton:active {
- transform: translateY(4px);
 }
 
 
@@ -139,13 +113,6 @@ export default {
 		};
     },
 	methods: {
-        handleScroll(event) {
-            this.showButton = window.onscroll;
-            // setTimeout(() => {this.showButton = false}, 5000)
-        },
-        topScroll() {
-            console.log('I want go top');
-        },
         hideMenu() {
             if(!this.isOpen) return
             this.isOpen = false
