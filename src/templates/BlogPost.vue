@@ -49,7 +49,7 @@ export default {
             meta: [
                 {key: "og:type", property:"og:type", content:'article'},
                 {key: "og:title", property:"og:title", content: this.$page.blogPost.title},
-                {key: "og:description", name:"og:description", content: this.$page.blogPost.excerpt},
+                {key: "og:description", property:"og:description", content: this.$page.blogPost.excerpt},
                 {key: "og:url", property:"og:url", content: `${ROOT_PATH}${this.$page.blogPost.path}`},
                 {key: "og:updated_time", property: "og:updated_time", content: this.$page.blogPost.date },
 
