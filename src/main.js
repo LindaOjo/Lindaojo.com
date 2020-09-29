@@ -13,10 +13,6 @@ import VueSocialSharing from 'vue-social-sharing';
 import Meta from 'vue-meta';
 
 export default function (Vue, { router, head, isClient }) {
-    // Set default layout as a global component
-    Vue.component('Layout', DefaultLayout);
-    Vue.use(VueSocialSharing);
-    Vue.use(Meta);
 
     head.meta.push(
 
@@ -37,4 +33,9 @@ export default function (Vue, { router, head, isClient }) {
         {key: "twitter:site", name: "twitter:site", content: "@LindaOjo"},
         {key: "twitter:creator", name: "twitter:creator", content: "@LindaOjo"},
     );
+
+    // Set default layout as a global component
+    Vue.component('Layout', DefaultLayout);
+    Vue.use(VueSocialSharing);
+    Vue.use(Meta);
 }
