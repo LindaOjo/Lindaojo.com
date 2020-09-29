@@ -36,7 +36,7 @@ import ArticleButtons from "./../components/ArticleButtons";
 import SubscriptionForm from "./../components/SubscriptionForm";
 import getShareImage from '@jlengstorf/get-share-image';
 
-let ROOT_PATH = 'https://lindaojo.netlify.app'
+let ROOT_PATH = 'https://lindaojo.com'
 export default {
     components: { 
         ArticleButtons,
@@ -74,7 +74,7 @@ export default {
     getImage() {
       const socialImage = getShareImage({
         title: this.$page.blogPost.title,
-        tagline: 'lindaojo.com.com',
+        tagline: 'lindaojo.com',
         cloudName: 'lindaojo',
         imagePublicID: 'Resume_Linda_Ojo_msdltz.png',
         titleFont: 'futura',
