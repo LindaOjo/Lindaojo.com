@@ -63,7 +63,7 @@ export default {
                     {key: "twitter:image", property: "twitter:image", content: this.getImage()},
                 ],
                 link: [
-                    { rel: 'canonical', href: `https://lindaojo.com${this.$page.blogPost.path}`}
+                    { rel: 'canonical', href: `${ROOT_PATH}${this.$page.blogPost.path}`}
                 ]
             }
     },
