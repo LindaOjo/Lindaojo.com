@@ -32,7 +32,7 @@ module.exports = {
         use: "gridsome-plugin-service-worker",
         options: {
             staleWhileRevalidate: {
-                routes: ["blog"],
+                routes: ["/blog"],
                 fileTypes: ["document", "script", "style", "image"],
             },
             cacheFirst: {
