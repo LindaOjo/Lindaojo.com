@@ -33,6 +33,7 @@
     "@iconify/vue": "^1.0.2",
     "compression-webpack-plugin": "^6.0.2",
     "gridsome-plugin-purgecss": "^1.0.12",
+    "gridsome-plugin-service-worker": "^0.2.6",
     "gridsome-plugin-tailwindcss": "^3.0.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^9.0.2",

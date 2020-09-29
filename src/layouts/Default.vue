@@ -1,8 +1,8 @@
-<template v-on:scroll.native="handleScroll">
+<template>
 	<div class="themer" :class="theme">
         <div :class="fadingDiv" class="h-full w-full"></div>   <!-- GIve illusion of transitioon --> 
 		<div class="container">
-			<div class="lg-container" @scroll="handleScroll">
+			<div class="lg-container">
 				<header class="header h-12">
 					<h1 class="h1">
 						<strong>

@@ -22,17 +22,30 @@ module.exports = {
   
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'BlogPost',
-        path: './content/blog/**/*.md',
-      }
+        use: '@gridsome/source-filesystem',
+        options: {
+            typeName: 'BlogPost',
+            path: './content/blog/**/*.md',
+        }
     },
     {
-      use: `gridsome-plugin-netlify-cms`,
-      options: {
-        publicPath: `/cms`
-      }
+        use: "gridsome-plugin-service-worker",
+        options: {
+            staleWhileRevalidate: {
+                routes: ["blog"],
+                fileTypes: ["document", "script", "style", "image"],
+            },
+            cacheFirst: {
+                routes: ["/", "/contact"],
+                fileTypes: ["document", "script", "style", "image"],
+            },
+        },
+    },
+    {
+        use: `gridsome-plugin-netlify-cms`,
+        options: {
+            publicPath: `/cms`
+        }
     },
     {
         use: 'gridsome-plugin-purgecss',
