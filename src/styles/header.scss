@@ -129,8 +129,10 @@
     background-color: var(--menu-background);
     font-size: 1.3rem;
     height: 22rem;
+    border: 1px solid var(--primary);
     left: 0; 
     right: 0; 
+    margin-top: -500px;
     margin-left: auto; 
     margin-right: auto; 
     cursor: pointer;

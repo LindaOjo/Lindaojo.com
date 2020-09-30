@@ -46,8 +46,8 @@
         </form>
         <div class="links sm:w-3/4 lg:w-1/2 mx-auto flex" >
             <p class=" inline-flex w-full justify-center mt-5">
-                    <a class="mr-10" href="https://twitter.com/LindaOjo_" title="Twitter">
-                        <i class="fa fa-twitter fa-2x pr-2" aria-hidden="true"></i> Twitter
+                    <a class="mx-10 block" href="https://twitter.com/LindaOjo_" title="Twitter">
+                        <i class="fa fa-twitter fa-2x pr-2 " aria-hidden="true"></i> Twitter
                     </a>  
                     <a class="mr-10" href="https://github.com/LindaOjo" title="Github">
                         <i class="fa fa-github fa-2x pr-2" aria-hidden="true"></i> Github

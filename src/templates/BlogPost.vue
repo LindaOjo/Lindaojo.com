@@ -36,7 +36,7 @@ import ArticleButtons from "./../components/ArticleButtons";
 import SubscriptionForm from "./../components/SubscriptionForm";
 import getShareImage from '@jlengstorf/get-share-image';
 
-let ROOT_PATH = 'https://lindaojo.com'
+let ROOT_PATH = 'https://lindaojo.com';
 export default {
     components: { 
         ArticleButtons,
