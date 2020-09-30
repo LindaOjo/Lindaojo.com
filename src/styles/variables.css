@@ -2,17 +2,27 @@
 :root {
     /*General*/
     --pink: #C850C0;
-    --menu-background: rgb(3, 7, 31);
-
-    /* Dark */
     --text-color: rgba(255, 255, 255, 0.816);
+    
 }
 
-[data-theme="dark"] , [data-theme="light"]   {
-    --postcard-background: #020c1f;
+[data-theme="dark"] {
+    --menu-background: rgba(3, 7, 31, 0.941);
+    --postcard-background: rgb(3, 7, 31);
     --code-comment: #4d9cec;
     --code-background-color: #12539482;
     --primary:  #3e8fe0cf;
     --primary-light:  #bedcfa;
     
 }
+
+[data-theme="light"]  {
+    --menu-background: #080b12ec;
+    --postcard-background: #10081270;
+    --code-comment: #4d9cec;
+    --code-background-color: #12539482;
+    --primary:  #3e8fe0cf;
+    --primary-light:  #bedcfa;
+    
+}
+
