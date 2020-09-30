@@ -24,12 +24,12 @@
             </p>
             <div class="sender-info">
                 <div class="py-4">
-                <label for="name" class="label block text-sm font-bold mb-2" >Your Name *</label>
-                <input required type="text" class="w-full bg-gray-400  text-black p-2" name="name" v-model="formData.name" />
+                    <label for="name" class="label block text-sm font-bold mb-2" >Your Name *</label>
+                    <input required type="text" class="w-full bg-gray-400  text-black p-2" name="name" v-model="formData.name" />
                 </div>
                 <div class="py-4">
-                <label for="email" class=" block text-sm font-bold mb-2">Your Email *</label>
-                <input required type="email" class="w-full bg-gray-400 text-black p-2"  name="email" v-model="formData.email" />
+                    <label for="email" class=" block text-sm font-bold mb-2">Your Email *</label>
+                    <input required type="email" class="w-full bg-gray-400 text-black p-2"  name="email" v-model="formData.email" />
                 </div>
             </div>
 
