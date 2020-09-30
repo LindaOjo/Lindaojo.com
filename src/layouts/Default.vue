@@ -90,6 +90,13 @@ export default {
     directives: {
         ClickOutside
     },
+    metaInfo()  {
+        return {
+            link: [
+                { rel: 'icon', href:'./../favicon.png'}
+            ]
+        }
+    },
     mounted() {
         let localTheme = localStorage.getItem('theme') || 'darkMode';
         if (localTheme == "darkMode") {
