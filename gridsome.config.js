@@ -35,6 +35,10 @@ module.exports = {
                 routes: ["/contact", "/blog"],
                 fileTypes: ["document", "script", "style", "image"],
             },
+            cacheFirst: {
+                routes: ["/"],
+                fileTypes: ["document", "script", "style", "image"],
+            },
         },
     },
     {

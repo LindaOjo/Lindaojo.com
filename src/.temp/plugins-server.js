@@ -4,7 +4,7 @@ import plugin_gridsome_plugin_netlify_cms_7 from "/Users/admin/Documents/Lindaoj
 export default [
   {
     run: plugin_gridsome_plugin_service_worker_6,
-    options: {"staleWhileRevalidate":{"routes":["/contact","/blog"],"fileTypes":["document","script","style","image"],"cacheName":"swr-v1"},"cacheFirst":{"cacheName":"cf-v1","routes":[],"fileTypes":[]},"cacheOnly":{"cacheName":"co-v1","routes":[],"fileTypes":[]},"networkFirst":{"cacheName":"nf-v1","routes":[],"fileTypes":[]},"networkOnly":{"cacheName":"no-v1","routes":[],"fileTypes":[]},"precachedRoutes":[]}
+    options: {"staleWhileRevalidate":{"routes":["/contact","/blog"],"fileTypes":["document","script","style","image"],"cacheName":"swr-v1"},"cacheFirst":{"routes":["/"],"fileTypes":["document","script","style","image"],"cacheName":"cf-v1"},"cacheOnly":{"cacheName":"co-v1","routes":[],"fileTypes":[]},"networkFirst":{"cacheName":"nf-v1","routes":[],"fileTypes":[]},"networkOnly":{"cacheName":"no-v1","routes":[],"fileTypes":[]},"precachedRoutes":[]}
   },
   {
     run: plugin_gridsome_plugin_netlify_cms_7,
