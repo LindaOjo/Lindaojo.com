@@ -45,7 +45,6 @@
     }
 </page-query>
 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script> 
 import SubscriptionForm from './../components/SubscriptionForm';
 import Layout from '~/layouts/Default.vue' 
