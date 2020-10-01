@@ -1,7 +1,7 @@
 ---
 title: "How to host a website with a custom domain name on Github"
 duration: "3 minutes"
-excerpt: "Not too long after becoming a developer, an urge comes upon you to create a personal website. you can only resist for so long..."
+excerpt: "Not too long after becoming a developer, an urge comes upon you to create a personal website. you can only resist for so long. I gave in two days ago and I am happy to say you can check out my personal website..."
 date: "2020-01-04"
 isBlogPost: true
 songHref: "https://music.youtube.com/watch?v=eRUM70CPYls&feature=share" 

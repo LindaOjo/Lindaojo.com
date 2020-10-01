@@ -11,11 +11,11 @@
 					</h1>
 					<nav class="nav">
                         <div class="desktop-nav w-2/3 inline-flex">
-                            <span class="desktop-light-switch nav__link" @click="toggleTheme" aria-label="Toggle light/dark mode">
+                            <span class="desktop-light-switch  nav__link" @click="toggleTheme" aria-label="Toggle light/dark mode">
                                 <i class="p-1"
                                     :class="this.themeIcon"
                                     aria-hidden="true">
-                                </i>    
+                                </i>
                             </span>
                             <g-link class="nav__link" to="/">Home</g-link>
                             <g-link class="nav__link" to="/blog/">Blog</g-link>
@@ -105,7 +105,6 @@
   }
 }
 
-
 .fade-enter-active {
 	transition: opacity 1s;
 }
@@ -157,17 +156,18 @@ export default {
             fadingDiv: false,
             showButton: false,
             themeIcon: 'fas fa-cloud-sun',
-            slide: ''
+            slide: '',
 		};
     },
 	methods: {
         hideMenu() {
-            if(!this.isOpen) return
-            this.isOpen = false
+            if(!this.isOpen) return;
+            this.isOpen = false;
         },
 		toggleMenu() {
-            this.isOpen = !this.isOpen
-            if (this.isOpen) this.slide = 'slide-bottom';
+            this.isOpen = !this.isOpen;
+            if (this.isOpen && !this.menuAnimate) this.slide = 'slide-bottom';
+            
         },
         toggleTheme() {
             //Hack for gradient transition below. 

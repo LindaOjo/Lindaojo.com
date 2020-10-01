@@ -1,7 +1,7 @@
 ---
 title: "Tic-Tac-Toe PWA"
 duration: "1 minute"
-excerpt: "A popular beginner-friendly project is “Tic-Tac-Toe”. I have built Tic-Tac-Toe before using plain Javascript. This time I am working with the Angular..."
+excerpt: "A popular beginner-friendly project is “Tic-Tac-Toe”. I have built Tic-Tac-Toe before using plain Javascript. This time I am working with the Angular. I played around with the styles and gave my App a Lagos-touch."
 date: "2019-12-16"
 isBlogPost: true
 songHref: "https://music.youtube.com/watch?v=LFWPotfn9Qo&feature=share" 

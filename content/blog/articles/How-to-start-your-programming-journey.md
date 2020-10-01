@@ -1,7 +1,7 @@
 ---
 title: How to Start Your Programming Journey
 duration: "3 minutes"
-excerpt: "Before getting into programming, I thought it was magic, something you couldn’t just learn. I assumed you had to  be extraordinarily smart..."
+excerpt: "You want to be a programmer? Good! But that’s a little vague. The first thing you should do is get a sense of what type of programming interests you. You don’t have to lock strictly on it but it helps with navigating the waters and knowing where to start learning from..."
 date: "2019-12-04"
 isBlogPost: true
 songHref: "https://www.youtube.com/watch?v=FtUNQpu2b7Q" 
