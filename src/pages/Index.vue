@@ -54,7 +54,8 @@
                             <i class="fa fa-github" aria-hidden="true"></i>
                             <p>Github</p>
                         </a>   
-                        <a class="flex flex-col items-center" href='https://res.cloudinary.com/lindaojo/image/upload/v1601131597/Resume_Linda_Ojo_msdltz.png' title="Resume" target="_blank">
+                        <a class="flex flex-col items-center" href='https://res.cloudinary.com/lindaojo/image/upload/v1601131597/Resume_Linda_Ojo_msdltz.png' 
+                           title="Resume" rel="noopener" target="_blank">
                             <i class="fas fa-file-alt" aria-hidden="true"></i>
                             <p>Resume</p>
                         </a> 
