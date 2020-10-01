@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html ${htmlAttrs}>
     <head>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link preconnect rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" preconnect />
         <link preconnect rel="styleSheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" crossorigin>
         <link preconnect rel="styleSheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" crossorigin>
         <link  href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-        <script preconnect rel="noopener" src="https://kit.fontawesome.com/b34768afc3.js" crossorigin="anonymous"></script>
+        <script preconnect rel="noopener" src="https://kit.fontawesome.com/b34768afc3.js" crossorigin></script>
         ${head}
         
         <title>Linda Ojo</title>
@@ -21,7 +21,7 @@
     <body ${bodyAttrs}>
         ${app}
         ${scripts}
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script preconnect src="https://unpkg.com/aos@next/dist/aos.js" crossorigin></script>
         <script> AOS.init();</script>
     </body>
 </html>
