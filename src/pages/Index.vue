@@ -15,7 +15,7 @@
             <span></span>
             <span></span>
         </div>
-        <div class="fade-in profile-picture-container slide-in-elliptic-top-fwd relative" data-aos="flip-right" data-aos-duration="1500">
+        <div class="fade-in profile-picture-container slide-in-elliptic-top-fwd relative">
             <picture>
                 <source alt="" srcset="./../../static/images/profile-pic.webp" type="image/webp">
                 <g-image class="profile-picture" src="./../../static/images/profile-pic.jpg" alt="profile picture"></g-image>
