@@ -55,7 +55,6 @@ P<template>
     }
 </page-query>
 
-<script defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script defer> 
 
 import Layout from '~/layouts/Default.vue';
