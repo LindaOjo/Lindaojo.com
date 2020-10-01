@@ -135,10 +135,6 @@ export default {
                 { rel: 'icon', href:'https://res.cloudinary.com/lindaojo/image/upload/v1601407787/favicon_kbxn6x.png'},
                 { rel: 'stylesheet', href:'//cdn-images.mailchimp.com/embedcode/classic-10_7.css', type:"text/css"},
                 { rel: 'stylesheet', href:'https://unpkg.com/aos@next/dist/aos.css', type:"text/css"},
-            ],
-            script: [
-                { rel: 'noopener', href:'https://kit.fontawesome.com/b34768afc3.js', crossorigin:"anonymous"},
-                
             ]
         }
     },
