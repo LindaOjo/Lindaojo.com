@@ -1,7 +1,9 @@
 ---
 title: "Angular — How to display one component within another"
 duration: "2 minutes"
-excerpt: "Let's begin with an Angular project which has a container component. We are going to display another component..."
+excerpt: "Let's begin with an Angular project which has a container component. We are going to display another      component (let's call it child component) within the container component in this post.
+
+We will be using the Angular CLI to generate modules and components, you can install Angular CLI by running the command below..."
 date: "2020-04-15"
 isBlogPost: true
 songHref: "https://music.youtube.com/watch?v=JpGGta_R8IM&feature=share" 

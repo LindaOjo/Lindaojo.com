@@ -14,7 +14,7 @@
 
 
             <div class="py-2 mc-field-group">
-                <label for="mce-FNAME" class="sr-only block text-sm font-bold mb-2">First Name </label>
+                <label for="MERGE1" class="sr-only block text-sm font-bold mb-2">First Name </label>
                 <input  type="text" value=""
                         name="MERGE1" id="MERGE1" 
                         class="required w-full bg-gray-200 text-black p-2" 
@@ -23,7 +23,7 @@
             </div>
 
             <div class="py-2 mc-field-group">
-                <label for="mce-EMAIL" class="sr-only block text-sm font-bold mb-2">Email Address </label>
+                <label for="MERGE0" class="sr-only block text-sm font-bold mb-2">Email Address </label>
                 <input  type="email" value=""
                         name="MERGE0" id="MERGE0" 
                         class="required email w-full bg-gray-200 text-black p-2" 

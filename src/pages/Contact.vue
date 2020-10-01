@@ -5,8 +5,7 @@
     </h1>
     <div class="fade-in">
         <p class="sm:w-3/4 lg:w-1/2 my-5 text-center mx-auto lg:text-xl">
-            I am open to discussing creative ideas and oppurtunies
-            <i class="fas fa-smile-wink"></i>
+            Want me to build something cool or got some questions? Send a message.
         </p>
         <form class="lg:w-1/2 sm:w-full shadow-2xl rounded px-4 py-6 mb-4 mx-auto"
             name="contact"
@@ -24,12 +23,12 @@
             </p>
             <div class="sender-info">
                 <div class="py-4">
-                <label for="name" class="label block text-sm font-bold mb-2" >Your Name *</label>
-                <input required type="text" class="w-full bg-gray-400  text-black p-2" name="name" v-model="formData.name" />
+                    <label for="name" class="label block text-sm font-bold mb-2" >Your Name *</label>
+                    <input required type="text" class="w-full bg-gray-400  text-black p-2" name="name" v-model="formData.name" />
                 </div>
                 <div class="py-4">
-                <label for="email" class=" block text-sm font-bold mb-2">Your Email *</label>
-                <input required type="email" class="w-full bg-gray-400 text-black p-2"  name="email" v-model="formData.email" />
+                    <label for="email" class=" block text-sm font-bold mb-2">Your Email *</label>
+                    <input required type="email" class="w-full bg-gray-400 text-black p-2"  name="email" v-model="formData.email" />
                 </div>
             </div>
 
@@ -46,14 +45,14 @@
         </form>
         <div class="links sm:w-3/4 lg:w-1/2 mx-auto flex" >
             <p class=" inline-flex w-full justify-center mt-5">
-                    <a class="mx-10 block" href="https://twitter.com/LindaOjo_" title="Twitter">
-                        <i class="fa fa-twitter fa-2x pr-2 " aria-hidden="true"></i> Twitter
+                    <a class="md:mr-16 mr-8  flex flex-col items-center" href="https://twitter.com/LindaOjo_" title="Twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
                     </a>  
-                    <a class="mr-10" href="https://github.com/LindaOjo" title="Github">
-                        <i class="fa fa-github fa-2x pr-2" aria-hidden="true"></i> Github
+                    <a class="md:mr-16 mr-8 flex flex-col items-center" href="https://github.com/LindaOjo" title="Github">
+                        <i class="fa fa-github" aria-hidden="true"></i> Github
                     </a>   
-                    <a href='https://res.cloudinary.com/lindaojo/image/upload/v1601131597/Resume_Linda_Ojo_msdltz.png' target="_blank">
-                        <i class="fas fa-file-alt fa-2x pr-2" aria-hidden="true"></i>
+                    <a class="flex flex-col items-center" href='https://res.cloudinary.com/lindaojo/image/upload/v1601131597/Resume_Linda_Ojo_msdltz.png' target="_blank">
+                        <i class="fas fa-file-alt" aria-hidden="true"></i>
                         Resume
                     </a> 
             </p>
@@ -101,6 +100,9 @@ export default {
 </script>
 
 <style scoped>
+i {
+    font-size: 1.3rem;
+}
 
 a:hover {
     color: var(--primary);

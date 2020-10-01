@@ -1,7 +1,7 @@
 ---
 title: "Creating User Friendly Forms"
 duration: "3 minutes"
-excerpt: "Forms are a common way to engage with users and could be a user’s first impression of your product..."
+excerpt: "Forms are a common way to engage with users and could be a user’s first impression of your product. Since forms aren’t always the user’s favourite thing, it is essential to make filling out forms as easy as possible. Let’s go over a few tips for creating great forms..."
 date: "2020-06-17"
 isBlogPost: true
 songHref: "https://music.youtube.com/watch?v=6mAvt3CxEQM&feature=share" 

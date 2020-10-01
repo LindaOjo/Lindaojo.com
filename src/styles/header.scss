@@ -1,5 +1,5 @@
 .header {
-    @apply flex justify-between items-center h-auto mb-5;
+    @apply flex justify-between items-center mb-5;
 }
 
 // Desktop Nav Bar
@@ -18,10 +18,11 @@
     cursor: pointer;
     padding: 0 10px;
     transition: all 1s ease;
-    animation: ani 4s infinite;
-    -webkit-animation: ani 4s infinite;
-    -moz-animation: ani 4s infinite;
+    animation: ani 6s infinite;
+    -webkit-animation: ani 6s infinite;
+    -moz-animation: ani 6s infinite;
 }
+
 
 
 @-webkit-keyframes ani {
