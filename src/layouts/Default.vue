@@ -90,8 +90,8 @@
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(500px);
-            transform: translateY(500px);
+    -webkit-transform: translateY(450px);
+            transform: translateY(450px);
   }
 }
 @keyframes slide-bottom {
@@ -100,8 +100,8 @@
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(500px);
-            transform: translateY(500px);
+    -webkit-transform: translateY(450px);
+            transform: translateY(450px);
   }
 }
 
