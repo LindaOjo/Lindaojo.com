@@ -74,6 +74,13 @@ export default {
             formData: {},
         }
     },
+    metaInfo()  {
+        return {
+            link: [
+                { rel: 'stylesheet', href:'//cdn-images.mailchimp.com/embedcode/classic-10_7.css', type:"text/css"},
+            ]
+        }
+    },
 
     methods: {
         encode(data) {
