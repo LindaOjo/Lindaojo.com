@@ -32,13 +32,13 @@
                and functional products. I also write and speak about web technologies. </p>          
         </div>
 
-        <div class="fade-in inline-flex w-full justify-between">
-            <h2 class="my-8 md:my-8 h2 sm:my-5">
+        <div class="fade-in inline-flex w-full justify-between items-end mt-8 md:mt-8 sm:mt-5">
+            <h2 class="h2">
                 <svg class="inline arrows" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="#ffffff" width="25px" height="25px">
                     <path d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z"/>
                 </svg> Latest Posts
             </h2>
-            <a class="primary-color h3 my-auto" href="/blog" >View all</a>
+            <a class="primary-color h3" href="/articles" >View all</a>
         </div>
 
         <Latest/>

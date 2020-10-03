@@ -1,6 +1,6 @@
 P<template>
   <Layout>
-    <h2 class="h2 text-center m-5" data-aos="flip-right" data-aos-duration="1500">Blog</h2>
+    <h2 class="h2 text-center m-5" data-aos="flip-right" data-aos-duration="1500">Articles</h2>
     <div class="inline-flex h-8 justify-between items-center w-full">
         <div>
             <h3 class="h3" v-if="this.noOfBlogPost > 1">{{this.noOfBlogPost}} Posts</h3>
@@ -69,7 +69,7 @@ export default {
         Layout,
         SubscriptionForm
     },
-    metaInfo: { title: 'Blog' },
+    metaInfo: { title: 'Articles' },
     data () {
         return {
             noOfBlogPost: 0
