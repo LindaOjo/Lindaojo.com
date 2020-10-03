@@ -133,6 +133,7 @@ export default {
         return {
             link: [
                 { rel: 'icon', href:'https://res.cloudinary.com/lindaojo/image/upload/v1601407787/favicon_kbxn6x.png'},
+                { rel: 'stylesheet', href:'https://unpkg.com/aos@next/dist/aos.css', type:"text/css"},
             ]
         }
     },
