@@ -17,8 +17,8 @@
         </div>
         <div class="fade-in profile-picture-container slide-in-elliptic-top-fwd relative">
             <picture>
-                <source alt="" srcset="https://res.cloudinary.com/lindaojo/image/upload/v1601738933/profile-pic_tsacb3.webp" type="image/webp">
-                <g-image class="profile-picture" src="https://res.cloudinary.com/lindaojo/image/upload/v1601738933/profile-pic_dlexyg.jpg" alt="profile picture" width="212" height="212"></g-image>
+                <source alt="" srcset="https://res.cloudinary.com/lindaojo/image/upload/c_scale,h_353,q_84,w_252/v1601738933/profile-pic_tsacb3.webp" type="image/webp">
+                <g-image class="profile-picture" src="https://res.cloudinary.com/lindaojo/image/upload/c_scale,w_253/v1601738933/profile-pic_dlexyg.jpg" alt="profile picture"></g-image>
             </picture>
         </div>
         
