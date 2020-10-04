@@ -2,9 +2,9 @@
     <Layout>
         <article>
             <h2 class="h2 text-center pb-2">{{$page.blogPost.title}}</h2>
-            <div class="mx-auto lg:w-3/4 sm:w-5/6" :class="$page.blogPost.isBlogPost ? '' : 'text-center'" v-html="$page.blogPost.content"></div>
+            <div class="mx-auto lg:w-2/4 sm:w-5/6" :class="$page.blogPost.isBlogPost ? '' : 'text-center'" v-html="$page.blogPost.content"></div>
             <div class="mx-auto lg:w-3/4 sm:w-5/6">
-                <ArticleButtons 
+                <ShareLinks
                     :songHref="$page.blogPost.songHref"
                     :path="$page.blogPost.path"
                     :title="$page.blogPost.title"
@@ -32,14 +32,14 @@
 </page-query>
 
 <script>
-import ArticleButtons from "./../components/ArticleButtons";
+import ShareLinks from "./../components/ShareLinks";
 import SubscriptionForm from "./../components/SubscriptionForm";
 import getShareImage from '@jlengstorf/get-share-image';
 
 let ROOT_PATH = 'https://lindaojo.com';
 export default {
     components: { 
-        ArticleButtons,
+        ShareLinks,
         SubscriptionForm
     },
 
