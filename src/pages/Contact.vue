@@ -112,6 +112,7 @@ export default {
 </script>
 
 <style scoped>
+
 i {
     font-size: 1.3rem;
 }
