@@ -10,8 +10,8 @@
         <div id="mc_embed_signup_scroll" class="lg:w-1/2 sm:w-full mx-auto">
             <h2 class="h3">Subscribe to Newsletter</h2>
 
-            <p class="">Be the first to know about about quality articles and poems written by Linda Ojo, frontend developer.</p>
-
+            <p class="">Be the first to know about quality articles and poems written by Linda Ojo.
+            </p>
 
             <div class="py-2 mc-field-group">
                 <label for="MERGE1" class="sr-only block text-sm font-bold mb-2">First Name </label>
@@ -30,6 +30,20 @@
                         size="25" placeholder="Email Address"
                         autocapitalize="off" autocorrect="off">
             </div>
+
+            <div class="py-2 inline-flex mc-field-group">
+                 <div class="mr-10">
+                     <input class="checkbox" type="checkbox" id="mce-group[6434]-6434-0" name="group[6434][1]" value="" :checked="page=='article'">
+                    <label for="mce-group[6434]-6434-0" class=" block text-sm font-bold mb-2">Articles</label>
+                 </div>
+
+                 <div>
+                    <input class="checkbox" type="checkbox" id="mce-group[6434]-6434-1" name="group[6434][2]" value="" :checked="page=='poem'">
+                    <label for="mce-group[6434]-6434-1" class="block text-sm font-bold mb-2">Poems</label> 
+                 </div>
+            </div>
+
+
 
 
             <div class="py-2 flex w-full justify-center __field subscribe-form__field--submit clear">
@@ -56,6 +70,10 @@
         color:white;
         clear:left;
     }
+
+    .checkbox{
+        cursor: pointer;
+    }
 </style>
 
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
@@ -63,6 +81,9 @@
 
 <script>  
 export default {
+    props: {
+        page: String,
+    },
 
 }
 </script>

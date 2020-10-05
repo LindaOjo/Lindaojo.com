@@ -9,21 +9,31 @@
     text-align: center;
 }
 
-.desktop-light-switch > i {
+.desktop-theme-switch > i {
     font-size: 1.4rem;
 }
-.desktop-light-switch, .mobile-light-switch {
+.desktop-theme-switch, .mobile-theme-switch {
     position: relative;
     color: var(--primary-light);
     cursor: pointer;
     padding: 0 10px;
-    transition: all 1s ease;
-    animation: ani 6s infinite;
-    -webkit-animation: ani 6s infinite;
-    -moz-animation: ani 6s infinite;
+    transition: all .6s cubic-bezier(0, 1, 1, 0);
+    animation: ani 3s infinite;
+    -webkit-animation: ani 3s infinite;
+    -moz-animation: ani 3s infinite;
 }
 
-
+@keyframes ani {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 6px;
+    }
+    100% {
+      left: 0;
+    }
+}
 
 @-webkit-keyframes ani {
     0% {
@@ -35,7 +45,7 @@
     100% {
       left: 0;
     }
-  }
+}
   
   
 
@@ -137,11 +147,11 @@
     margin-left: auto; 
     margin-right: auto; 
     cursor: pointer;
-     /* Need a specific value to work, width is specified inline */
+     /* Needs a specific value to work, width is specified inline */
 }
 
 
-.mobile-light-switch {
+.mobile-theme-switch {
     font-size: 1.5rem;
 }
 
