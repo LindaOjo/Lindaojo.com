@@ -30,7 +30,7 @@ P<template>
         </span>
     </div>
     <div id="subscribe">
-        <SubscriptionForm></SubscriptionForm>
+        <SubscriptionForm :page="'article'">></SubscriptionForm>
     </div>
     
     

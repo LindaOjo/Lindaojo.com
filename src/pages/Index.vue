@@ -1,6 +1,6 @@
 <template>
     <Layout>
-            <div class="background container">
+        <div class="background container">
             <span></span>
             <span></span>
             <span></span>
@@ -24,11 +24,11 @@
         
         <div class="fade-in" >
             <h2 class="text-center p-3 h2">
-                Frontend Engineer
+                Frontend Developer
             </h2>
         </div>
         <div class="bio fade-in lg:w-3/4 lg:text-2xl sm:w-3/4 mx-auto my-5" >
-            <p>Hi there! I'm Linda, an engineer and designer in Lagos, Nigeria. I enjoy solving problems by creating beautiful
+            <p>Hi there! I'm Linda, a frontend developer in Lagos, Nigeria. I enjoy solving problems by creating beautiful
                and functional products. I also write and speak about web technologies. </p>          
         </div>
 

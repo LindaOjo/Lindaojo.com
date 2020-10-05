@@ -8,10 +8,10 @@
             <div class="inline-block w-full">
                 <div>
                     <h3 class="h3 my-2">{{post.node.title}}</h3>
-                    <p class="excerpt">{{post.node.excerpt}} </p>
+                    <p v-if="post.node.isBlogPost" class="excerpt">{{post.node.excerpt}} </p>
                 </div>
                 <div class="text-right">
-                    <p>{{post.node.duration}}</p>
+                    <p v-if="post.node.isBlogPost">{{post.node.duration}}</p>
                 </div>
             </div>
             
@@ -22,7 +22,7 @@
 
 <static-query>
     query {
-        allBlogPost (sortBy: "date", order: DESC, limit: 3) {
+        allBlogPost (sortBy: "date", order: DESC, limit: 4) {
           edges {
             node {
                 isBlogPost

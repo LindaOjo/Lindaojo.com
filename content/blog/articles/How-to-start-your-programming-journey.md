@@ -7,7 +7,7 @@ isBlogPost: true
 songHref: "https://www.youtube.com/watch?v=FtUNQpu2b7Q" 
 ---
 
-<img class="lg:w-2/4" src="https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif"></img>
+<img class="lg:w-3/4" src="https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif"></img>
 
 I am Linda, a Frontend Developer at BuyCoins, you can call me Linda too.
 Before getting into programming, I thought it was magic, something you couldn’t just learn. I assumed you had to be extraordinarily smart to speak the ‘language of computers’. Don’t worry if you feel that way.

@@ -23,7 +23,7 @@
             </g-link>
       </span>
     <div id="subscribe">
-        <SubscriptionForm></SubscriptionForm>
+        <SubscriptionForm :page="'poem'">></SubscriptionForm>
     </div>
     
   </Layout>

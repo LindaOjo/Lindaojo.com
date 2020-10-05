@@ -1,7 +1,11 @@
 <template>
     <Layout>
         <article>
-            <h2 class="h2 text-center pb-2">{{$page.blogPost.title}}</h2>
+            <div class="flex-col text-center">
+                <h2 class="h1">{{$page.blogPost.title}}</h2>
+                <small>Published: {{$page.blogPost.date}}</small>
+            </div>
+            
             <div class="mx-auto lg:w-2/4 sm:w-5/6" :class="$page.blogPost.isBlogPost ? '' : 'text-center'" v-html="$page.blogPost.content"></div>
             <div class="mx-auto lg:w-3/4 sm:w-5/6">
                 <ShareLinks
@@ -11,7 +15,7 @@
                     :excerpt="$page.blogPost.excerpt"
                  />
             </div>
-            <SubscriptionForm ></SubscriptionForm>
+            <SubscriptionForm :page="$page.blogPost.isBlogPost ? 'article' : 'poem'"></SubscriptionForm>
             
         </article>
     </Layout>   
