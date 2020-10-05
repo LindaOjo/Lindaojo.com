@@ -33,12 +33,12 @@
 
             <div class="py-2 inline-flex mc-field-group">
                  <div class="mr-10">
-                     <input type="checkbox" id="mce-group[6434]-6434-0" name="group[6434][1]" value="">
+                     <input class="checkbox" type="checkbox" id="mce-group[6434]-6434-0" name="group[6434][1]" value="" :checked="page=='article'">
                     <label for="mce-group[6434]-6434-0" class=" block text-sm font-bold mb-2">Articles</label>
                  </div>
 
                  <div>
-                    <input type="checkbox" id="mce-group[6434]-6434-1" name="group[6434][2]" value="">
+                    <input class="checkbox" type="checkbox" id="mce-group[6434]-6434-1" name="group[6434][2]" value="" :checked="page=='poem'">
                     <label for="mce-group[6434]-6434-1" class="block text-sm font-bold mb-2">Poems</label> 
                  </div>
             </div>
@@ -69,6 +69,10 @@
         background:var(--postcard-background);
         color:white;
         clear:left;
+    }
+
+    .checkbox{
+        cursor: pointer;
     }
 </style>
 
