@@ -16,11 +16,8 @@
             <span></span>
         </div>
         <div class="fade-in profile-picture-container slide-in-elliptic-top-fwd relative">
-            <g-image width="172"
-                     height="172"
-                     quality="100"
-                     class="profile-picture"
-                     src="https://res.cloudinary.com/lindaojo/image/upload/c_scale,w_253,dpr_auto/v1601738933/profile-pic_dlexyg.jpg"
+            <g-image class="profile-picture"
+                     src="https://res.cloudinary.com/lindaojo/image/upload/c_scale,w_253/v1601738933/profile-pic_dlexyg.jpg"
                      alt="profile picture">
             </g-image>
         </div>
