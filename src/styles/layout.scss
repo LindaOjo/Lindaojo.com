@@ -99,7 +99,10 @@ body {
 }
 
 /* Mobile */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+    .container {
+        @apply p-4;
+    }
 
     .lg-container {
         border-radius: 2rem;
@@ -114,6 +117,17 @@ body {
     }
     .project-picture{
         @apply h-56 w-56; 
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        @apply p-0;
+    }
+
+    .lg-container {
+        border-radius: 0rem;
+        background-color: rgba(16, 8, 18, 0.461);
     }
 }
 

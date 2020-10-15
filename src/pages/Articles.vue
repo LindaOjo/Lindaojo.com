@@ -1,4 +1,4 @@
-P<template>
+<template>
   <Layout>
     <h2 class="h2 text-center m-5" data-aos="flip-right" data-aos-duration="1500">Articles</h2>
     <div class="inline-flex h-8 justify-between items-center w-full">

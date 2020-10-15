@@ -5,9 +5,7 @@
 			<div class="lg-container">
 				<header class="header h-12">
 					<h1 class="h1 title">
-						<strong>
-							<g-link to="/">Linda Ojo</g-link>
-						</strong>
+						<g-link to="/">Linda Ojo</g-link>
 					</h1>
 					<nav class="nav">
                         <div class="desktop-nav w-2/3 inline-flex items-end">

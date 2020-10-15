@@ -1,13 +1,13 @@
 <template>
   <Layout>
     <h1 class="h2 text-center m-5 " data-aos="flip-right" data-aos-duration="1500">
-            Don't be a stranger
+            Contact
     </h1>
     <div class="fade-in">
         <p class="sm:w-3/4 lg:w-1/2 my-5 text-center mx-auto lg:text-xl">
             Want me to build something cool or got some questions? Send a message.
         </p>
-        <form class="lg:w-1/2 sm:w-full shadow-2xl rounded px-4 py-6 mb-4 mx-auto"
+        <form class="lg:w-1/2 sm:w-full rounded py-6 mb-4 mx-auto"
             name="contact"
             method="post"
             v-on:submit.prevent="handleSubmit"
@@ -32,9 +32,9 @@
                 </div>
             </div>
 
-            <div class="message-wrapper">
+            <div class="message-wrapper py-4">
                 <label for="message" class="block text-sm font-bold mb-2">Message *</label>
-                <textarea required name="message" class="w-full bg-gray-400 text-black p-2"  v-model="formData.message"></textarea>
+                <textarea required name="message" class="w-full h-32 bg-gray-400 text-black p-2"  v-model="formData.message"></textarea>
             </div>
 
             <div class="flex justify-center mx-8 mt-5 relative">
@@ -125,8 +125,5 @@ a:hover {
     color: var(--primary);
 }
 
-.shadow-2xl {
-    box-shadow: 1px 4px 12px -6px rgba(255,255,255,0.28);
-}
 
 </style>
