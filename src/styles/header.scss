@@ -18,36 +18,7 @@
     cursor: pointer;
     padding: 0 10px;
     transition: all .6s cubic-bezier(0, 1, 1, 0);
-    animation: ani 3s infinite;
-    -webkit-animation: ani 3s infinite;
-    -moz-animation: ani 3s infinite;
 }
-
-@keyframes ani {
-    0% {
-      left: 0;
-    }
-    50% {
-      left: 6px;
-    }
-    100% {
-      left: 0;
-    }
-}
-
-@-webkit-keyframes ani {
-    0% {
-      left: 0;
-    }
-    50% {
-      left: 6px;
-    }
-    100% {
-      left: 0;
-    }
-}
-  
-  
 
 .nav__link {
     margin-left: 25px;

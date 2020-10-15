@@ -1,10 +1,10 @@
 <template>
   <Layout>
       <div class="w-full text-center mx-auto">
-          <h1 class="h2 text-center m-5 " data-aos="flip-right" data-aos-duration="1500">
+          <h1 class="h2 text-center m-5 scale-up-center">
             😧 Oops! This page does not exist.
             </h1>
-            <a href="/contact" class="primary-color">Contact me if you think this is a bug.</a>
+            <a href="/contact" class="primary-color">Contact me if you think this is some sort of error.</a>
       </div>
     
   </Layout>

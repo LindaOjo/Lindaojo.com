@@ -1,12 +1,12 @@
 <template>
   <Layout class="">
-    <h2 class="h2 text-center m-5 " data-aos="flip-right" data-aos-duration="1500">
+    <h2 class="h2 text-center m-5 scale-up-center">
         Message Sent!
     </h2>
     <h3 class=" h3 text-center">
         Thank you for reaching out, you will hear from me soon.
     </h3>
-    <div data-aos="slide-right" data-aos-duration="700" class="flex justify-center my-16 w-full">
+    <div class="flex justify-center my-16 w-full">
         <div  class="illustration mx-auto object-cover inline-flex justify-center">
             <g-image class="message_illustration mx-2" src="./../../content/images/speed.svg" alt="message illustration"></g-image>
             <g-image class="message_illustration mx-2" src="./../../content/images/message_sent.svg" alt="message illustration"></g-image>

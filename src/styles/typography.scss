@@ -1,18 +1,10 @@
-
-body {
-    font-family: 'Lato', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-weight: 300;
-    font-kerning: normal;
-}
-
-   h1, h2, h3, h4, h5, h6 {
+body, h1, h2, h3, h4, h5, h6, p {
     font-family: 'Helvetica', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, serif;
     font-kerning: auto;
 }
 
 .h1 {
     font-size: 2rem;
-    
 }
 
 .h2 {
