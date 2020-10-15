@@ -1,9 +1,5 @@
 require("~/styles/main.scss");
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 

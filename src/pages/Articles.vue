@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h2 class="h2 text-center m-5" data-aos="flip-right" data-aos-duration="1500">Articles</h2>
+    <h2 class="h2 text-center m-5 scale-up-center">Articles</h2>
     <div class="inline-flex h-8 justify-between items-center w-full">
         <div>
             <h3 class="h3" v-if="this.noOfBlogPost > 1">{{this.noOfBlogPost}} Posts</h3>
@@ -11,7 +11,7 @@
         </div>   
     </div>
     <div>
-        <span data-aos="slide-up" v-for="post in $page.allBlogPost.edges" :key="post.node.id">
+        <span v-for="post in $page.allBlogPost.edges" :key="post.node.id">
             <g-link v-if="post.node.isBlogPost" 
                     :to="post.node.path"
                     class="post-card w-full hover:-translate-y-1 hover:scale-105 transition delay-100 duration-300 ease-in-out transform">
@@ -40,7 +40,6 @@
 <page-query>
     query {
         allBlogPost (sortBy: "date", order: DESC){
-          totalCount
           edges {
             node {
                 isBlogPost

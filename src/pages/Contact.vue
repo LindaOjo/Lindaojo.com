@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <h1 class="h2 text-center m-5 " data-aos="flip-right" data-aos-duration="1500">
-            Contact
+    <h1 class="h2 text-center m-5 scale-up-center">
+        Contact
     </h1>
     <div class="fade-in">
         <p class="sm:w-3/4 lg:w-1/2 my-5 text-center mx-auto lg:text-xl">
