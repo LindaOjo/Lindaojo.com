@@ -16,9 +16,13 @@
             <span></span>
         </div>
         <div class="fade-in profile-picture-container slide-in-elliptic-top-fwd relative">
-            <picture>
-                <g-image width="172" height="172" class="profile-picture" src="https://res.cloudinary.com/lindaojo/image/upload/c_scale,w_253/v1601738933/profile-pic_dlexyg.jpg" alt="profile picture"></g-image>
-            </picture>
+            <g-image width="172"
+                     height="172"
+                     quality="100"
+                     class="profile-picture"
+                     src="https://res.cloudinary.com/lindaojo/image/upload/c_scale,w_253/v1601738933/profile-pic_dlexyg.jpg"
+                     alt="profile picture">
+            </g-image>
         </div>
         
         
@@ -71,7 +75,7 @@
                 </div>
             </div>
 
-            <p class=" mt-6 text-center mx-5">Designed and Developed by Linda Ojo </p>
+            <p class="mt-6 mb-3 text-center mx-3">Designed and Developed by Linda Ojo </p>
         </div> 
     </Layout>
 </template>
