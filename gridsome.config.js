@@ -26,6 +26,19 @@ module.exports = {
         options: {
             typeName: 'BlogPost',
             path: './content/blog/**/*.md',
+            remark: {
+                plugins: [
+                    [
+                      "gridsome-plugin-remark-prismjs-all",
+                      {
+                        showLineNumber: true,
+                        highlightClassName: "gridsome-highlight",
+                        codeTitleClassName: "gridsome-code-title",
+                        classPrefix: "language-",
+                      },
+                    ]
+                ]
+            }
         }
     },
     {

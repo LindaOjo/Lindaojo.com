@@ -10,7 +10,7 @@
     --menu-background: rgba(3, 7, 31, 0.941);
     --postcard-background: rgb(3, 7, 31);
     --code-comment: #4d9cec;
-    --code-background-color: #12539482;
+    --code-background-color: rgb(0, 2, 19) ;
     --primary:  #3e8fe0cf;
     --primary-light:  #bedcfa;
     
@@ -20,7 +20,7 @@
     --menu-background: #080b12ec;
     --postcard-background: #10081270;
     --code-comment: #4d9cec;
-    --code-background-color: #12539482;
+    --code-background-color: rgb(19, 21, 37) ;
     --primary:  #3e8fe0cf;
     --primary-light:  #bedcfa;
     
