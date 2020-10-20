@@ -26,6 +26,19 @@ module.exports = {
         options: {
             typeName: 'BlogPost',
             path: './content/blog/**/*.md',
+            remark: {
+                plugins: [
+                    [
+                      "gridsome-plugin-remark-prismjs-all",
+                      {
+                        showLineNumber: true,
+                        highlightClassName: "gridsome-highlight",
+                        codeTitleClassName: "gridsome-code-title",
+                        classPrefix: "language-",
+                      },
+                    ]
+                ]
+            }
         }
     },
     {
@@ -52,9 +65,15 @@ module.exports = {
             './src/**/*.js',
             './src/**/*.jsx',
             './src/**/*.pug',
-            './src/**/*.md'
+            './src/**/*.md',
           ],
-          defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
+
+          // https://purgecss.com/configuration.html#configuration-file Safelist below stop styles
+          // from being purge in production -bug-fix works
+          safelist: {
+            greedy: [/^token/, /^pre/, /^code/, /token$/, 'pre', 'gridsome']
+          },
+          defaultExtractor: content => content.match(/[A-Za-z0-9-_:/ ]+/g) || [],
         }
     }
   ],

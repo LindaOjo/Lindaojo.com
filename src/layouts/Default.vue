@@ -23,6 +23,7 @@
                             <g-link class="nav__link" to="/articles/">Articles</g-link>
                             <g-link class="nav__link" to="/poems/">Poems</g-link>
                             <g-link class="nav__link" to="/contact/">Contact</g-link>
+                            <g-link to="https://www.zikoko.com/citizen/everything-you-need-to-know-about-the-endsars-protest/" class="nav__link text-red-700"><strong>#ENDSARS</strong></g-link>
                         </div>
                         					
 <!-- Mobile Navigation -->
@@ -56,6 +57,7 @@
                             <g-link class="menu-link" to="/articles/">Articles</g-link>
                             <g-link class="menu-link" to="/poems/">Poems</g-link>
                             <g-link class="menu-link" to="/contact/">Contact</g-link>
+                            <g-link to="https://www.zikoko.com/citizen/everything-you-need-to-know-about-the-endsars-protest/" class="menu-link text-red-700">#ENDSARS</g-link>
                         </div>
                     </div>
 
