@@ -67,9 +67,9 @@ module.exports = {
             './src/**/*.pug',
             './src/**/*.md',
           ],
-          whitelist: ['gridsome-highlight', 'gridsome-code-title', 'token'],
-          whitelistPatterns: [/^fa-/, /^svg-inline--fa/], 
-          whitelistPatternsChildren: [/^token/, /^pre/, /^code/], 
+          safelist: {
+            greedy: [/^token/, /^pre/, /^code/, /token$/, 'pre', 'gridsome']
+          },
           defaultExtractor: content => content.match(/[A-Za-z0-9-_:/ ]+/g) || [],
         }
     }
