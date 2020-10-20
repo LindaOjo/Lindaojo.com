@@ -69,7 +69,7 @@ module.exports = {
           ],
 
           // https://purgecss.com/configuration.html#configuration-file Safelist below stop styles
-          // from being purge in production
+          // from being purge in production -bug-fix works
           safelist: {
             greedy: [/^token/, /^pre/, /^code/, /token$/, 'pre', 'gridsome']
           },
