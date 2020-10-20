@@ -41,7 +41,7 @@ Navigate into your child component folder and create a module for your component
 ng generate module <child-component-name> --flat
 ```
 
-<strong class="code-word">--flat</strong> is a command-line flag that ensures that the module is not created within a new folder.
+<span class="code-word">--flat</span> is a command-line flag that ensures that the module is not created within a new folder.
 
 Open <span class="code-word">child.module.ts</span> file and import the child component using JavaScript import at the top of the file.
 
