@@ -93,6 +93,11 @@ module.exports = {
                     "type": "image/png"
                   },
                   {
+                    "src": "./static/assets/icons/icon-144.png",
+                    "sizes": "144x144",
+                    "type": "image/png"
+                  },
+                  {
                     "src": "./static/assets/icons/icon-256.png",
                     "sizes": "256x256",
                     "type": "image/png"
