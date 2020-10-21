@@ -22,12 +22,6 @@ module.exports = {
   
   plugins: [
     {
-        use: '@gridsome/plugin-google-analytics',
-        options: {
-          id: 'UA-179418260-1'
-        }
-    },
-    {
         use: '@gridsome/source-filesystem',
         options: {
             typeName: 'BlogPost',
@@ -122,7 +116,13 @@ module.exports = {
           },
           defaultExtractor: content => content.match(/[A-Za-z0-9-_:/ ]+/g) || [],
         }
-    }
+    },
+    {
+        use: '@gridsome/plugin-google-analytics',
+        options: {
+          id: 'UA-179418260-1'
+        }
+    },
   ],
   css: {
     loaderOptions: {
