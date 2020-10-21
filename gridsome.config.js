@@ -22,6 +22,12 @@ module.exports = {
   
   plugins: [
     {
+        use: '@gridsome/plugin-google-analytics',
+        options: {
+          id: 'UA-179418260-1'
+        }
+    },
+    {
         use: '@gridsome/source-filesystem',
         options: {
             typeName: 'BlogPost',
