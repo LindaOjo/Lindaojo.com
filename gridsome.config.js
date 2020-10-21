@@ -51,6 +51,47 @@ module.exports = {
         },
     },
     {
+        use: 'gridsome-plugin-pwa',
+        options: {
+             // Service Worker Options
+             disableServiceWorker: false,
+             serviceWorkerPath: './static/assets/js/service-worker.js',
+             cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif',
+             disableTemplatedUrls: false,       // Optional
+ 
+             // Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
+             manifestPath: 'manifest.json',
+             title: "Linda Ojo's personal website and blog",
+             startUrl: '/',
+             display: 'standalone',
+             "orientation": "portrait",
+             statusBarStyle: 'default',
+             themeColor: '#0855a1',
+             backgroundColor: '#0855a1',
+             icon: '',
+             shortName: 'Linda Ojo',              // Optional
+             description: "A Progressive Web App for Linda Ojo's personal Website and blog !",  // Optional
+             categories: ['education', 'blog', 'tech', 'programming', 'web development', 'coding', 'frontend', 'software engineering'],          // Optional
+             lang: 'en-US',                      // Optional
+             dir: 'auto',                        // Optional
+             maskableIcon: true,  
+
+             icons: [
+                {
+                  "src": "https://res.cloudinary.com/lindaojo/image/upload/v1601407787/favicon_kbxn6x.png",
+                  "sizes": "192x192",
+                  "type": "image/png"
+                },
+                {
+                  "src": "https://res.cloudinary.com/lindaojo/image/upload/v1601407787/favicon_kbxn6x.png",
+                  "sizes": "512x512",
+                  "type": "image/png"
+                }
+              ],
+        }
+
+    },
+    {
         use: `gridsome-plugin-netlify-cms`,
         options: {
             publicPath: `/cms`
