@@ -51,6 +51,67 @@ module.exports = {
         },
     },
     {
+        use: 'gridsome-plugin-pwa',
+        options: {
+             // Service Worker Options
+             disableServiceWorker: false,
+             serviceWorkerPath: './static/assets/js/service-worker.js',
+             cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif',
+             disableTemplatedUrls: false,       // Optional
+ 
+             // Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
+             manifestPath: 'manifest.json',
+             title: "Linda Ojo's personal website and blog",
+             startUrl: '/',
+             display: 'standalone',
+             "orientation": "portrait",
+             statusBarStyle: 'default',
+             themeColor: '#0855a1',
+             backgroundColor: '#0855a1',
+             icon: 'favicon.svg',
+             shortName: 'Linda Ojo',              // Optional
+             description: "A Progressive Web App for Linda Ojo's personal Website and blog !",  // Optional
+             categories: ['education', 'blog', 'tech', 'programming', 'web development', 'coding', 'frontend', 'software engineering'],          // Optional
+             lang: 'en-US',                      // Optional
+             dir: 'auto',                        // Optional
+             maskableIcon: true,  
+
+             icons: [
+                {
+                    "src": "./static/assets/icons/icon-32.png",
+                    "sizes": "32x32",
+                    "type": "image/png"
+                  },
+                  {
+                    "src": "./static/assets/icons/icon-48.png",
+                    "sizes": "48x48",
+                    "type": "image/png"
+                  },
+                  {
+                    "src": "./static/assets/icons/icon-128.png",
+                    "sizes": "128x128",
+                    "type": "image/png"
+                  },
+                  {
+                    "src": "./static/assets/icons/icon-144.png",
+                    "sizes": "144x144",
+                    "type": "image/png"
+                  },
+                  {
+                    "src": "./static/assets/icons/icon-256.png",
+                    "sizes": "256x256",
+                    "type": "image/png"
+                  },
+                  {
+                    "src": "./static/assets/icons/icon-512.png",
+                    "sizes": "512x512",
+                    "type": "image/png"
+                  }
+              ],
+        }
+
+    },
+    {
         use: `gridsome-plugin-netlify-cms`,
         options: {
             publicPath: `/cms`
@@ -75,7 +136,13 @@ module.exports = {
           },
           defaultExtractor: content => content.match(/[A-Za-z0-9-_:/ ]+/g) || [],
         }
-    }
+    },
+    {
+        use: '@gridsome/plugin-google-analytics',
+        options: {
+          id: 'UA-179418260-1'
+        }
+    },
   ],
   css: {
     loaderOptions: {
