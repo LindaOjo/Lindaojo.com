@@ -79,7 +79,7 @@ The table below gives a brief description of the popular types of programmers.
 
 The most popular programmers are web programmers (Frontend and Backend). Most newbies think they have to be one or the other. I suggest you research the various careers in programming and make a decision on what you want to explore.
 
-_Remember, not all roles in tech involve core programming. Click this to check out other roles._
+Remember, not all roles in tech involve core programming. <a class="link" href="https://www.forbes.com/sites/laurencebradford/2017/03/07/16-tech-careers-you-can-land-no-coding-required/#5c05b6a426af" target="_blank">Check out other roles.</a>
 
 <h3>Have a clear learning path</h3>
 
@@ -93,7 +93,7 @@ There are many paid and free resources out there that can walk you through this 
 
 Do you comprehend concepts better when you read? Then try Codecademy or freeCodeCamp. Are you better with explanatory videos? check out courses on platforms like Udacity and Udemy. You don’t have to learn strictly by one of the methods mentioned above, just figure out what works for you.
 
-Here is a link to check out for top programming learning platforms.
+<a class="link" href="https://www.developerdrive.com/best-places-learn-how-to-code/" target="_blank">Check out top programming learning platforms.</a>
 
 <h3>Keep Coding!</h3>
 
@@ -101,4 +101,4 @@ Learning a new skill isn’t easy and I am so proud of you for making this decis
 
 One of the best ways to learn fast is by building — work on projects as you grow. You should also surround yourself with the right content to keep you motivated. Participate in coding challenges, follow programmers who you admire and don’t be too hard on yourself.
 
-Lastly, I wanna say a big thank you to the founders of BuyCoins — <a href="https://twitter.com/timigod" class="pink-link">Timi Ajiboye</a>, <a href="https://twitter.com/ireaderinokun" class="pink-link">Ire Aderinokun</a>, and <a href="https://twitter.com/alephile" class="pink-link">Aleph Pi</a> for giving me this rare opportunity. Thank you for making my year.
+Lastly, I wanna say a big thank you to the founders of BuyCoins — <a href="https://twitter.com/timigod" class="link">Timi Ajiboye</a>, <a href="https://twitter.com/ireaderinokun" class="link">Ire Aderinokun</a>, and <a href="https://twitter.com/alephile" class="link">Aleph Pi</a> for giving me this rare opportunity. Thank you for making my year.

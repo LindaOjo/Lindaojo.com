@@ -8,7 +8,7 @@ songHref: "https://music.youtube.com/watch?v=eRUM70CPYls&feature=share"
 ---
 
 Not too long after becoming a developer, an urge comes upon you to create a personal website. you can only resist for so long. I gave in two days ago and I am happy to say you can check out my 
-<a class="pink-link" href="https://lindaojo.com">personal website</a>
+<a class="link" href="https://lindaojo.com">personal website</a>
 
 After creating my simple personal website, I had to host it and connect a custom domain name, here is how I did that.
 
