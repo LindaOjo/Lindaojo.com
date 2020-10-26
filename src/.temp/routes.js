@@ -37,4 +37,9 @@ export default [
     path: "/",
     component: c7
   },
+  {
+    name: "*",
+    path: "*",
+    component: c6
+  }
 ]
