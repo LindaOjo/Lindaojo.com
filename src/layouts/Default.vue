@@ -24,6 +24,7 @@
                             <g-link class="nav__link" to="/poems/">Poems</g-link>
                             <g-link class="nav__link" to="/contact/">Contact</g-link>
                         </div>
+                        
                         					
 <!-- Mobile Navigation -->
                         
