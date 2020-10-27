@@ -68,7 +68,7 @@ module.exports = {
              statusBarStyle: 'default',
              themeColor: '#0855a1',
              backgroundColor: '#0855a1',
-             icon: 'favicon.svg',
+             icon: './static/assets/icons/icon-128.png',
              shortName: 'Linda Ojo',              // Optional
              description: "A Progressive Web App for Linda Ojo's personal Website and blog !",  // Optional
              categories: ['education', 'blog', 'tech', 'programming', 'web development', 'coding', 'frontend', 'software engineering'],          // Optional
