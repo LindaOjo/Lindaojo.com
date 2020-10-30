@@ -13,6 +13,7 @@
                     :path="$page.blogPost.path"
                     :title="$page.blogPost.title"
                     :excerpt="$page.blogPost.excerpt"
+                    :page="$page.blogPost.isBlogPost ? 'article' : 'poem'"
                  />
             </div>
             <SubscriptionForm :page="$page.blogPost.isBlogPost ? 'article' : 'poem'"></SubscriptionForm>

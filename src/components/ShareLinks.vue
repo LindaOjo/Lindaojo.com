@@ -3,7 +3,7 @@
 
         <div class="button-container mt-5 links">
             <div class="mb-5">
-                <a href="/articles" class="h3">View Other Articles 📖</a>
+                <a :href="page == 'article' ? '/articles' : '/poems'" class="h3">View Other {{page == 'article' ? 'Articles' : 'Poems'}} 📖</a>
             </div>
             <div>
                 <h2 class="h3 mb-2 text-center share-word">Share</h2>
@@ -67,10 +67,11 @@ export default {
         }
     },
     props: {
-        songHref: String,
+        page: String,
         path: String,
         title: String,
         excerpt: String,
+        
     },
 }
 </script>
