@@ -1,8 +1,12 @@
 <template>
     <div>
+
         <div class="button-container mt-5 links">
+            <div class="mb-5">
+                <a href="/articles" class="h3">View Other Articles 📖</a>
+            </div>
             <div>
-                <h2 class="h3 mb-2 text-center">📢 Share</h2>
+                <h2 class="h3 mb-2 text-center share-word">Share</h2>
                 <ShareNetwork
                     network="facebook"
                     :url="prefixedUrl"

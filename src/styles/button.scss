@@ -27,17 +27,18 @@
 @media (min-width: 769px) {
 
 	.button-container {
-        @apply justify-end; 
+        @apply justify-between; 
     }
 
     .button {
         @apply px-6;
         font-size: 1.2rem;
     }
+
 }
 /* Mobile */
 @media (max-width: 500px) {
-	.twitter-button {
+	.twitter-button, .share-word {
         display: none;
     }
     .subscribe-button{
