@@ -22,7 +22,7 @@
 
 <static-query>
     query {
-        allBlogPost (sortBy: "date", order: DESC, limit: 4) {
+        allBlogPost (sortBy: "date", order: DESC, limit: 5) {
           edges {
             node {
                 isBlogPost

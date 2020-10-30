@@ -65,9 +65,9 @@ export class ChildModule { }
 
 <h3>Import Child Module into Container Module</h3>
 
-Next, head on to <span class="code-word">cointainer.module.ts</span> and import the child Module within the NgModule.
+Next, head on to <span class="code-word">container.module.ts</span> and import the child Module within the NgModule.
 
-💡 you can create a container module same way we made the child module if it doesn’t exist. This is what my <span class="code-word">cointainer.module.ts</span> looks like.
+💡 you can create a container module same way we made the child module if it doesn’t exist. This is what my <span class="code-word">container.module.ts</span> looks like.
 
 ```ts{codeTitle: "In container.module.ts"}
 import { ChildModule } from './../child/child.module'; // JavaScript Import
