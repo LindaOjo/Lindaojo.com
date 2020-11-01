@@ -1,11 +1,11 @@
 ---
 title: "Darkmode using CSS variables - Vue JS"
 duration: "3 minutes"
-excerpt: "Dark Mode! Dark Mode! Dark Mode! Everybody loves it, you want it! That's why you are here and I will help you achieve it in Vue JS! Let's get our variables."
-date: "2020-10-28"
+excerpt: "Dark Mode! Dark Mode! Dark Mode! Everybody wants it! That's why you are here and I will help you achieve it in Vue JS! Let's get our variables."
+date: "2020-11-02"
 isBlogPost: true
 ---
-Dark Mode! Dark Mode! Dark Mode! Everybody wants it and you want it too! That's why you are here and I will help you achieve it in Vue JS. Let's go!
+Dark Mode! Dark Mode! Dark Mode! Everybody wants it! That's why you are here and I will help you achieve it in Vue JS. Let's go!
 
 First, we set up <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties" target="_blank">custom variables</a> in CSS.
 Variables are also available in <a class="link" href="https://sass-lang.com/documentation/variables" target="_blank">SASS</a> and <a class="link" href="http://lesscss.org/#variables" target="_blank">LESS </a> in a slightly different format.
@@ -33,7 +33,7 @@ We can use the <a class="link" href="https://www.w3schools.com/css/css3_variable
     color: var(--text-color);
 }
 ```
-These variables helps us switch between styles with ease.
+These variables help us switch between styles with ease.
 
 💡 You would want users to be able to switch themes anywhere within your site so I recommend adding the theme <span class="code-word">toggle element</span> to your header.
 
@@ -78,7 +78,7 @@ We can now switch the content of the <span class="code-word">button</span> eleme
 </button>
 ```
 
-Here is a wholistic view of the previous code snippets working together.
+Here is a holistic view of the previous code snippets working together.
 
 ```ts{codeTitle: "header.vue"}
  <button  @click="toggleTheme" aria-label="Toggle themes">
