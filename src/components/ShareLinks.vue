@@ -1,8 +1,12 @@
 <template>
     <div>
+
         <div class="button-container mt-5 links">
+            <div class="mb-5">
+                <a :href="page == 'article' ? '/articles' : '/poems'" class="h3">Read More {{page == 'article' ? 'Articles' : 'Poems'}} 📖</a>
+            </div>
             <div>
-                <h2 class="h3 mb-2 text-center">📢 Share</h2>
+                <h2 class="h3 mb-2 text-center share-word">Share</h2>
                 <ShareNetwork
                     network="facebook"
                     :url="prefixedUrl"
@@ -63,10 +67,11 @@ export default {
         }
     },
     props: {
-        songHref: String,
+        page: String,
         path: String,
         title: String,
         excerpt: String,
+        
     },
 }
 </script>

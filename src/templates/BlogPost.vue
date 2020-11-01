@@ -13,6 +13,7 @@
                     :path="$page.blogPost.path"
                     :title="$page.blogPost.title"
                     :excerpt="$page.blogPost.excerpt"
+                    :page="$page.blogPost.isBlogPost ? 'article' : 'poem'"
                  />
             </div>
             <SubscriptionForm :page="$page.blogPost.isBlogPost ? 'article' : 'poem'"></SubscriptionForm>
@@ -38,7 +39,6 @@
 <script>
 import ShareLinks from "./../components/ShareLinks";
 import SubscriptionForm from "./../components/SubscriptionForm";
-import getShareImage from '@jlengstorf/get-share-image';
 
 let ROOT_PATH = 'https://lindaojo.com';
 export default {

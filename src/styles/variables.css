@@ -3,26 +3,23 @@
     /*General*/
     --pink: #C850C0;
     --text-color: rgba(255, 255, 255, 0.816);
+    --primary:  #3e8fe0cf;
+    --primary-light:  #bedcfa;
     
 }
 
 [data-theme="dark"] {
     --menu-background: rgba(3, 7, 31, 0.941);
     --postcard-background: rgb(3, 7, 31);
-    --code-comment: #4d9cec;
-    --code-background-color: rgb(0, 2, 19) ;
-    --primary:  #3e8fe0cf;
-    --primary-light:  #bedcfa;
+    --code-block-background: rgb(0, 2, 19);
+    --code-word-background:  rgb(19, 24, 69);
     
 }
 
 [data-theme="light"]  {
     --menu-background: #080b12ec;
     --postcard-background: #10081270;
-    --code-comment: #4d9cec;
-    --code-background-color: rgb(19, 21, 37) ;
-    --primary:  #3e8fe0cf;
-    --primary-light:  #bedcfa;
-    
+    --code-block-background: rgb(19, 21, 37);
+    --code-word-background:  rgb(13, 17, 56);
 }
 
