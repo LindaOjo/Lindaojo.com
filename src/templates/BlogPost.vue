@@ -39,7 +39,6 @@
 <script>
 import ShareLinks from "./../components/ShareLinks";
 import SubscriptionForm from "./../components/SubscriptionForm";
-import getShareImage from '@jlengstorf/get-share-image';
 
 let ROOT_PATH = 'https://lindaojo.com';
 export default {

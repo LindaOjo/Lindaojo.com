@@ -78,8 +78,8 @@ module.exports = {
 
              icons: [
                 {
-                    "src": "./static/assets/icons/icon-32.png",
-                    "sizes": "32x32",
+                    "src": "./static/assets/icons/icon-40.png",
+                    "sizes": "40x40",
                     "type": "image/png"
                   },
                   {

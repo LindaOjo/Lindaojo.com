@@ -5,10 +5,10 @@ excerpt: "Dark Mode! Dark Mode! Dark Mode! Everybody loves it, you want it! That
 date: "2020-10-28"
 isBlogPost: true
 ---
-Dark Mode! Dark Mode! Dark Mode! Everybody loves it and you want it too! That's why you are here and I will help you achieve it in Vue JS. Let's go!
+Dark Mode! Dark Mode! Dark Mode! Everybody wants it and you want it too! That's why you are here and I will help you achieve it in Vue JS. Let's go!
 
 First, we set up <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties" target="_blank">custom variables</a> in CSS.
-Variables are also available in <a class="link" href="https://sass-lang.com/documentation/variables" target="_blank">SASS</a> and <a class="link" href="http://lesscss.org/#variables" target="_blank">LESS </a> with a slightly different format.
+Variables are also available in <a class="link" href="https://sass-lang.com/documentation/variables" target="_blank">SASS</a> and <a class="link" href="http://lesscss.org/#variables" target="_blank">LESS </a> in a slightly different format.
 
 Variables for the default theme should be placed under <strong class=code-word>:root</strong>, while the variables for dark mode can be placed under the data-theme attribute. Make sure data-theme is set to "darkMode" as shown below
 
@@ -35,7 +35,7 @@ We can use the <a class="link" href="https://www.w3schools.com/css/css3_variable
 ```
 These variables helps us switch between styles with ease.
 
-💡 You would want users to be able to switch themes anywhere within your site so I recommend adding the theme toggle element to your header.
+💡 You would want users to be able to switch themes anywhere within your site so I recommend adding the theme <span class="code-word">toggle element</span> to your header.
 
 To toggle between the two themes, let's add a function called <span class="code-word">Toggle theme</span> which will be triggered by a <span class="code-word">button</span>.
 
@@ -59,7 +59,7 @@ toggleTheme() {
 ```
 Now we can toggle dark mode by clicking on the <span class="code-word">toggle theme button</span>.
 
-We also need to set the theme when the page loads. We do this in Vue JS within <a class="link" href="https://vuejs.org/v2/api/#mounted" target="_blank">Mounted Life-Cycle hook</a>.
+We also need to set the theme when the page loads. We do this in Vue JS within the <a class="link" href="https://vuejs.org/v2/api/#mounted" target="_blank">Mounted Life-Cycle hook</a>.
 
 ```ts{codeTitle: "header.vue"}
 
