@@ -8,7 +8,7 @@
             <div class="inline-block w-full">
                 <div>
                     <h3 class="h3 my-2">{{post.node.title}}</h3>
-                    <p v-if="post.node.isBlogPost" class="excerpt">{{post.node.excerpt}} </p>
+                    <p v-if="post.node.isBlogPost" class="excerpt lg:w-5/6 sm:w-full">{{post.node.excerpt}} </p>
                 </div>
                 <div class="text-right">
                     <p v-if="post.node.isBlogPost">{{post.node.duration}}</p>

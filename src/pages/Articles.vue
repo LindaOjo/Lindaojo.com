@@ -18,7 +18,7 @@
                 <div class="inline-block w-full">
                     <div>
                         <h2 class="h3 my-2">{{post.node.title}}</h2>
-                        <p class="excerpt w-5/6">
+                        <p class="excerpt lg:w-5/6 sm:w-full">
                         {{post.node.excerpt}}
                         </p>
                     </div>
