@@ -24,6 +24,7 @@
                             <g-link class="nav__link" to="/poems/">Poems</g-link>
                             <g-link class="nav__link" to="/contact/">Contact</g-link>
                         </div>
+                        
                         					
 <!-- Mobile Navigation -->
                         
@@ -104,7 +105,7 @@ export default {
     metaInfo()  {
         return {
             link: [
-                { rel: 'icon', href:'https://res.cloudinary.com/lindaojo/image/upload/v1601407787/favicon_kbxn6x.png'}
+                { rel: 'icon', href:'https://res.cloudinary.com/lindaojo/image/upload/v1604241942/favicon.png'}
             ]
         }
     },

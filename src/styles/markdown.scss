@@ -1,5 +1,5 @@
 .gridsome-highlight {
-    background-color: var(--code-background-color)!important;
+    background-color: var(--code-block-background)!important;
     border: 2px solid white !important;
 
 }
@@ -51,31 +51,19 @@ hr {
 
 /* Code styles*/
 
-.code-word, .code-block {
-    font-family: monospace;
-    background-color: var(--code-background-color);
+.code-word {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     word-break: break-all;
     color: white;
     padding: 0.3rem;
     border-radius: 10px;
-    font-size: 1.3rem;
+    // font-size: 1.3rem;
     transition: all .7s ease-in;
 
     p {
         white-space: pre-wrap
     }
 
-}
-
-.code-block {
-    background-color: var(--code-background-color);
-    font-size: 1.3rem;
-    padding: 1rem;
-    border-radius: 15px;
-}
-
-.code-block > .comment {
-    color: var(--code-comment);
 }
 
 

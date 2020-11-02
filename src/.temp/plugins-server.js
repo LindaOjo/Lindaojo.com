@@ -10,7 +10,7 @@ export default [
   },
   {
     run: plugin_gridsome_plugin_pwa_7,
-    options: {"title":"Linda Ojo's personal website and blog","serviceWorkerPath":"/static/assets/js/service-worker.js","manifestPath":"/manifest.json","statusBarStyle":"default","themeColor":"#0855a1","icon":"favicon.svg","msTileColor":"#666600"}
+    options: {"title":"Linda Ojo's personal website and blog","serviceWorkerPath":"/static/assets/js/service-worker.js","manifestPath":"/manifest.json","statusBarStyle":"default","themeColor":"#0855a1","icon":"./static/assets/icons/icon-128.png","msTileColor":"#666600"}
   },
   {
     run: plugin_gridsome_plugin_netlify_cms_8,
