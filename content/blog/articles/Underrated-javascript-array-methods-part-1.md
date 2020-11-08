@@ -1,7 +1,7 @@
 ---
 title: "Underrated JavaScript Array Methods – Part 1"
-duration: "1 minute"
-excerpt: "A popular beginner-friendly project is “Tic-Tac-Toe”. I have built Tic-Tac-Toe before using plain Javascript. This time I am working with the Angular. I played around with the styles and gave my App a Lagos-touch."
+duration: "2 minutes"
+excerpt: "JavaScript Array Methods are popular, some more than others. We are going to be looking through some methods you might have not heard of..."
 date: "2020-11-09"
 isBlogPost: true
 ---
