@@ -53,17 +53,8 @@ hr {
 
 .code-word {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    word-break: break-all;
+    letter-spacing: 0.07em;
     color: white;
-    padding: 0.3rem;
-    border-radius: 10px;
-    // font-size: 1.3rem;
-    transition: all .7s ease-in;
-
-    p {
-        white-space: pre-wrap
-    }
-
 }
 
 
