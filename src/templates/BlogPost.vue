@@ -51,6 +51,7 @@ export default {
         return {
             title: this.$page.blogPost.title,
             meta: [
+                {name:"monetization", content:"$ilp.uphold.com/UrBeYjYH86ZA"},
                 {key: "og:type", property:"og:type", content:'article'},
                 {key: "og:title", property:"og:title", content: this.$page.blogPost.title},
                 {key: "og:description", property:"og:description", content: this.$page.blogPost.excerpt},

@@ -8,15 +8,19 @@ isBlogPost: true
 
 JavaScript Arrays have built-in methods. These methods are unique functions that we apply to our arrays to carry out common manipulations on the array. This helps us save time as we don't have to write common functions from scratch every time.
 
-JavaScript Array Methods are popular, some more than others. We are going to be looking through some method you might have not heard of.
+JavaScript Array Methods are popular, some more than others. We are going to be looking through some methods you might have not heard of.
 
 
 <h3>- copyWithin()</h3>
 
 The <span class="code-word">copyWithin()</span>  method shallow copies part of an array to another location in the same array and returns it without modifying its length. Here is a example of this method in action
 
-Syntax – <span class="code-word">arr.copyWithin(target, start, end?)</span><br><br> 
-The <span class="code-word">end</span> argument is optional. When absent, the last index is used.
+Syntax – <span class="code-word">arr.copyWithin(target, start?, end?)</span><br>
+
+<span class="code-word">target</span>: the index position  at which to copy the sequence to.
+The <span class="code-word">start</span> and <span class="code-word">end</span> argument is optional.
+
+The <span class="code-word">start</span> index defaults to zero, while the <span class="code-word">end</span> index defaults to <span class="code-word">array.length</span>.
 
 ```js{codeTitle: "copyWithin()"}
 const hearts = ['💜', '🧡', '💙', '🤍', ' 💚'];
@@ -43,7 +47,7 @@ console.log(hearts.copyWithin(0, 4));
 //Imagine a user fills a form that returns the object below
 const allergies = {
   'milk': true,
-  'eggs': false
+  'eggs': false,
   'peanuts': false
 }
 
@@ -87,7 +91,7 @@ Syntax – <span class="code-word">array.fill(value,  start?,  end?)</span><br><
 ```js{codeTitle: "fill()"}
 const hearts = ['💜', '🧡', '💙', '🤍', ' 💚'];
 
-// fill with 5 from position 2
+// fill with 💖 from position 2
 console.log(hearts.fill('💖', 2));
 // expected output: ['💜', '🧡', '💖', '💖', ' 💖']
 
