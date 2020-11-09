@@ -5,6 +5,13 @@ backend:
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: "lindaojo"
+    api_key: "647952957864838"
+
+
 collections:
   - name: "blog"
     label: "blog"
@@ -19,6 +26,7 @@ collections:
       - {label: "Content", name: "content", widget: "markdown"}
       - {label: "isBlogPost", name: "isBlogPost", widget: "boolean", required: true}
       - {label: "songHref", name: "songHref", widget: "string"}
+      - {label: 'Cover Image', name: 'image', widget: 'image', required: false}
   - name: "poem"
     label: "poem"
     folder: "content/blog/poems"

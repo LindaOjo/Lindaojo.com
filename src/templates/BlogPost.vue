@@ -58,7 +58,7 @@ export default {
                 {key: "og:url", property:"og:url", content: `${ROOT_PATH}${this.$page.blogPost.path}`},
                 {key: "og:updated_time", property: "og:updated_time", content: this.$page.blogPost.date },
 
-                {key: "twitter:card", name:"twitter:card", content:"summary"},
+                {key: "twitter:card", name:"twitter:card", content:"summary_large_image"},
                 {key: "twitter:title", name:"twitter:title", content: this.$page.blogPost.title},
                 {key: "twitter:description", name:"twitter:description", content: this.$page.blogPost.excerpt},
                 {key: "twitter:url", name:"twitter:url", content: `${ROOT_PATH}${this.$page.blogPost.path}`},
