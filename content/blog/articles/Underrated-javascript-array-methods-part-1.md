@@ -5,6 +5,11 @@ excerpt: "JavaScript Array Methods are popular, some more than others. We are go
 date: "2020-11-09"
 isBlogPost: true
 ---
+<div class="lg:w-2/3 md:w-2/3 sm:w-64 centered-image">
+
+![Black text "JS Array methods" on yellow background](https://dev-to-uploads.s3.amazonaws.com/i/k94r2syntli9ub1inztu.png)
+</div>
+
 
 JavaScript Arrays have built-in methods. These methods are unique functions that we apply to our arrays to carry out common manipulations on the array. This helps us save time as we don't have to write common functions from scratch every time.
 

@@ -9,7 +9,6 @@
             <div class="mx-auto lg:w-3/4 sm:w-5/6" :class="$page.blogPost.isBlogPost ? '' : 'text-center'" v-html="$page.blogPost.content"></div>
             <div class="mx-auto lg:w-3/4 sm:w-5/6">
                 <ShareLinks
-                    :songHref="$page.blogPost.songHref"
                     :path="$page.blogPost.path"
                     :title="$page.blogPost.title"
                     :excerpt="$page.blogPost.excerpt"
@@ -31,7 +30,6 @@
             excerpt
             content
             date
-            songHref
         }
     }
 </page-query>
