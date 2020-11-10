@@ -59,13 +59,13 @@ export default {
                 {key: "og:description", property:"og:description", content: this.$page.blogPost.excerpt},
                 {key: "og:url", property:"og:url", content: `${ROOT_PATH}${this.$page.blogPost.path}`},
                 {key: "og:updated_time", property: "og:updated_time", content: this.$page.blogPost.date},
-                {key: "og:image", property: "og:image", content: this.$page.blogPost.image || 'https://res.cloudinary.com/lindaojo/image/upload/v1605041276/icon-144_itx9ug.png'},
+                {key: "og:image", property: "og:image", content: this.$page.blogPost.image || 'https://res.cloudinary.com/lindaojo/image/upload/v1605041775/icon-512_cfnlso.png'},
 
                 {key: "twitter:card", name:"twitter:card", content:"summary_large_image"},
                 {key: "twitter:title", name:"twitter:title", content: this.$page.blogPost.title},
                 {key: "twitter:description", name:"twitter:description", content: this.$page.blogPost.excerpt},
                 {key: "twitter:url", name:"twitter:url", content: `${ROOT_PATH}${this.$page.blogPost.path}`},
-                {key: "twitter:image", property: "twitter:image", content: this.$page.blogPost.image || 'https://res.cloudinary.com/lindaojo/image/upload/v1605041276/icon-144_itx9ug.png' },
+                {key: "twitter:image", property: "twitter:image", content: this.$page.blogPost.image || 'https://res.cloudinary.com/lindaojo/image/upload/v1605041775/icon-512_cfnlso.png' },
             ],
             link: [
                 { rel: 'canonical', href: `${ROOT_PATH}${this.$page.blogPost.path}`}
