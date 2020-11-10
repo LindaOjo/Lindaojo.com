@@ -1,5 +1,5 @@
 ---
-image: 'https://res.cloudinary.com/lindaojo/image/upload/v1605033996/1_3a6C1tNB_3bgSH-m5cGXYg_hjkjg8.png'
+image: 'https://res.cloudinary.com/lindaojo/image/upload/v1605043758/undderrated_js_f6zyb7.png'
 title: "Underrated JavaScript Array Methods – Part 1"
 duration: "2 minutes"
 excerpt: "JavaScript Array Methods are popular, some more than others. We are going to be looking through some methods you might have not heard of..."
