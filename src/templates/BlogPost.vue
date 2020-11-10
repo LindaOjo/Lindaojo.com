@@ -9,7 +9,6 @@
             <div class="mx-auto lg:w-3/4 sm:w-5/6" :class="$page.blogPost.isBlogPost ? '' : 'text-center'" v-html="$page.blogPost.content"></div>
             <div class="mx-auto lg:w-3/4 sm:w-5/6">
                 <ShareLinks
-                    :songHref="$page.blogPost.songHref"
                     :path="$page.blogPost.path"
                     :title="$page.blogPost.title"
                     :excerpt="$page.blogPost.excerpt"
@@ -31,7 +30,6 @@
             excerpt
             content
             date
-            songHref
         }
     }
 </page-query>
@@ -58,7 +56,7 @@ export default {
                 {key: "og:url", property:"og:url", content: `${ROOT_PATH}${this.$page.blogPost.path}`},
                 {key: "og:updated_time", property: "og:updated_time", content: this.$page.blogPost.date },
 
-                {key: "twitter:card", name:"twitter:card", content:"summary"},
+                {key: "twitter:card", name:"twitter:card", content:"summary_large_image"},
                 {key: "twitter:title", name:"twitter:title", content: this.$page.blogPost.title},
                 {key: "twitter:description", name:"twitter:description", content: this.$page.blogPost.excerpt},
                 {key: "twitter:url", name:"twitter:url", content: `${ROOT_PATH}${this.$page.blogPost.path}`},

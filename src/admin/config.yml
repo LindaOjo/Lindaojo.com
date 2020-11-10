@@ -5,6 +5,13 @@ backend:
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: "lindaojo"
+    api_key: "647952957864838"
+
+
 collections:
   - name: "blog"
     label: "blog"
@@ -12,13 +19,14 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - {label: 'Cover Image', name: 'image', widget: 'image', required: false}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime", dateformat: "YYYY-MM-DD", format: "YYYY-MM-DD"}
       - {label: "Duration", name: "duration", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "string"} 
       - {label: "Content", name: "content", widget: "markdown"}
       - {label: "isBlogPost", name: "isBlogPost", widget: "boolean", required: true}
-      - {label: "songHref", name: "songHref", widget: "string"}
+
   - name: "poem"
     label: "poem"
     folder: "content/blog/poems"
@@ -26,10 +34,10 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - {label: 'Cover Image', name: 'image', widget: 'image', required: false}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "datetime", widget: "datetime", date_format: "YYYY.MM.DD"}
       - {label: "Excerpt", name: "excerpt", widget: "string"}
       - {label: "Content", name: "content", widget: "markdown"}
       - {label: "isBlogPost", name: "isBlogPost", widget: "boolean", default: "false"}
-      - {label: "songHref", name: "songHref", widget: "string"}
       

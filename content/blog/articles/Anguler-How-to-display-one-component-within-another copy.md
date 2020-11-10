@@ -6,7 +6,6 @@ excerpt: "Let's begin with an Angular project which has a container component. W
 We will be using the Angular CLI to generate modules and components, you can install Angular CLI by running the command below..."
 date: "2020-04-15"
 isBlogPost: true
-songHref: "https://music.youtube.com/watch?v=JpGGta_R8IM&feature=share" 
 ---
 
 <span class="centered-image">
