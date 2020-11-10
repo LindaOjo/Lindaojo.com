@@ -5,7 +5,7 @@
                 <h2 class="h1">{{$page.blogPost.title}}</h2>
                 <small>Published: {{$page.blogPost.date}}</small>
             </div>
-            <div v-if="$page.blogPost.image" class="centered-image">
+            <div v-if="$page.blogPost.image" class="lg:w-2/3 md:w-2/3 sm:w-64 pt-5 pb-2 centered-image">
                 <g-image :src="$page.blogPost.image"></g-image>
             </div>
             
@@ -58,12 +58,14 @@ export default {
                 {key: "og:title", property:"og:title", content: this.$page.blogPost.title},
                 {key: "og:description", property:"og:description", content: this.$page.blogPost.excerpt},
                 {key: "og:url", property:"og:url", content: `${ROOT_PATH}${this.$page.blogPost.path}`},
-                {key: "og:updated_time", property: "og:updated_time", content: this.$page.blogPost.date },
+                {key: "og:updated_time", property: "og:updated_time", content: this.$page.blogPost.date},
+                {key: "og:image", property: "og:image", content: this.$page.blogPost.image || 'https://res.cloudinary.com/lindaojo/image/upload/v1604242086/icon-512_eutvzh.png'},
 
                 {key: "twitter:card", name:"twitter:card", content:"summary_large_image"},
                 {key: "twitter:title", name:"twitter:title", content: this.$page.blogPost.title},
                 {key: "twitter:description", name:"twitter:description", content: this.$page.blogPost.excerpt},
                 {key: "twitter:url", name:"twitter:url", content: `${ROOT_PATH}${this.$page.blogPost.path}`},
+                {key: "twitter:image", property: "twitter:image", content: this.$page.blogPost.image || 'https://res.cloudinary.com/lindaojo/image/upload/v1604242086/icon-512_eutvzh.png' },
             ],
             link: [
                 { rel: 'canonical', href: `${ROOT_PATH}${this.$page.blogPost.path}`}
