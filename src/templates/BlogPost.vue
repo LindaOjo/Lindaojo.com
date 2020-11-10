@@ -5,6 +5,9 @@
                 <h2 class="h1">{{$page.blogPost.title}}</h2>
                 <small>Published: {{$page.blogPost.date}}</small>
             </div>
+            <div v-if="$page.blogPost.image" class="centered-image">
+                <g-image :src="$page.blogPost.image"></g-image>
+            </div>
             
             <div class="mx-auto lg:w-3/4 sm:w-5/6" :class="$page.blogPost.isBlogPost ? '' : 'text-center'" v-html="$page.blogPost.content"></div>
             <div class="mx-auto lg:w-3/4 sm:w-5/6">
@@ -25,6 +28,7 @@
     query ($id: ID!) {
         blogPost (id: $id) {
             isBlogPost
+            image
             path
             title
             excerpt
