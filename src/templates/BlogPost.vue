@@ -5,7 +5,7 @@
                 <h2 class="h1">{{$page.blogPost.title}}</h2>
                 <small>Published: {{$page.blogPost.date}}</small>
             </div>
-            <div v-if="$page.blogPost.image" class="lg:w-2/3 md:w-2/3 sm:w-64 pt-5 pb-2 centered-image">
+            <div v-if="$page.blogPost.image" class="lg:w-2/4 md:w-2/3 sm:w-64 pt-5 pb-2 centered-image">
                 <g-image :src="$page.blogPost.image"></g-image>
             </div>
             
