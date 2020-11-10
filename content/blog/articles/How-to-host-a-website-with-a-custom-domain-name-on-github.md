@@ -11,8 +11,6 @@ Not too long after becoming a developer, an urge comes upon you to create a pers
 
 After creating my simple personal website, I had to host it and connect a custom domain name, here is how I did that.
 
-<hr class="my-10">
-
 <h3>Create a Repository on Github</h3>
 
 Create a <strong>public</strong> repository for your website and name it what you want. My repository looks like the image below. Make sure your master branch is up to date with all your files and renders your desired website.

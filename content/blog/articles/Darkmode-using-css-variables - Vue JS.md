@@ -1,4 +1,5 @@
 ---
+image: 'https://res.cloudinary.com/lindaojo/image/upload/v1605039310/darkmode_varvyx.png'
 title: "Darkmode using CSS variables - Vue JS"
 duration: "3 minutes"
 excerpt: "First, we set up custom variables in CSS. Variables are also available in SASS and LESS in a slightly different format. Variables for the default theme should be placed..."

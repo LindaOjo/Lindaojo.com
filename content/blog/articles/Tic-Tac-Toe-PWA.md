@@ -6,7 +6,7 @@ date: "2019-12-16"
 isBlogPost: true
 ---
 
-<div class="w-64 h-64 mx-auto">
+<div class="lg:w-2/4 md:w-2/3 sm:w-64 mx-auto">
 
 ![Tic-Tac-Toe](./../../images/tic-tac-toe.jpg)
 
