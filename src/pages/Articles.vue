@@ -23,7 +23,7 @@
                         </p>
                     </div>
                     <div class="text-right">
-                        <p>{{post.node.duration}}</p>
+                        <p>{{post.node.date}}</p>
                     </div>
                 </div>               
             </g-link>

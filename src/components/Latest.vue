@@ -11,7 +11,7 @@
                     <p v-if="post.node.isBlogPost" class="excerpt lg:w-5/6 sm:w-full">{{post.node.excerpt}} </p>
                 </div>
                 <div class="text-right">
-                    <p v-if="post.node.isBlogPost">{{post.node.duration}}</p>
+                    <p v-if="post.node.isBlogPost">{{post.node.date}}</p>
                 </div>
             </div>
             

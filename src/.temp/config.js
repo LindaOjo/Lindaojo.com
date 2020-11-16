@@ -3,6 +3,6 @@ export default {
   "pathPrefix": "",
   "titleTemplate": "%s - Linda Ojo - Personal Website and Blog",
   "siteUrl": "",
-  "version": "0.7.18",
+  "version": "0.7.22",
   "catchLinks": true
 }
