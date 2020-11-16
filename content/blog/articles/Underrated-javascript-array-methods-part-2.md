@@ -61,4 +61,4 @@ console.log( names.lastIndexOf('Dwight') );
 console.log( names.lastIndexOf('Tiger') );
 // expected output: -1
 ```
-See you next week 💙.
+See you next week 💙
