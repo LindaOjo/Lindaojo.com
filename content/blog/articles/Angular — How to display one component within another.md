@@ -15,7 +15,7 @@ songHref: "https://music.youtube.com/watch?v=JpGGta_R8IM&feature=share"
 
 </div>
 
-Before we get started, all of the code for this tutorial can be found in my GitHub Repository.
+Before we get started, all of the code for this tutorial can be found in my <a href="https://github.com/LindaOjo/Display-One-Component-within-Another" target="_blank" class="link"></a> GitHub Repository.
 
 Let's begin with an Angular project which has a container component. We are going to display another component (let's call it child component) within the container component in this post.
 

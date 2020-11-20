@@ -6,6 +6,8 @@ date: "2020-01-04"
 isBlogPost: true
 ---
 
+In this article, I am going to help you host your website on Github.
+
 Not too long after becoming a developer, an urge comes upon you to create a personal website. you can only resist for so long. I gave in two days ago and I am happy to say you can check out my 
 <a class="link" href="https://lindaojo.com">personal website</a>
 
