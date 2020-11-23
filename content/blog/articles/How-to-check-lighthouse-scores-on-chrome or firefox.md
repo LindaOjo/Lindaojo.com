@@ -1,4 +1,5 @@
 ---
+image: "https://res.cloudinary.com/lindaojo/image/upload/v1606136238/Lighthouse-score_pzhivl.png"
 title: "How to check Lighthouse scores on Chrome or Firefox"
 duration: "2 minutes"
 excerpt: "Lighthouse is an open-source, automated tool for improving the quality of web pages. You can run it against any web page. It has audits for performance, accessibility, progressive web apps, SEO and more...."
