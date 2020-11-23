@@ -1,5 +1,5 @@
 ---
-image: 'https://res.cloudinary.com/lindaojo/image/upload/v1605904193/SEO_l95mif.png'
+image: 'https://res.cloudinary.com/lindaojo/image/upload/v1606136238/Lighthouse-score_pzhivl.png'
 title: "How to Improve Lighthouse Score - Search Engine Optimization (SEO)"
 duration: "2 minutes"
 excerpt: "In this post, we are gonna be going through tips to improve your Lighthouse SEO score and overall visibility of your website..."
