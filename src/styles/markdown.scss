@@ -11,8 +11,8 @@ article>h2 {
 }
 
 article>div>h3 {
-    font-size: 1.7rem;
-    margin: 24px 0;
+    font-size: 1.9rem;
+    margin: 24px 0 -16px 0;
     font-weight: 400;
 }
 
@@ -22,12 +22,24 @@ article>div>p {
     margin: 16px 0;
 }
 
+ol {
+    list-style-type: square;
+}
+
+li>.link {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 16px 0;
+}
+
+
+
 .link {
-    color: var(--primary);
+    color: #5baaf8;
 }
 
 .hint {
-    color: var(--primary);
+    color: #5baaf8;
     font-weight: bold;
 }
 
@@ -40,6 +52,7 @@ p > img {
 div > p > img.g-image {
     @apply  w-full;
 }
+
 
 .centered-image {
     @apply mx-auto;
@@ -113,19 +126,17 @@ hr {
 @media (max-width: 768px) {
     article>h2 {
         font-size: 1.8rem !important;
-        font-weight: 400;
     }
 
     article>div>h3 {
-        font-size: 1.5rem;
-        font-weight: 400;
+        font-size: 1.7rem;
     }
 
     table {
         margin: 0 -16px;
     }
     .tg .tg-0pky {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
 }

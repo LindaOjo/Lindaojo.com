@@ -10,7 +10,7 @@
 
 .lightMode {
     height: auto;
-    background: linear-gradient(62deg, #0855a1 0%, #0855a1 87%);
+    background: linear-gradient(62deg, #2686e6 0%, #2686e6 87%);
     background-color: transparent;
     transition: background-color all 1.5s;
     -webkit-transition: background-color all 1.5s;
@@ -24,7 +24,7 @@
 }
 
 .lightTransition {
-    background-color:  #0855a1;
+    background-color:  #2686e6;
     transition: background-color all 1.5s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }

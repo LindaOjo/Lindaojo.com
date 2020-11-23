@@ -5,7 +5,7 @@ const postcssPlugins = [tailwind()];
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
-  siteName: 'Linda Ojo - Personal Website and Blog',
+  siteName: 'Linda Ojo',
   siteDescription: 'Articles on frontend development and poems written by Linda Ojo, Frontend Developer',
   keywords: 'Frontend,Developer,Web,JavaScript,CSS,HTML,Angular,Software,Engineer,Blog,Nigeria,Lagos',
 
@@ -61,7 +61,7 @@ module.exports = {
  
              // Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
              manifestPath: 'manifest.json',
-             title: "Linda Ojo's personal website and blog",
+             title: "Linda Ojo",
              startUrl: '/',
              display: 'standalone',
              "orientation": "portrait",
@@ -70,7 +70,7 @@ module.exports = {
              backgroundColor: '#0855a1',
              icon: './static/assets/icons/icon-128.png',
              shortName: 'Linda Ojo',              // Optional
-             description: "A Progressive Web App for Linda Ojo's personal Website and blog !",  // Optional
+             description: "A Progressive Web App for Linda Ojo's personal Website and blog",  // Optional
              categories: ['education', 'blog', 'tech', 'programming', 'web development', 'coding', 'frontend', 'software engineering'],          // Optional
              lang: 'en-US',                      // Optional
              dir: 'auto',                        // Optional
@@ -129,7 +129,7 @@ module.exports = {
             './src/**/*.md',
           ],
 
-          // https://purgecss.com/configuration.html#configuration-file Safelist below stop styles
+          // https://purgecss.com/configuration.html#configuration-file Safelist below stop prism js styles
           // from being purge in production -bug-fix works
           safelist: {
             greedy: [/^token/, /^pre/, /^code/, /token$/, 'pre', 'gridsome']

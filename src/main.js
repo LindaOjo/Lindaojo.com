@@ -25,7 +25,7 @@ export default function (Vue, { router, head, isClient }) {
         // Twitter Card
         {key: "twitter:card", name: "twitter:card", content: "summary"},
         {key: "twitter:title", name: "twitter:title", content: "Linda Ojo"},
-        {key: "twitter:description", name: "twitter:description", content: "Written by Linda Ojo, Frontend Developer"},
+        {key: "twitter:description", name: "twitter:description", content: "Articles on frontend development and more"},
         {key: "twitter:url", name: "twitter:url", content: "https://lindaojo.com"},
         {key: "twitter:label1", name: "twitter:label1", content: "Written by"},
         {key: "twitter:data1", name: "twitter:data1",  content: "Linda Ojo"},

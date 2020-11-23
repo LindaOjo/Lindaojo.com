@@ -53,7 +53,7 @@
 
 <style scoped>
 a, .share-button {
-    color: var(--primary);
+    color: #5baaf8;
     cursor: pointer;
 }
 

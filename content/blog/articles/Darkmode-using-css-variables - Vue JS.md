@@ -2,11 +2,11 @@
 image: 'https://res.cloudinary.com/lindaojo/image/upload/v1605039310/darkmode_varvyx.png'
 title: "Darkmode using CSS variables - Vue JS"
 duration: "3 minutes"
-excerpt: "First, we set up custom variables in CSS. Variables are also available in SASS and LESS in a slightly different format. Variables for the default theme should be placed..."
+excerpt: "In this article we are going to cover how to add dark mode to a Vue JS application using CSS variables..."
 date: "2020-11-02"
 isBlogPost: true
 ---
-Dark Mode! Dark Mode! Dark Mode! Everybody wants it! That's why you are here and I will help you achieve it in Vue JS. Let's go!
+In this article, we are going to cover how to add dark mode to a Vue JS application using CSS variables
 
 Variables for the default theme should be placed under <strong class=code-word>:root</strong>, while the variables for dark mode can be placed under the data-theme attribute. Make sure data-theme is set to "darkMode" as shown below
 
