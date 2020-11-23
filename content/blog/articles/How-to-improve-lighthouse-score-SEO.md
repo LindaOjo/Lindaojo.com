@@ -1,7 +1,7 @@
 ---
 image: 'https://res.cloudinary.com/lindaojo/image/upload/v1605904193/SEO_l95mif.png'
 title: "How to Improve Lighthouse Score - Search Engine Optimization (SEO)"
-duration: "2 minute"
+duration: "2 minutes"
 excerpt: "In this post, we are gonna be going through tips to improve your Lighthouse SEO score and overall visibility of your website..."
 date: "2020-11-23"
 isBlogPost: true
@@ -59,15 +59,18 @@ Below are meta tags I use to customise links to my website
     <meta name="twitter:description" content="Articles on frontend development written by Linda Ojo, Frontend Developer">
     <meta name="twitter:image" content="logo.png">
     <meta property="twitter:url" content="https//www.lindaojo.com">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
 </head>
 ```
+Using the meta tags above, a link to my website on twitter looks like this:
+
+![twitter card](https://res.cloudinary.com/lindaojo/image/upload/v1606058540/twitter-card_mpspzu.png)
 
 <h3>Size interactive elements properly</h3>
 
 Interactive elements such as links and buttons should be sized and spaced properly. This is very important as search engines rank pages based on how mobile-friendly they are.
 
-These elements minimum have a size of 48px by 48px and a spacing of at least 8px in all directions.
+These elements should have a minimum size of 48px by 48px and a spacing of at least 8px in all directions.
 
 <h3>Links should have descriptive text</h3>
 
@@ -97,9 +100,9 @@ The minimum accepted font size for text is 12px. Text with a font size lower tha
 
 <h3>Use "hreflang" links to specify different Versions of a website</h3>
 
-<span class="code-word">hreflang</span> links enables search engines to select the right version of a website based on the language and region of the user. Lighthouse checks for hreflang links in the page's head and in its <a href="https://developer.mozilla.org/en-US/docs/Glossary/Response_header" target="_blank" class="link">response headers</a>.
+<span class="code-word">hreflang</span> links enables search engines to select the right version of a website based on the language and region of the user. Lighthouse checks for <span class="code-word">hreflang</span> links in the page's head and in its <a href="https://developer.mozilla.org/en-US/docs/Glossary/Response_header" target="_blank" class="link">response headers</a>.
 
-Add <span class="code-word">hreflang</span> link are added to the head of your webpage.
+<span class="code-word">hreflang</span> links should be added to the head of your webpage.
 
 ```html{codeTitle: Alternative texts}
 <link rel="alternate" hreflang="en" href="https://example.com" />    //English
@@ -111,5 +114,6 @@ For pages that allow users to select their language, use the x-default keyword:
 ```html{codeTitle: Alternative texts}
 <link rel="alternate" href="https://example.com" hreflang="x-default" />
 ```
+<br>
 
-The tips above will definitely boost your lighthouse SEO score and improve overall visibility of your website on the internet.
+The tips above will definitely boost your lighthouse SEO score and improve the overall visibility of your website on the internet.

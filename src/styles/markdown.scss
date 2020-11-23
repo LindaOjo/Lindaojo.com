@@ -22,6 +22,18 @@ article>div>p {
     margin: 16px 0;
 }
 
+ol {
+    list-style-type: square;
+}
+
+li>.link {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 16px 0;
+}
+
+
+
 .link {
     color: #5baaf8;
 }
@@ -40,6 +52,7 @@ p > img {
 div > p > img.g-image {
     @apply  w-full;
 }
+
 
 .centered-image {
     @apply mx-auto;
