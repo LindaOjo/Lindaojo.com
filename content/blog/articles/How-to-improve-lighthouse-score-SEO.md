@@ -1,7 +1,7 @@
 ---
 image: 'https://res.cloudinary.com/lindaojo/image/upload/v1605904193/SEO_l95mif.png'
 title: "How to Improve Lighthouse Score - Search Engine Optimization (SEO)"
-duration: "2 minutes"
+duration: "3 minutes"
 excerpt: "In this post, we are gonna be going through tips to improve your Lighthouse SEO score and overall visibility of your website..."
 date: "2020-11-23"
 isBlogPost: true
@@ -11,13 +11,13 @@ This is the first article of the Lighthouse Series 🎉🎉🎉
 
 Don't know how to check your website's Lighthouse score? No problem, use my last article <a class="link" href="https://www.lindaojo.com/blog/how-to-check-lighthouse-scores-on-chrome-and-firefox/" target="_blank">How to Check Lighthouse Scores using Chrome or Firefox</a> as a guide.
 
-In this post, we will be going through tips to improve your Lighthouse SEO score and overall visibility of your website.
+In this post, we will be going through tips to improve your Lighthouse SEO score and the overall visibility of your website.
 
 <h3>What is SEO?</h3>
 
 Search Engine Optimization (SEO) simply means the process of improving your site to increase its visibility for relevant searches. The higher your SEO score, the better visibility your web pages have in search results.
 
-Lighthouse carries various audits on you website, these audits can be passed by making a few simple changes. Want to know what they are? Keep reading. 
+Lighthouse carries various audits on your website, these audits can be passed by making a few simple changes. Want to know what they are? Keep reading. 
 
 <h3>Add a title element</h3>
 
@@ -41,7 +41,7 @@ Meta tags provide information about a webpage. The meta tags don’t appear on t
     <meta name="keywords" content="HTML, CSS, JavaScript, Frontend, Web Development">
 </head>
 ```
-You could also customise the way your webpage link looks on social media platforms such as twitter and facebook. Though this does <strong>not</strong> affect your lighthouse score, it's recommended.
+You could also customise the way your webpage link looks on social media platforms such as Twitter and Facebook. Though this does <strong>not</strong> affect your lighthouse score, it's recommended.
 
 Below are meta tags I use to customise links to my website
 
@@ -62,7 +62,7 @@ Below are meta tags I use to customise links to my website
     <meta name="twitter:card" content="summary">
 </head>
 ```
-Using the meta tags above, a link to my website on twitter looks like this:
+Using the meta tags above, a link to my website on Twitter looks like this:
 
 ![twitter card](https://res.cloudinary.com/lindaojo/image/upload/v1606058540/twitter-card_mpspzu.png)
 

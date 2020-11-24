@@ -3,6 +3,6 @@ export default {
   "pathPrefix": "",
   "titleTemplate": "%s - Linda Ojo",
   "siteUrl": "",
-  "version": "0.7.22",
+  "version": "0.7.18",
   "catchLinks": true
 }

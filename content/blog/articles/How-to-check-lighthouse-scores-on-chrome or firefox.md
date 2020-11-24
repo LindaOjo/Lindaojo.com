@@ -7,7 +7,7 @@ date: "2020-11-22"
 isBlogPost: true
 ---
 
-I am starting a Lighthouse Series, where I go into details on how to improve a website's Lighthouse scores and realized some of my readers might need a guide on how to check the scores of a websites hence this quick article.
+I am starting a Lighthouse Series, where I go into details on how to improve a website's Lighthouse scores and realized some of my readers might need a guide on how to check the scores of a website hence this quick article.
 
 Here is a list of articles in the Series. I will update the list until the series is complete.
 
@@ -40,7 +40,7 @@ Lighthouse is only available on Chrome and Firebox browsers. Install your prefer
 
 <h3>Visit your website in an private or incognito window</h3>
 
-Vist the website you plan to assess in a private or incognito window. Lighthouse scores should always be generated in an incognito browser because extensions and cached data can affect the auditing process. You can open a private window as shown below
+Visit the website you plan to assess in a private or incognito window. Lighthouse scores should always be generated in an incognito browser because extensions and cached data can affect the auditing process. You can open a private window as shown below
 
 Chrome: 
 <div class="centered-image lg:w-2/4 md:w-2/3 sm:w-56">
@@ -89,7 +89,7 @@ Chrome users should navigate to the menu bar and select Lighthouse tab
 
 Click the "generate report" button to start auditing
 
-Firefox users should navigate to the lighthouse icon in the top-right menu and click "generate report" button as shown below
+Firefox users should navigate to the lighthouse icon in the top-right menu and click the "generate report" button as shown below
 
 <div class="centered-image lg:w-2/3 md:w-2/3 sm:w-56">
 
