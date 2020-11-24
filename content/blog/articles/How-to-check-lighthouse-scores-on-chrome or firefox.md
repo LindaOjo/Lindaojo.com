@@ -14,7 +14,7 @@ Here is a list of articles in the Series. I will update the list until the serie
 <div>
     <ol class="ml-8">
         <li>
-            <a class="link"  href="https://www.lindaojo.com/improve-lighthouse-score-search-engine-optimization-seo/"  target="_blank">
+            <a class="link"  href="https://www.lindaojo.com/blog/how-to-improve-lighthouse-score-search-engine-optimization-seo/"  target="_blank">
                 How to Improve Lighthouse Score - Search Engine Optimization (SEO)
             </a>
         </li>
