@@ -9,7 +9,7 @@ isBlogPost: true
 
 This is the first article of the Lighthouse Series 🎉🎉🎉
 
-Don't know how to check your website's Lighthouse score? No problem, use my last article <a class="link" href="https://www.lindaojo.com/blog/how-to-check-lighthouse-scores-on-chrome-and-firefox/" target="_blank">How to Check Lighthouse Scores using Chrome or Firefox</a> as a guide.
+Don't know how to check your website's Lighthouse score? No problem, use my last article <a class="link" href="https://www.lindaojo.com/blog/how-to-check-lighthouse-scores-on-chrome-or-firefox/" target="_blank">How to Check Lighthouse Scores using Chrome or Firefox</a> as a guide.
 
 In this post, we will be going through tips to improve your Lighthouse SEO score and the overall visibility of your website.
 
