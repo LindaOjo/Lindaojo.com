@@ -46,13 +46,17 @@ Remove all calls to <span class="code-word">geolocation.getCurrentPosition()</sp
 
 <h3>Displays images with correct aspect ratio</h3>
 
-Rendered images with aspect ratios significantly different from their source file may look distorted. Source files come with their natural aspect ratio.
+Rendered images with aspect ratios greatly different from their source file could look distorted. Source files come with their natural aspect ratio.
 An image content delivery network (CDN) can make it easier to automate the process of creating different sized versions of your images. I recommend <a class="link"  href="https://cloudinary.com/"  target="_blank" rel="noopener">Cloudinary</a>.
 
 
 <h3>Allows users to paste into password fields</h3>
 
 Allowing users to paste their passwords could improve security because it enables the use of password managers. Password managers can automatically paste passwords whenever users need to log in; this improves the user experience.
+
+<h3>Ensure no browser errors are logged to the console</h3>
+
+Messages logged in the console come from either the web developers who built the page or the browser itself. An Error message means there's a problem on your page that you need to resolve.
 
 
 
