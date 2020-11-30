@@ -37,7 +37,7 @@ When you link to a page on another site using the <span class="code-word">target
 
 <h3>Avoid Unload event listeners</h3>
 
-Some developer treat the <span class="code-word">Unload</span> event as a callback. This is extremely unreliable because the <span class="code-word">Unload</span> event does not fire in many typical unload situations especially on mobile. Listening for <span class="code-word">Unload</span> event  can prevent browser optimizations like the Back-Forward Cache. Consider using the <span class="code-word">pagehide</span> event or <span class="code-word">visibilitychange</span> events instead.
+Some developer treat the <span class="code-word">Unload</span> event as a callback. This is extremely unreliable because this event does not fire in many typical unload situations especially on mobile. Listening for <span class="code-word">Unload</span> event  can prevent browser optimizations like the <a class="link" href="https://web.dev/bfcache/" target="_blank" rel="noopener">Back-Forward Cache</a>. Consider using the <span class="code-word">pagehide</span> event or <span class="code-word">visibilitychange</span> events instead.
 
 
 <h3>Avoid requesting for user location on page load</h3>
