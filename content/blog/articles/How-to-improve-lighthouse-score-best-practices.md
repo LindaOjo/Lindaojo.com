@@ -1,8 +1,8 @@
 ---
 image: 'https://res.cloudinary.com/lindaojo/image/upload/v1606668387/Best-Practices_jfpbck.png'
 title: "How to Improve Lighthouse Score - Best Practices"
-duration: "3 minutes"
-excerpt: "In this post, we are gonna be going through tips to improve your Lighthouse SEO score and overall visibility of your website..."
+duration: "2 minutes"
+excerpt: "In this post, we will be checking out a few best practices when building for the web."
 date: "2020-11-30"
 isBlogPost: true
 ---
@@ -19,7 +19,7 @@ This article is part of the lighthouse series. You can check out last week's art
     </ol>
 </div>
 
-In this post, we will be checkout the best practices when building for the ever evolving web.
+In this post, we will be checking out a few best practices when building for the web.
 
 <h3>Protect website using HTTPS</h3>
 
@@ -57,6 +57,3 @@ Allowing users to paste their passwords could improve security because it enable
 <h3>Ensure no browser errors are logged to the console</h3>
 
 Messages logged in the console come from either the web developers who built the page or the browser itself. An Error message means there's a problem on your page that you need to resolve.
-
-
-
