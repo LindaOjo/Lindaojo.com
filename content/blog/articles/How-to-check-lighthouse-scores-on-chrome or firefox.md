@@ -14,7 +14,7 @@ Here is a list of articles in the Series. I will update the list until the serie
 <div>
     <ol class="ml-8">
         <li>
-            <a class="link"  href="https://www.lindaojo.com/blog/how-to-improve-lighthouse-score-search-engine-optimization-seo/"  target="_blank">
+            <a class="link"  href="https://www.lindaojo.com/blog/how-to-improve-lighthouse-score-search-engine-optimization-seo/"  target="_blank"  rel="noopener">
                 How to Improve Lighthouse Score - Search Engine Optimization (SEO)
             </a>
         </li>
@@ -27,13 +27,13 @@ Lighthouse is only available on Chrome and Firebox browsers. Install your prefer
 
 <a class="link"
    href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjUy4GjxJbtAhUHh9UKHfLND4oYABABGgJ3cw&ohost=www.google.com&cid=CAESQOD25Sah3cNDQ2L8LBW1V2hpjCusxPRz15l6CWD6NOhAoC8mqmQ_GI9VP84kxtSsk5A8p9hQZANhYd2ciVLKFM0&sig=AOD64_2byRhhrA7YAKNuj019WHRuEUdwmA&q=&ved=2ahUKEwjS0vqixJbtAhVK6uAKHYw-C4kQqyQoAHoECBwQEw&adurl="
-   target="_blank">
+   target="_blank" rel="noopener">
                 Install Chrome Browser
 </a>
 <br>
 <a class="link"
    href="https://www.mozilla.org/en-US/firefox/new/"
-   target="_blank">
+   target="_blank" rel="noopener">
                 Install Firefox Browser
 </a>
 
@@ -68,7 +68,7 @@ Chrome users can open up devtools by inspecting the webpage using the menu that 
 Firefox users should 
 <a class="link"
    href="https://www.mozilla.org/en-US/firefox/new/"
-   target="_blank">
+   target="_blank" rel="noopener">
                 install the Google Lighthouse Add-on
 </a>
 

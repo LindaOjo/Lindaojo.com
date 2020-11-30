@@ -9,7 +9,7 @@ isBlogPost: true
 
 This is the first article of the Lighthouse Series 🎉🎉🎉
 
-Don't know how to check your website's Lighthouse score? No problem, use my last article <a class="link" href="https://www.lindaojo.com/blog/how-to-check-lighthouse-scores-on-chrome-or-firefox/" target="_blank">How to Check Lighthouse Scores using Chrome or Firefox</a> as a guide.
+Don't know how to check your website's Lighthouse score? No problem, use my last article <a class="link" href="https://www.lindaojo.com/blog/how-to-check-lighthouse-scores-on-chrome-or-firefox/" target="_blank" rel="noopener">How to Check Lighthouse Scores using Chrome or Firefox</a> as a guide.
 
 In this post, we will be going through tips to improve your Lighthouse SEO score and the overall visibility of your website.
 
@@ -100,7 +100,7 @@ The minimum accepted font size for text is 12px. Text with a font size lower tha
 
 <h3>Use "hreflang" links to specify different Versions of a website</h3>
 
-<span class="code-word">hreflang</span> links enables search engines to select the right version of a website based on the language and region of the user. Lighthouse checks for <span class="code-word">hreflang</span> links in the page's head and in its <a href="https://developer.mozilla.org/en-US/docs/Glossary/Response_header" target="_blank" class="link">response headers</a>.
+<span class="code-word">hreflang</span> links enables search engines to select the right version of a website based on the language and region of the user. Lighthouse checks for <span class="code-word">hreflang</span> links in the page's head and in its <a href="https://developer.mozilla.org/en-US/docs/Glossary/Response_header"  rel="noopener" class="link">response headers</a>.
 
 <span class="code-word">hreflang</span> links should be added to the head of your webpage.
 

@@ -7,7 +7,7 @@ date: "2020-11-16"
 isBlogPost: true
 ---
 
-Last week, we looked at a few JavaScript Array Methods which you can read about in my last article: <a href="https://www.lindaojo.com/blog/underrated-java-script-array-methods-part-1/" target="_blank" class="link">Underrated JavaScript Array Methods – Part 1</a>. We are rounding up this week with a few more methods.
+Last week, we looked at a few JavaScript Array Methods which you can read about in my last article: <a href="https://www.lindaojo.com/blog/underrated-java-script-array-methods-part-1/" target="_blank" rel="noopener" class="link">Underrated JavaScript Array Methods – Part 1</a>. We are rounding up this week with a few more methods.
 
 <h3>- flat()</h3>
 
@@ -34,7 +34,7 @@ console.log(flattenedTwice);
 
 The <span class="code-word">reduceRight()</span> method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value. This method comes in pretty handy when you want to specify items in a left-to-right manner but execute them in a right-to-left manner.
 
-You could use <span class="code-word">reduceRight()</span> method to replace <span href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce" target="_blank" class="code-word"> Array.reverse().reduce()</span>
+You could use <span class="code-word">reduceRight()</span> method to replace <span href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce" target="_blank" rel="noopener" class="code-word"> Array.reverse().reduce()</span>
 
 ```js{codeTitle: "reduceRight()"}
 const numbers = [[0, 0], [1, 1], [2, 2]];

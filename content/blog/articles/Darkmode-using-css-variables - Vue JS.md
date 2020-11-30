@@ -23,7 +23,7 @@ Variables for the default theme should be placed under <strong class=code-word>:
     --text-color: white;   
 }
 ```
-We can use the <a class="link" href="https://www.w3schools.com/css/css3_variables.asp" target="_blank">var() function</a> to insert the value of the variables we just created in our CSS. Take a look at the example below.
+We can use the <a class="link" href="https://www.w3schools.com/css/css3_variables.asp" target="_blank" rel="noopener">var() function</a> to insert the value of the variables we just created in our CSS. Take a look at the example below.
 
 ```css{codeTitle: "main.css"}
 .example {
@@ -57,7 +57,7 @@ toggleTheme() {
 ```
 Now we can toggle dark mode by clicking on the <span class="code-word">toggle theme button</span>.
 
-We also need to set the theme when the page loads. We do this in Vue JS within the <a class="link" href="https://vuejs.org/v2/api/#mounted" target="_blank">Mounted Life-Cycle hook</a>.
+We also need to set the theme when the page loads. We do this in Vue JS within the <a class="link" href="https://vuejs.org/v2/api/#mounted" target="_blank" rel="noopener">Mounted Life-Cycle hook</a>.
 
 ```ts{codeTitle: "header.vue"}
 
@@ -67,7 +67,7 @@ We also need to set the theme when the page loads. We do this in Vue JS within t
     },
 ```
 
-We can now switch the content of the <span class="code-word">button</span> element based on the active theme using <a href="https://vuejs.org/v2/guide/conditional.html" target="_blank"> Vue's Conditional Rendering</a> as shown below.
+We can now switch the content of the <span class="code-word">button</span> element based on the active theme using <a href="https://vuejs.org/v2/guide/conditional.html" target="_blank" rel="noopener"> Vue's Conditional Rendering</a> as shown below.
 
 ```html{codeTitle: "header.vue"}
  <button @click="toggleTheme" aria-label="Toggle themes">
