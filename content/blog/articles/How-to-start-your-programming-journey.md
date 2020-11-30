@@ -78,7 +78,7 @@ The table below gives a brief description of the popular types of programmers.
 
 The most popular programmers are web programmers (Frontend and Backend). Most newbies think they have to be one or the other. I suggest you research the various careers in programming and make a decision on what you want to explore.
 
-Remember, not all roles in tech involve core programming. <a class="link" href="https://www.forbes.com/sites/laurencebradford/2017/03/07/16-tech-careers-you-can-land-no-coding-required/#5c05b6a426af" target="_blank">Check out other roles.</a>
+Remember, not all roles in tech involve core programming. <a class="link" href="https://www.forbes.com/sites/laurencebradford/2017/03/07/16-tech-careers-you-can-land-no-coding-required/#5c05b6a426af" target="_blank" rel="noopener">Check out other roles.</a>
 
 <h3>Have a clear learning path</h3>
 
@@ -92,7 +92,7 @@ There are many paid and free resources out there that can walk you through this 
 
 Do you comprehend concepts better when you read? Then try Codecademy or freeCodeCamp. Are you better with explanatory videos? check out courses on platforms like Udacity and Udemy. You don’t have to learn strictly by one of the methods mentioned above, just figure out what works for you.
 
-<a class="link" href="https://www.developerdrive.com/best-places-learn-how-to-code/" target="_blank">Check out top programming learning platforms.</a>
+<a class="link" href="https://www.developerdrive.com/best-places-learn-how-to-code/" target="_blank" rel="noopener">Check out top programming learning platforms.</a>
 
 <h3>Keep Coding!</h3>
 

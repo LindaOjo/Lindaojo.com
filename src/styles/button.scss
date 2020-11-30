@@ -5,14 +5,15 @@
     @apply font-bold py-2 px-4 rounded;
     font-size: 1rem;
     transition: all ease 0.5s;
-    background-color: var(--primary);
-    box-shadow: 0 4px #fff;
+    color: #0b549c;
+    background-color: white;
+    box-shadow: 0 4px #0b549c;
 }
 
 .button:focus {
     transform: scale(0.9);
 }
-
+3333
 .button:hover {
     opacity: 0.8;
 }
