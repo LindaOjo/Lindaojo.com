@@ -7,7 +7,7 @@ date: "2020-11-30"
 isBlogPost: true
 ---
 
-This article is part of the lighthouse series. You can check out last week's article below:
+This article is part of the lighthouse series. You can check out other articles below:
 
 <div>
     <ol class="ml-8">
@@ -16,8 +16,14 @@ This article is part of the lighthouse series. You can check out last week's art
                 How to Improve Lighthouse Score - Search Engine Optimization (SEO)
             </a>
         </li>
+        <li>
+            <a class="link"  href="https://www.lindaojo.com/blog/how-to-improve-lighthouse-score-accessibility/"  target="_blank"  rel="noopener">
+                How to Improve Lighthouse Score -Accessibility
+            </a>
+        </li>
     </ol>
 </div>
+<br>
 
 In this post, we will be checking out a few best practices when building for the web.
 

@@ -18,8 +18,19 @@ Here is a list of articles in the Series. I will update the list until the serie
                 How to Improve Lighthouse Score - Search Engine Optimization (SEO)
             </a>
         </li>
+        <li>
+            <a class="link"  href="https://www.lindaojo.com/blog/how-to-improve-lighthouse-score-best-practices/"  target="_blank"  rel="noopener">
+                How to Improve Lighthouse Score - Best Practices
+            </a>
+        </li>
+        <li>
+            <a class="link"  href="https://www.lindaojo.com/blog/how-to-improve-lighthouse-score-accessibility/"  target="_blank"  rel="noopener">
+                How to Improve Lighthouse Score -Accessibility
+            </a>
+        </li>
     </ol>
 </div>
+<br>
 
 <h3>Install Chrome or Firefox Browser</h3>
 

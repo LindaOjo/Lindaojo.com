@@ -5,7 +5,7 @@
             <div class="mb-5">
                 <a :href="page == 'article' ? '/articles' : '/poems'" class="h3">Read More {{page == 'article' ? 'Articles' : 'Poems'}} 📖</a>
             </div>
-            <div>
+            <div class="mx-10">
                 <h2 class="h3 mb-2 text-center share-word">Share</h2>
                 <ShareNetwork
                     network="facebook"

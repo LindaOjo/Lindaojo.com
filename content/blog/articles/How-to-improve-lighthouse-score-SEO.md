@@ -7,7 +7,23 @@ date: "2020-11-23"
 isBlogPost: true
 ---
 
-This is the first article of the Lighthouse Series 🎉🎉🎉
+This is the first article of the Lighthouse Series 🎉🎉🎉  You can check out other articles below:
+
+<div>
+    <ol class="ml-8">
+        <li>
+            <a class="link"  href="https://www.lindaojo.com/blog/how-to-improve-lighthouse-score-best-practices/"  target="_blank"  rel="noopener">
+                How to Improve Lighthouse Score - Best Practices
+            </a>
+        </li>
+        <li>
+            <a class="link"  href="https://www.lindaojo.com/blog/how-to-improve-lighthouse-score-accessibility/"  target="_blank"  rel="noopener">
+                How to Improve Lighthouse Score -Accessibility
+            </a>
+        </li>
+    </ol>
+</div>
+
 
 Don't know how to check your website's Lighthouse score? No problem, use my last article <a class="link" href="https://www.lindaojo.com/blog/how-to-check-lighthouse-scores-on-chrome-or-firefox/" target="_blank" rel="noopener">How to Check Lighthouse Scores using Chrome or Firefox</a> as a guide.
 
@@ -116,4 +132,4 @@ For pages that allow users to select their language, use the x-default keyword:
 ```
 <br>
 
-The tips above will definitely boost your lighthouse SEO score and improve the overall visibility of your website on the internet.
+These tips will definitely boost your lighthouse SEO score and improve the overall visibility of your website on the internet.
