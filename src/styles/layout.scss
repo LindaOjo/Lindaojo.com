@@ -11,6 +11,10 @@ body {
 }
 
 /* containers */
+* :focus:not(:focus-visible) {
+    outline: none;
+}
+
 .container {
     background: transparent;
     @apply h-auto w-screen mx-auto p-8;

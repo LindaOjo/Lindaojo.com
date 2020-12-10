@@ -16,6 +16,12 @@ article>div>h3 {
     font-weight: 400;
 }
 
+article>div>h4 {
+    font-size: 1.6rem;
+    margin: 24px 0 -12px 0;
+    font-weight: 400;
+}
+
 article>div>p {
     font-size: 1.3rem;
     font-weight: 300;
@@ -130,6 +136,10 @@ hr {
 
     article>div>h3 {
         font-size: 1.7rem;
+    }
+
+    article>div>h4 {
+        font-size: 1.4rem;
     }
 
     table {

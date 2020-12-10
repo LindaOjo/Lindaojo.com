@@ -7,7 +7,7 @@ date: "2020-11-23"
 isBlogPost: true
 ---
 
-This is the first article of the Lighthouse Series 🎉🎉🎉  You can check out other articles below:
+This is the first article of the Lighthouse Series 🎉🎉🎉  You can check out other Lighthouse articles below:
 
 <div>
     <ol class="ml-8">
@@ -19,6 +19,11 @@ This is the first article of the Lighthouse Series 🎉🎉🎉  You can check o
         <li>
             <a class="link"  href="https://www.lindaojo.com/blog/how-to-improve-lighthouse-score-accessibility/"  target="_blank"  rel="noopener">
                 How to Improve Lighthouse Score -Accessibility
+            </a>
+        </li>
+        <li>
+            <a class="link"  href="https://www.lindaojo.com/blog/how-to-improve-lighthouse-score-performance/"  target="_blank"  rel="noopener">
+                How to Improve Lighthouse Score - Performance
             </a>
         </li>
     </ol>

@@ -7,7 +7,7 @@ date: "2020-11-30"
 isBlogPost: true
 ---
 
-This article is part of the lighthouse series. You can check out other articles below:
+This article is part of the lighthouse series. You can check out other Lighthouse articles below:
 
 <div>
     <ol class="ml-8">
@@ -21,9 +21,16 @@ This article is part of the lighthouse series. You can check out other articles 
                 How to Improve Lighthouse Score -Accessibility
             </a>
         </li>
+        <li>
+            <a class="link"  href="https://www.lindaojo.com/blog/how-to-improve-lighthouse-score-performance/"  target="_blank"  rel="noopener">
+                How to Improve Lighthouse Score - Performance
+            </a>
+        </li>
     </ol>
 </div>
 <br>
+
+Don't know how to check your website's Lighthouse score? No problem, use this article <a class="link" href="https://www.lindaojo.com/blog/how-to-check-lighthouse-scores-on-chrome-or-firefox/" target="_blank" rel="noopener">How to Check Lighthouse Scores using Chrome or Firefox</a> as a guide.
 
 In this post, we will be checking out a few best practices when building for the web.
 
