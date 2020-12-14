@@ -36,9 +36,9 @@ Don't know how to check your website's Lighthouse score? No problem, use this ar
 
 Render-blocking resources are either scripts or stylesheets.
 
-Use the Coverage tab in Chrome DevTools to identify non-critical CSS and JS. When you load or run a page, the tab tells you how much code was used.
+Use the Coverage tab in Chrome DevTools to identify non-critical CSS and JavaScript. When you load or run a page, the tab tells you how much code was used.
 
-Press <strong>Control+Shift+P</strong> or <strong>Command+Shift+P (Mac)</strong> to open the Coverage Tab shown below.
+Press <strong>Control+Shift+P</strong> or <strong>Command+Shift+P (Mac)</strong> and search "Show Coverage" to open the Coverage Tab shown below.
 
 <div class="my-5">
 
@@ -46,20 +46,26 @@ Press <strong>Control+Shift+P</strong> or <strong>Command+Shift+P (Mac)</strong>
 
 </div>
 
-Remove all the resources that are not used.
+Coverage measures the code used to render the present page, not the whole website. So just because a set of code is unused on your page does not mean it is totally useless.
 
 <h4>- Remove render blocking scripts</h4>
 
-Non-critical scripts should be placed in the end of the body of your index.html file.
+Avoid importing scripts in the head section of your HTML file.
 
-If a script is a render-blocking URL that's not critical(marked red), you can keep it in the URL, and then mark the URL with async or defer attributes as shown below
+Place scripts that impacts the render of the page at the end of the body (before the body closure).
+
+If a script is critical (marked partially or totally red) and must be placed in the head section, mark the script with async or defer attributes as shown below
 
 ```html
-<body>
+<head>
     <script defer></script>
     <script async></script>
-</body>
+</head>
 ```
+With async, the file gets downloaded asynchronously and then executed as soon as it’s downloaded.
+
+With defer, the file gets downloaded asynchronously but executed only when the document parsing is completed. Deferred scripts will execute in the same order as they are called.
+
 <h4>- Remove render blocking stylesheets</h4>
 
 Remove render blocking stylesheets by preloading them. Suppose your page loads in the order below
@@ -71,20 +77,20 @@ index.html
    |--animation.js
 ```
 
-Main.js runs then styles.css and animation.js are downloaded. The page doesn't appear complete until those last 2 resources are downloaded, parsed, and executed. The order can be changed by preloading links in your HTML. This instruct the browser to download key resources as soon as possible.
+Main.js runs then styles.css and animation.js are downloaded. The page doesn't appear complete until those last 2 resources are downloaded, parsed, and executed. The order can be changed by preloading links in your HTML. This instructs the browser to download key resources as soon as possible.
 
 ```html
 <head>
   ...
   <link rel="preload" href="styles.css" as="style">
-  <link rel="preload" href="ui.js" as="script">
+  <link rel="preload" href="animation.js" as="script">
   ...
 </head>
 ```
 
-<h3>Avoid importing large 3rd party libraries</h3>
+<h3>Avoid importing large 3rd party libraries within head tag</h3>
 
-For instance instead of setting up font-awesome icons in the head of your html as shown below
+For instance, instead of setting up font-awesome icons in the head of your html as shown below
 
 ```html
 <head>
@@ -92,7 +98,7 @@ For instance instead of setting up font-awesome icons in the head of your html a
 </head>
 
 ```
-You could use SVG icons instead, they are light and you don't have to install a library containing thousands of icons when you are just using 25. Font Awesome also let's you down load the svg versions of icons. It's a win-win situation.
+You could use SVG icons instead, they are light and you don't have to install a library containing thousands of icons when you are just using 25. Font Awesome also lets you download the SVG versions of icons. It's a win-win situation.
 
 <h3>Use CDNs for images to optimize images</h3>
 
@@ -106,7 +112,7 @@ An image URL indicates not only which image to load, but also parameters like si
 
 <h3>Use improved image formats such as Webp</h3>
 
-New image formats such as <a href="https://developers.google.com/speed/webp" target="_blank" rel="noopener" class="link">Webp</a> are lightweight yet of great quality. Even though it is not supported by all browsers yet. You could use Webp images along with a fall back image as shown below.
+New image formats such as <a href="https://developers.google.com/speed/webp" target="_blank" rel="noopener" class="link">Webp</a> are lightweight yet of great quality. Even though it is not supported by all browsers yet. You could use Webp images along with a fallback image as shown below.
 
 ```html
 <picture>
@@ -120,7 +126,7 @@ New image formats such as <a href="https://developers.google.com/speed/webp" tar
 Removing unused CSS from your production builds for maximum performance.
 When you are building a website, you might decide to use a CSS framework like TailwindCSS, Bootstrap, MaterializeCSS, etc... But you will only use a small set of the framework, and a lot of unused CSS styles will be included.
 
-You could use a tool like PurgeCSS to remove the excesses. PurgeCSS analyzes your content and your CSS files. Then it matches the selectors used in your files with the one in your content files. It removes unused selectors from your CSS, resulting in smaller CSS files.
+You could use a tool like PurgeCSS to remove the excesses. PurgeCSS analyzes your content and your CSS files. Then it matches the selectors used in your files with the ones in your content files. It removes unused selectors from your CSS, resulting in smaller CSS files.
 
 <a href="https://purgecss.com/#table-of-contents" target="_blank" rel="noopener" class="link">Get started with Purge CSS</a>
 
@@ -130,5 +136,4 @@ Your CSS files usually contain unnecessary characters, such as whitespaces, comm
 
 You can minimise your CSS using <a href="https://github.com/NMFR/optimize-css-assets-webpack-plugin" target="_blank" rel="noopener" class="link">optimize-css-assets-webpack-plugin</a>
 
-
-<h3>use light modern JS libraries</h3>
+The tips above will definitely give your lighthouse performance score the boost that it deserves.
