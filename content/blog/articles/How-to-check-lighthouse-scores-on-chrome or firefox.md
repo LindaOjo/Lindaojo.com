@@ -49,7 +49,7 @@ Lighthouse is only available on Chrome and Firebox browsers. Install your prefer
 </a>
 
 
-<h3>Visit your website in an private or incognito window</h3>
+<h3>Visit your website in a private or incognito window</h3>
 
 Visit the website you plan to assess in a private or incognito window. Lighthouse scores should always be generated in an incognito browser because extensions and cached data can affect the auditing process. You can open a private window as shown below
 
@@ -98,9 +98,9 @@ Chrome users should navigate to the menu bar and select Lighthouse tab
 
 </div>
 
-Click the "generate report" button to start auditing
+Click the <strong>"generate report"</strong> button to start auditing
 
-Firefox users should navigate to the lighthouse icon in the top-right menu and click the "generate report" button as shown below
+Firefox users should head over to the lighthouse icon in the top-right menu and click the "generate report" button as shown below
 
 <div class="centered-image lg:w-2/3 md:w-2/3 sm:w-56">
 

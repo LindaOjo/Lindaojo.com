@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        <p>Hey there, don't forget to share this helpful article!</p>
         <div class="button-container mt-5 links">
             <div class="mb-5">
                 <a :href="page == 'article' ? '/articles' : '/poems'" class="h3">Read More {{page == 'article' ? 'Articles' : 'Poems'}} 📖</a>
@@ -63,6 +63,11 @@ a, .share-button {
     cursor: pointer;
 }
 
+p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 16px 0;
+}
 </style>
 
 <script>
