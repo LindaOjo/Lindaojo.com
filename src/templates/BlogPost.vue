@@ -6,7 +6,7 @@
                 <small>Published: {{$page.blogPost.date}}</small>
             </div>
             <div v-if="$page.blogPost.image" class="lg:w-2/4 md:w-2/3 sm:w-64 pt-5 pb-2 centered-image">
-                <g-image :src="$page.blogPost.image"></g-image>
+                <g-image :src="$page.blogPost.image" alt="preview-image"></g-image>
             </div>
             
             <div class="mx-auto lg:w-3/4 sm:w-5/6" :class="$page.blogPost.isBlogPost ? '' : 'text-center'" v-html="$page.blogPost.content"></div>
