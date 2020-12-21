@@ -100,7 +100,7 @@ For instance, instead of setting up font-awesome icons in the head of your html 
 ```
 You could use SVG icons instead, they are light and you don't have to install a library containing thousands of icons when you are just using 25. Font Awesome also lets you download the SVG versions of icons. It's a win-win situation.
 
-<h3>Use CDNs for images to optimize images</h3>
+<h3>Use CDNs to optimize images</h3>
 
 CDN stands for Content Delivery Network. Using an image CDN, such as  <a href="https://cloudinary.com/" target="_blank" rel="noopener" class="link">Cloudinary</a> can significantly reduce the latency of your image delivery. Switching to an image CDN can yield a 40–80% savings in image file size.
 
