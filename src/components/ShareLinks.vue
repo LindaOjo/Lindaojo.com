@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Hey there, don't forget to share this helpful article!</p>
+        <p>You could support my work by sharing this article, thanks!</p>
         <div class="button-container mt-5 links">
             <div class="mb-5">
                 <a :href="page == 'article' ? '/articles' : '/poems'" class="h3">Read More {{page == 'article' ? 'Articles' : 'Poems'}} 📖</a>
