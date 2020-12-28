@@ -73,8 +73,9 @@ p {
 <script>
 export default {
     data() {
+        const path = this.path.slice(0, -1);
         return {
-            prefixedUrl: `https://lindaojo.com${this.path}`
+            prefixedUrl: `https://lindaojo.com${path}`
         }
     },
     props: {
