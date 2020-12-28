@@ -7,7 +7,11 @@ date: "2020-12-28"
 isBlogPost: true
 ---
 
-<strong>'this' refers to the Object that is executing the current function.</strong>
+'this' is a property of an execution context
+
+In <strong>non–strict mode</strong>, 'this' refers to the Object that is executing the current function.
+
+In <strong> <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode" trget ="_blank">strict mode</a></strong>, 'this' can be any value.
 
 The value of 'this' depends on the context in which it is used. Let's dive in!
 
@@ -19,8 +23,6 @@ When 'this' is used globally, (meaning it is not within a method or function) it
 console.log(this); // {window Object}
 ```
 
-Note: In strict mode, 'this' would be undefined in the global context because it does not automatically refer to the window Object.
-
 <h3>Function Context</h3>
 
 <h4>Regular Function Context</h4>
@@ -31,6 +33,14 @@ Note: In strict mode, 'this' would be undefined in the global context because it
 const showThis = () => {
     console.log(this); // {window Object}
 }
+
+//In strict mode, however, if the value of this is not set when entering an execution context, it remains as undefined, as shown in the following example:
+
+const showThis = () => {
+    'use strict'; // see strict mode
+    console.log(this); // undefined
+}
+
 ```
 <h4>Constructor Function Context</h4>
 
