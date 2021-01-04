@@ -45,6 +45,7 @@ module.exports = {
         use: "gridsome-plugin-service-worker",
         options: {
             staleWhileRevalidate: {
+                cacheName:"v1.2.14",
                 routes: ["/contact", "/blog"],
                 fileTypes: ["document", "script", "style", "image"],
             },
