@@ -2,7 +2,7 @@
 image: 'https://res.cloudinary.com/lindaojo/image/upload/v1609757500/CSS_attribute_selectors_yrqhex.png'
 title: "Advanced Styling using CSS Attribute Selectors"
 duration: "3 minutes"
-excerpt: "The attributes often selected for styling are 'class' and 'id' attribute. In this article, I will show you how to target specific elements using other attributes and their values..."
+excerpt: "The attributes often selected for styling are 'class' and 'id' attribute. In this article, I will show you how to target specific elements using other attributes and their specified values..."
 date: "2021-01-04"
 isBlogPost: true
 ---
