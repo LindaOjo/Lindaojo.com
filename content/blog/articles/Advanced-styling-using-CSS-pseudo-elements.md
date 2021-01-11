@@ -17,16 +17,9 @@ The ::first-letter pseudo-element is used to target the first letter of a text.
 
 Example
 
-```css
-p::first-letter {
-    color: red;
-}
-```
-
-<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="LindaOjo" data-slug-hash="BaLOZME" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="::first-letter">
+<p class="codepen" data-height="181" data-theme-id="dark" data-default-tab="css,result" data-user="LindaOjo" data-slug-hash="BaLOZME" style="height: 181px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="::first-letter">
   <span>See the Pen <a href="https://codepen.io/LindaOjo/pen/BaLOZME">
   ::first-letter</a> by Linda (<a href="https://codepen.io/LindaOjo">@LindaOjo</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
