@@ -37,8 +37,17 @@ The ::first-letter pseudo-element is used to style the first letter of a text.
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-<h3>::before</h3>
+<h3>::before and ::after</h3>
 
 The ::before pseudo-element can be used to insert some content before the content of an element.
 
-<h4>Example</h4>
+The ::after pseudo-element can be used to insert some content after the content of an element.
+
+<h4 class="mb-5">Example</h4>
+
+<p class="codepen" data-height="280" data-theme-id="dark" data-default-tab="css,result" data-user="LindaOjo" data-slug-hash="xxEaLyy" style="height: 280px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="::before &amp;amp; ::after">
+  <span>See the Pen <a href="https://codepen.io/LindaOjo/pen/xxEaLyy">
+  ::before &amp; ::after</a> by Linda (<a href="https://codepen.io/LindaOjo">@LindaOjo</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
