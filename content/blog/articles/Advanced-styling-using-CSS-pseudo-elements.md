@@ -7,15 +7,17 @@ date: "2021-01-11"
 isBlogPost: true
 ---
 
-Last week, I wrote about <a href="https://www.lindaojo.com/blog/advanced-styling-using-css-attribute-selectors/" target="_blank">CSS Attribute Selectors</a>. This week, we are moving on to CSS Pseudo Elements.
+Last week, I wrote about <a class="link" href="https://www.lindaojo.com/blog/advanced-styling-using-css-attribute-selectors/" target="_blank">CSS Attribute Selectors</a>. This week, we are moving on to CSS Pseudo Elements.
 
-CSS pseudo-elements are used to style specified parts of an element. When used properly, they can create pretty amazing styles. Let's check them out below
+CSS pseudo-elements are used to style specified parts of an element. When used properly, they can create pretty amazing styles. Let's check them out below.
 
 <h3>::first-letter</h3>
 
 The ::first-letter pseudo-element is used to style the first letter of a text.
 
 <h4 class="mb-5">Example</h4>
+
+<p><strong>🚧 Note: If codepen is not displayed properly below please refresh.</strong> </p>
 
 <p class="codepen" data-height="181" data-theme-id="dark" data-default-tab="css,result" data-user="LindaOjo" data-slug-hash="BaLOZME" data-preview="true" style="height: 181px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="::first-letter">
   <span>See the Pen <a href="https://codepen.io/LindaOjo/pen/BaLOZME">
