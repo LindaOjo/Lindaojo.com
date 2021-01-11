@@ -15,7 +15,7 @@ CSS pseudo-elements are used to style specified parts of an element. When used p
 
 The ::first-letter pseudo-element is used to style the first letter of a text.
 
-<h4 class="mb-8">Example</h4>
+<h4 class="mb-5">Example</h4>
 
 <p class="codepen" data-height="181" data-theme-id="dark" data-default-tab="css,result" data-user="LindaOjo" data-slug-hash="BaLOZME" style="height: 181px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="::first-letter">
   <span>See the Pen <a href="https://codepen.io/LindaOjo/pen/BaLOZME">
@@ -28,7 +28,7 @@ The ::first-letter pseudo-element is used to style the first letter of a text.
 
 The ::first-letter pseudo-element is used to style the first letter of a text.
 
-<h4 class="mb-8">Example</h4>
+<h4 class="mb-5">Example</h4>
 
 <p class="codepen" data-height="181" data-theme-id="dark" data-default-tab="css,result" data-user="LindaOjo" data-slug-hash="BaLOdpa" style="height: 181px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="::first-line">
   <span>See the Pen <a href="https://codepen.io/LindaOjo/pen/BaLOdpa">
