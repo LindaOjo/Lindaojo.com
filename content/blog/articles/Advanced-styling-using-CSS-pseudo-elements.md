@@ -1,8 +1,8 @@
 ---
-image: 'https://res.cloudinary.com/lindaojo/image/upload/v1609757500/CSS_attribute_selectors_yrqhex.png'
+image: 'https://res.cloudinary.com/lindaojo/image/upload/v1610355735/CSS_pseudo_elements_nbisth.png'
 title: "Advanced Styling using CSS Pseudo Elements"
 duration: "3 minutes"
-excerpt: "In this article, I will run you through a simple explanation of common CSS Pseudo Elements with practical examples."
+excerpt: "In this article, I share simple explanations of common CSS Pseudo Elements with practical examples."
 date: "2021-01-11"
 isBlogPost: true
 ---
