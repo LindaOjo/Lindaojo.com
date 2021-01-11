@@ -51,3 +51,16 @@ The ::after pseudo-element can be used to insert some content after the content 
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<h3>::selection</h3>
+
+The ::selection pseudo-element matches the portion of an element that is selected or by a user.
+
+<h4 class="mb-5">Example</h4>
+
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="LindaOjo" data-slug-hash="mdrGMoy" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="::selection">
+  <span>See the Pen <a href="https://codepen.io/LindaOjo/pen/mdrGMoy">
+  ::selection</a> by Linda (<a href="https://codepen.io/LindaOjo">@LindaOjo</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
