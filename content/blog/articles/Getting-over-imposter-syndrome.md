@@ -6,9 +6,9 @@ excerpt: "Firstly you should know that imposter syndrome is a product of your mi
 date: "2021-01-18"
 isBlogPost: true
 ---
-This is a short article, it's kinda different from my usual articles, enjoy.
+In this short article, I will expose the fraud that is your imposter syndrome by asking you a few questions. Let's dive in!
 
-Firstly you should know that imposter syndrome is a product of your mind. Being more successful will not make it go away. 
+Firstly you should know that imposter syndrome is a product of your mind. Being more successful will not make it go away.
 
 <h3>Who is an imposter</h3>
 
@@ -30,7 +30,7 @@ Example, if you think you are a junior developer pretending to be a senior devel
 
 <strong>What kind of skills should a senior developer have?</strong>
 
-Once you have answered the questions above, You need to check if your answers are accurate and realistic.
+Once you have answered the questions above, you need to check if your answers are accurate and realistic.
 
 <h3>Are your expectations realistic?</h3>
 
@@ -40,7 +40,7 @@ Do you think the expectations you set for yourself are realistic? If yes then wo
 
 If you think the expectations are unrealistic, then, you are expecting too much of yourself and can ease up a bit.
 
-Setting unrealistic expectations is very common amongst new developers. For instance, expecting yourself to remember the syntax for every programming language is impractical. It's alright to google the simplest syntax.
+Setting unrealistic expectations is very common amongst new developers. For instance, expecting yourself to remember the syntax for every programming language is impractical. It's alright to google even the simplest syntax.
 
 <h3>Are you "deceiving" a lot of people?</h3>
 
