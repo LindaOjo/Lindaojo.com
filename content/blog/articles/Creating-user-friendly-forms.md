@@ -10,7 +10,11 @@ Forms are a common way to engage with users and could be a user’s first impres
 
 <h3>Use a Single Column Layout</h3>
 
+<span class="centered-image">
+
 ![Single and Multiple Columns](./article-images/single-and-multiple-columns.png)
+
+</span>
 
 Limiting your form to one column makes it easier for users to read and lets you predict the order in which the form should be filled. A single column form also favours keyboard users by making it simple to tab from one field to another. If you have a long form, consider grouping related fields and placing them in different sections.
 
