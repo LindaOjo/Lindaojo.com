@@ -17,7 +17,7 @@
         </div>
         <div class="fade-in profile-picture-container slide-in-elliptic-top-fwd relative">
             <g-image class="profile-picture"
-                     src="https://res.cloudinary.com/lindaojo/image/upload/c_scale,w_253/v1601738933/profile-pic_dlexyg.jpg"
+                     src="https://res.cloudinary.com/lindaojo/image/upload/v1611505626/headshot_hl9yli.jpg"
                      alt="profile picture">
             </g-image>
         </div>
@@ -29,8 +29,9 @@
             </h2>
         </div>
         <div class="bio fade-in lg:w-3/4 lg:text-2xl sm:w-3/4 mx-auto my-5" >
-            <p>Hi there! I'm Linda, a frontend developer in Lagos, Nigeria. I enjoy solving problems by creating beautiful
-               and functional products. I also write and speak about web technologies. </p>          
+            <p>I'm Linda, a frontend developer in Lagos, Nigeria. I spend most of my time solving
+                problems by creating beautiful and functional products. I actively give back to the
+                developer community by mentoring on <a class="link" href="https://codingcoach.io/" target="_blank">CodingCoach</a> and co-organizing community programs such as <a class="link"  href="https://www.meetup.com/vuejs-nigeria/" target="_blank">VueJS Nigeria Meetup</a>. </p>          
         </div>
 
         <div class="fade-in inline-flex w-full justify-between items-end mt-8 md:mt-8 sm:mt-5">
