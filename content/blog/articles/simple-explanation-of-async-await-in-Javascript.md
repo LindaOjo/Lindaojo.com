@@ -11,7 +11,7 @@ To fully appreciate the use of Async-Await you must first understand that by def
 
 <h3>Synchronous Functions</h3>
 
-In synchronous functions, operations run simultaneously and you can't specify   <strong>pausing or waiting</strong> points.
+In synchronous functions, operations run simultaneously and you can't specify <strong>pausing or waiting</strong> points.
 
 Example
 
@@ -23,20 +23,22 @@ function solveC() {
 
     const C = A + B;
 
-    return C;
+    console.log(C);
 }
 
-console.log(solveC()); // 3
-
+solveC(); // 3
 ```
-But if some reason there is a delay in getting the value 'B', JavaScript will execute other lines of code that aren't delayed.This could result in an error.
+But if for some reason there is a delay in getting the value 'B', JavaScript will execute other lines of code that aren't delayed.This could result in an error.
 
-In the example below, 'B' is delayed. Let's check out what the results will be.
+In the example below, 'B' is delayed using a promise. Let's check out what the results will be.
 
 ```js
 function solveC() {
     const getB = () => {
-        setTimeout(() => {return 2;}, 500); 
+      const executor = (resolve, _reject) => {
+        setTimeout(() => resolve(2), 100);
+      };
+      return new Promise(executor); 
     }
     const A = 1;
 
@@ -44,12 +46,13 @@ function solveC() {
     
     const C = A + B;
 
-    return C;
+    console.log(C);
 }
 
-console.log(solveC()); // NaN
-
+solveC(); // "1[object Promise]"
 ```
+JavaScript logs the result before the promise above is fulfilled; 
+
 What do we do to get the right result even if B is delayed? How do we ask Javascript to <strong>pause and wait</strong> for 'B'.
 
 The answer is we make the function asynchronous. This is where ```async-await``` comes in.
@@ -61,7 +64,7 @@ The answer is we make the function asynchronous. This is where ```async-await```
 To make a function Asynchronous we declare the function using the ```Async``` keyword.
 The word “async” before a function means the function will always returns a <a class="link" href="https://medium.com/javascript-in-plain-english/truly-understanding-promises-in-javascript-cb31ee487860" target="_blank">promise</a>.
 
-The async function below
+The async function below...
 
 ```js
 async function One() {
@@ -75,23 +78,28 @@ async function One() {
   return Promise.resolve(1);
 }
 ```
-We can ask JavaScript to wait for a promise by using the ```await``` keyword. It has to be noted that it only makes the async function block wait and not the whole program execution.
+We can ask JavaScript to wait for a promise to be fulfilled by using the ```await``` keyword. It has to be noted that it only makes the async function block wait and not the whole program execution.
 
 The code block below shows how we solve our earlier problem with the use of async-await.
 
 ```js
 async function solveC() {
-    function getB () {
-        setTimeout(() => {return 2;}, 100); 
+    const getB = () => {
+      const executor = (resolve, _reject) => {
+        setTimeout(() => resolve(2), 100);
+      };
+      return new Promise(executor); 
     }
     const A = 1;
 
-    const B = await getB();
+    const B = await getB(); //waits for promise to be resolved
     
     const C = A + B;
+
+    console.log(C);
 }
 
-solveC();
+solveC(); // 3
 
 ```
 
