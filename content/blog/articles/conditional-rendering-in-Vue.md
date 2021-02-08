@@ -7,7 +7,7 @@ date: "2021-02-08"
 isBlogPost: true
 ---
 
-Conditional rendering is a term to describe the ability to render different user interface (UI) markup if a condition is true or false.
+Conditional rendering is a term to describe the ability to render different user interface (UI) markup depending on if a condition is true or false.
 
 Conditional Rendering can be implemented in Vue using the directives below
 
