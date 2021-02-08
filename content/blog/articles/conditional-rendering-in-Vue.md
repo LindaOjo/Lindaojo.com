@@ -26,7 +26,7 @@ Example
 ```html
 <h1 v-if="showGreeting">Welcome Home!</h1>
 ```
-Because v-if is a directive, it has to be attached to a single element. But what if we want to toggle more than one element?
+Because ```v-if``` is a directive, it has to be attached to a single element. But what if we want to toggle more than one element?
 
 You can also add conditional rendering to a group of elements by wrapping them in a ```<template>``` element as shown below
 
@@ -39,7 +39,7 @@ You can also add conditional rendering to a group of elements by wrapping them i
     <ul>
 </template>
 ```
-<template> element serves as an invisible wrapper and will not be displayed in the final rendered result.
+```<template>``` element serves as an invisible wrapper and will not be displayed in the final rendered result.
 
 <h3>v-else</h3>
 
@@ -61,7 +61,7 @@ The content within the v-else element will be rendered if the condition set in t
 
 The ```v-else``` element gives you only one other option to render if ```v-if``` element's condition is not met.
 
-```v-else-if``` serves as an “else if block” for v-if. It can also be chained multiple times so it enable you to have more than one option to render.
+```v-else-if``` serves as an else-if block for ```v-if```. It can also be chained multiple times so it enable you to have more than one option to render.
 
 ```html
 <template v-if="Chores"> 🙃
@@ -85,8 +85,14 @@ The difference is that an element with ```v-show``` will always be rendered and 
 
 ```v-if``` has higher toggle costs while ```v-show``` has higher initial render costs. So use ```v-show``` if you need to toggle something very often, and prefer ```v-if``` if the condition is unlikely to change at runtime.
 
-You can play around with Conditional rendering using the vue Sandbox belwo.
-Example
+You can play around with Conditional rendering using the Vue Sandbox below.
+
+<iframe src="https://codesandbox.io/embed/conditional-rendering-zmbq0?fontsize=14&module=%2Fsrc%2FApp.vue&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="conditional rendering"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 
 
