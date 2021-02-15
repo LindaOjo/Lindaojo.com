@@ -2,7 +2,7 @@
 image: 'https://res.cloudinary.com/lindaojo/image/upload/v1613422335/pagination_ultdqf.png'
 title: "How to Set Up Pagination in Gridsome"
 duration: "3 minutes"
-excerpt: "Conditional rendering is a term to describe the ability to render different user interface (UI) markup depending on if a condition is true or false."
+excerpt: "Gridsome is a modern website development framework for creating fast and secure websites that can be deployed anywhere..."
 date: "2021-02-15"
 isBlogPost: true
 ---
