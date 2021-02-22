@@ -45,7 +45,7 @@ module.exports = {
         use: "gridsome-plugin-service-worker",
         options: {
             staleWhileRevalidate: {
-                cacheName:"v1.2.22",
+                cacheName:"v1.2.23",
                 routes: ["/contact", "/blog"],
                 fileTypes: ["document", "script", "style", "image"],
             },
@@ -72,7 +72,7 @@ module.exports = {
              icon: './static/assets/icons/icon-128.png',
              shortName: 'Linda Ojo',              // Optional
              description: "A Progressive Web App for Linda Ojo's personal Website and blog",  // Optional
-             categories: ['education', 'blog', 'tech', 'programming', 'web development', 'coding', 'frontend', 'software engineering'],          // Optional
+             categories: ['frontend','code', 'blog', 'tech', 'programming', 'web development', 'coding', 'software engineering'],          // Optional
              lang: 'en-US',                      // Optional
              dir: 'auto',                        // Optional
              maskableIcon: true,  
