@@ -2,7 +2,7 @@
 image: 'https://res.cloudinary.com/lindaojo/image/upload/v1613932905/watchers_zbwbrb.jpg'
 title: "Introduction to Vue Watchers"
 duration: "3 minutes"
-excerpt: "In this article, we will take a deep dive into watchers, one of the core concepts in Vue.js..."
+excerpt: "In this article, I explain what Vue Watchers are, using practical examples..."
 date: "2021-02-22"
 isBlogPost: true
 ---
@@ -26,7 +26,7 @@ export default {
   },
 }
 ```
-The Watcher above will log the ```answer``` property to the console anytime it's value changes.
+The Watcher above will log the ```answer``` property to the console anytime its value changes.
 
 We can also access the old property value and new property value in a Watcher by adding two optional parameters as shown below.
 
@@ -46,7 +46,7 @@ export default {
 }
 ```
 
-If we want to monitor the changes of a items within an array or properties of an object we use ```deep```.
+If we want to monitor the changes of items within an array or the properties of an object we use ```deep```. Let's watch out for changes in the ```person``` Object below.
 
 ```js
 export default {
@@ -70,14 +70,13 @@ export default {
 
 }
 ```
+As a practical example, I have created a simple "App" where we use a Watcher to monitor the number of times a user has signed.
 
-For instance we can use a watcher to monitor the number of times a user has signed in the Dummy App below.
-
-<iframe height="265" style="width: 100%;" scrolling="no" title="Watchers" src="https://codepen.io/LindaOjo/embed/qBqPZYm?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="365" style="width: 100%;" scrolling="no" title="Watchers" src="https://codepen.io/LindaOjo/embed/qBqPZYm?height=265&theme-id=dark&default-tab=js,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/LindaOjo/pen/qBqPZYm'>Watchers</a> by Linda
   (<a href='https://codepen.io/LindaOjo'>@LindaOjo</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-
+That's all folks, See you next week!
 
 
