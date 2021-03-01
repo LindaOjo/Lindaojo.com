@@ -55,7 +55,7 @@ The CSS above changes the position of Box-B as shown below.
 
 Absolute positioning tells the browser that the element being positioned should be removed from the normal flow of the document and will be placed in an exact location on the page based on the values specified in top, bottom, left & right. it won't affect how the elements before it or after it in the HTML are positioned on the Web page.
 
-Absolute elements will by default head to the top-left of it's closest parent that has a non-static position .
+Absolute elements will by default head to the top-left of their closest parent that has a non-static position .
 
 ```css
 .absolute {
@@ -73,7 +73,7 @@ Absolute elements will by default head to the top-left of it's closest parent th
 
 <h3>Fixed Positioning</h3>
 
-Fixed elements are positioned relative to the entire HTMl element.
+Fixed elements are positioned relative to the entire HTML element.
 
 Fixed positioning is similar to absolute positioning, but, fixed positioning anchors an element to the browser window. If you scroll up and down, the fixed element stays put even as other elements scroll past.
 
