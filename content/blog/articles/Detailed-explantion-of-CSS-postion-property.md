@@ -24,7 +24,7 @@ A static positioned element is always positioned according to the normal flow of
 }
 ``` 
 
-<div class="centered-image lg:w-1/3 md:w-1/3 sm:w-56">
+<div class="centered-image lg:w-1/3 md:w-2/3 sm:w-56">
 
 ![Static positioning](https://res.cloudinary.com/lindaojo/image/upload/v1614593087/Static_dja3yr.png)
 
@@ -45,7 +45,7 @@ Relative positioning tells the element to move relative to where it would have l
 ``` 
 The CSS above changes the position of Box-B as shown below.
 
-<div class="centered-image lg:w-1/3 md:w-1/3 sm:w-56">
+<div class="centered-image lg:w-1/3 md:w-2/3 sm:w-56">
 
 ![Relative positioning](https://res.cloudinary.com/lindaojo/image/upload/v1614593099/Relative_pr9pui.png)
 
@@ -65,7 +65,7 @@ Absolute elements will by default head to the top-left of it's closest parent th
 }
 ``` 
 
-<div class="centered-image lg:w-1/3 md:w-1/3 sm:w-56">
+<div class="centered-image lg:w-1/3 md:w-2/3 sm:w-56">
 
 ![Absolute positioning](https://res.cloudinary.com/lindaojo/image/upload/v1614593107/Absolute_w2v3cc.png)
 
@@ -75,7 +75,7 @@ Absolute elements will by default head to the top-left of it's closest parent th
 
 Fixed elements are positioned relative to the entire HTMl element.
 
-Fixed positioning is similar to absolute positioning, but, fixed positioning anchors an element to the browser window. If you scroll up and down, the fixed element stays put, even as other elements scroll past.
+Fixed positioning is similar to absolute positioning, but, fixed positioning anchors an element to the browser window. If you scroll up and down, the fixed element stays put even as other elements scroll past.
 
 ```css
 .fixed {
@@ -85,7 +85,7 @@ Fixed positioning is similar to absolute positioning, but, fixed positioning anc
 }
 ``` 
 
-<div class="centered-image lg:w-1/3 md:w-1/3 sm:w-56">
+<div class="centered-image lg:w-1/3 md:w-2/3 sm:w-56">
 
 ![Fixed positioning](https://res.cloudinary.com/lindaojo/image/upload/v1614593119/Fixed_sslddt.png)
 
