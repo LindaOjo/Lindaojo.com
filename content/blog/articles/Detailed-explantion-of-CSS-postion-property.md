@@ -2,7 +2,7 @@
 image: 'https://res.cloudinary.com/lindaojo/image/upload/v1614585916/CSS_position_property_s83pcy.png'
 title: "Detailed Explanation of CSS Position Property"
 duration: "2 minutes"
-excerpt: "Firstly you should know that imposter syndrome is a product of your mind. Being more successful will not make it go away. "
+excerpt: "The position property in CSS defines how an element will be positioned on a page. The top, right, bottom, and left properties determine the final location of positioned element "
 date: "2021-03-01"
 isBlogPost: true
 ---
