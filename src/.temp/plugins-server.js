@@ -6,7 +6,7 @@ import plugin_gridsome_plugin_google_analytics_10 from "/Users/admin/Downloads/W
 export default [
   {
     run: plugin_gridsome_plugin_service_worker_6,
-    options: {"staleWhileRevalidate":{"cacheName":"v1.2.23","routes":["/contact","/blog"],"fileTypes":["document","script","style","image"]},"cacheFirst":{"cacheName":"cf-v1","routes":[],"fileTypes":[]},"cacheOnly":{"cacheName":"co-v1","routes":[],"fileTypes":[]},"networkFirst":{"cacheName":"nf-v1","routes":[],"fileTypes":[]},"networkOnly":{"cacheName":"no-v1","routes":[],"fileTypes":[]},"precachedRoutes":[]}
+    options: {"staleWhileRevalidate":{"cacheName":"v1.2.24","routes":["/contact","/blog"],"fileTypes":["document","script","style","image"]},"cacheFirst":{"cacheName":"cf-v1","routes":[],"fileTypes":[]},"cacheOnly":{"cacheName":"co-v1","routes":[],"fileTypes":[]},"networkFirst":{"cacheName":"nf-v1","routes":[],"fileTypes":[]},"networkOnly":{"cacheName":"no-v1","routes":[],"fileTypes":[]},"precachedRoutes":[]}
   },
   {
     run: plugin_gridsome_plugin_pwa_7,
