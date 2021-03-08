@@ -60,4 +60,4 @@ You can read more about improving a website's performance,  <a href="https://www
 
 </div>
 
-That's all folks, See you next week!
+That's all folks, Feel free to let me know what your favourite frontend handy tools are. See you next week!

@@ -114,7 +114,7 @@ export default {
         }
     },
     mounted() {
-        let localTheme = localStorage.getItem('theme') || 'lightMode';
+        let localTheme = localStorage.getItem('theme') || 'darkMode';
         if (localTheme == "darkMode") {
             this.theme = "darkMode";
             document.documentElement.setAttribute('data-theme', 'dark');
