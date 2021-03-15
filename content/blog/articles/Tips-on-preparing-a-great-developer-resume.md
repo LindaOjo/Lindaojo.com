@@ -39,7 +39,7 @@ A great way to improve readability is by having a simple layout that lets you co
 
 <a href="https://www.canva.com" class="link" target="_blank">Canva</a> has great templates which you can use to create beautiful resumes.
 
-<h3>Relevant things first, Relevant things only</h3>
+<h3>Relevant things first, relevant things only</h3>
 
 <div class="centered-image lg:w-2/3 md:w-2/3 sm:w-56">
 
@@ -72,7 +72,7 @@ You should state a major feature you built and the effect it had on the company 
 E.g
 <strong>"Implemented a new payment feature with a team of UI designers and product managers which lead to an 11% increase in monthly revenue."</strong>
 
-<h3>Don't Quantify your skills</h3>
+<h3>Don't quantify your skills</h3>
 
 Simply list the skills that you possess and let the recruiter be the judge of your proficiency. Don't cut yourself short by quantifying for skills e.g
 
