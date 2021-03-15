@@ -65,7 +65,7 @@ Using numbers and outlining the impact you had in past roles does a better job a
 
 For instance, instead of saying:
 
-<strong>" Built complex software features, while working directly with product owner. "</strong>
+<strong>" Built complex software features, while working directly with product owners. "</strong>
 
 You should state a major feature you built and the effect it had on the company profits or user experience e.t.c.
 
