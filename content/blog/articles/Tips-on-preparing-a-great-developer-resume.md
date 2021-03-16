@@ -61,7 +61,7 @@ You can have multiple resumes that contain different sets of skills if you are a
 
 </div>
 
-Using numbers and outlining the impact you had in past roles does a better job at communicating your relevance to a team instead of listing vague responsibilities.
+Using numbers and outlining the impact you had in past roles does a better job at communicating your relevance to a team that a list of vague responsibilities.
 
 For instance, instead of saying:
 
@@ -96,7 +96,7 @@ Please don't do this 👆🏾. Not only does it reduce readability it could also
 
 You should never lie on your resume. If you are going to get that role, you want to get it the right way.
 
-You shouldn't lie about your years of experiences, skills, or interests. Honesty saves everyone's time. 
+You shouldn't lie about your years of experience, skills, or interests. Honesty saves everyone's time. 
 
 <h3>Be confident</h3>
 
@@ -109,6 +109,7 @@ You shouldn't lie about your years of experiences, skills, or interests. Honesty
 Be confident in your skills no matter what level you are on. The presence or absence of confidence can be sensed through your resume. You have to believe in yourself
 
 <h3>Pay attention to details</h3>
+
 <div class="centered-image lg:w-2/3 md:w-2/3 sm:w-56">
 
 !['Attention to Details'](https://res.cloudinary.com/lindaojo/image/upload/v1615840459/details_znej9l.jpg)
