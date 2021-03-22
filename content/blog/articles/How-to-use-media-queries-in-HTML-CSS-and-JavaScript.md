@@ -2,7 +2,7 @@
 image: 'https://res.cloudinary.com/lindaojo/image/upload/v1616440805/three-way-knot_cnrrze.jpg'
 title: "How to use Media Queries in HTML, CSS and JavaScript"
 duration: "2 minutes"
-excerpt: ""
+excerpt: "Media queries are commonly associated with CSS, but they can be used in HTML and JavaScript as well."
 date: "2021-03-22"
 isBlogPost: true
 ---
