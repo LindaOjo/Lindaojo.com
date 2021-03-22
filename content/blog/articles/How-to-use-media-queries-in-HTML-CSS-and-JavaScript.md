@@ -16,14 +16,11 @@ Media queries can be used to check many things, such as:
     <li>Using media queries are a popular technique for delivering a tailored style sheet (responsive web design) to desktops, laptops, tablets, and mobile phones.</li>
 </ol>
 
-
-
-
 Media queries are commonly associated with CSS, but they can be used in HTML and JavaScript as well.
 
 <h3>Media Queries in HTML</h3>
 
-We can use media queries to determine what ```<link>``` to use in the ```<head>``` of an HTML file as shown below.
+We can use media queries to determine what `<link>` to use in the `<head>` of an HTML file as shown below.
 
 ```html
 <html>
@@ -37,7 +34,7 @@ We can use media queries to determine what ```<link>``` to use in the ```<head>`
 
 ```
 
-We can use use media queries on the ```<style>``` element too.
+We can use media queries on the `<style>` element too.
 
 ```html
 <style media="all and (min-width: 800px)">
@@ -48,7 +45,7 @@ We can use use media queries on the ```<style>``` element too.
 </style>
 ```
 
-Media queries can also be placed within the ```<picture>``` element. How? By specifying them on the ```<source>``` element which lets us pass multiply image options.
+Media queries can also be placed within the `<picture>` element. How? By specifying them on the `<source>` element which lets us pass multiply image options.
 
 ```html
 <picture>
@@ -63,7 +60,7 @@ Media queries can also be placed within the ```<picture>``` element. How? By spe
 
 This is the most common environment for writing media queries.
 
-The ```@media``` rule is used in media queries to apply different styles for different media types/devices.
+The `@media` rule is used in media queries to apply different styles for different media types/devices.
 
 ```css
 @media only screen and (min-device-width: 500px) and (max-device-width: 8000px) {
@@ -77,7 +74,7 @@ The ```@media``` rule is used in media queries to apply different styles for dif
 
 You can add media queries to your JavaScript by using the  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia" class="link" target="_blank">window.matchMedia()</a> method.
 
-For instance, if we want to change the background color of the ```<body>````  to red when the screen width exceeds 600px, we can do that by first creating a constant using "window.matchMedia()" as shown below.
+For instance, if we want to change the background color of the `<body>` to "red" when the screen width exceeds 600px, we can do that by first creating a constant using "window.matchMedia()" as shown below.
 
 ```js
 // Create a media condition that targets viewports at least 768px wide
