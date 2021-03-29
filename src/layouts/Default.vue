@@ -21,7 +21,6 @@
                             </span>
                             <g-link class="nav__link" to="/">Home</g-link>
                             <g-link class="nav__link" to="/articles/">Articles</g-link>
-                            <g-link class="nav__link" to="/poems/">Poems</g-link>
                             <g-link class="nav__link" to="/contact/">Contact</g-link>
                         </div>
 	
