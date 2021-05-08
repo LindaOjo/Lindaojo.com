@@ -1,6 +1,6 @@
 ---
 image: 'https://res.cloudinary.com/lindaojo/image/upload/v1620497291/cookies_lznktu.jpg'
-title: "Introduction to HTTP cookies"
+title: "What exactly are Cookies and how do you use them?"
 duration: "2 minutes"
 excerpt: "We have all accepted cookies from random websites. What exactly do websites use these snacks for? "
 date: "2021-05-08"
@@ -15,9 +15,23 @@ Okay, let's focus.
 
 Cookies, more properly called HTTP cookies, are small bits of data stored as text files on a browser. Cookies associate bits of data to a specific user.
 
-For instance, if you accept cookies from a website, the website may deliver a cookie identifying you as user-A. If you ever visit that website again, that cookie will be used  to recognize that you are the same user-A that was at the website at a previous time.
+Cookies are mainly used for three purposes:
 
-Cookies could then be used to make the user-A's experience on the website fast and personalized. For example, user-A's preferences such as language and preferred theme could be save for future sessions.
+<h4>Session management</h4>
+
+Logins, shopping carts, game scores, or anything else the server should remember.
+
+<h4>Personalization</h4>
+
+User preferences, themes, and other settings.
+
+For example, a user's preferences such as language and preferred theme could be saved for future sessions.
+
+<h4>Tracking</h4>
+
+Recording and analyzing user behavior.
+
+When a user visits a shopping website and searches for an item, the item gets saved in their browser history. Cookies can read browsing history so similar are shown to the user next time they visit.
 
 <h3>Types of Cookies</h3>
 
@@ -44,4 +58,121 @@ Zombie cookies are a type of flash cookie that are automatically re-created afte
 <h4>Secure Cookies</h4>
 
 Only HTTPS websites can set secure cookies, i.e., cookies with encrypted data. Mostly, the checkout or payment pages of e-commerce websites have secure cookies to facilitate safer transactions. Similarly, online banking websites are required to use secure cookies for security reasons.
+
+<h3>Creating Cookies with Vanilla JavaScript</h3>
+
+<strong>NOTE: For the code below to work, your browser has to have local cookies support turned on.</strong>
+
+JavaScript can create, read, and delete cookies with the document.cookie property.
+
+With JavaScript, a cookie can be created like this:
+
+```js
+document.cookie = "name=Linda Ojo";
+```
+
+You can also add an expiry date (in UTC time). By default, the cookie is deleted when the browser is closed:
+
+```js
+document.cookie = "name=Linda Ojo; expires=Wed, 1 Oct 2022 12:00:00 UTC";
+```
+
+With a path parameter, you can tell the browser what path the cookie belongs to. By default, the cookie belongs to the current page.
+
+```js
+document.cookie = "name=Linda Ojo; expires=Wed, 1 Oct 2022 12:00:00 UTC; path=/";
+```
+
+Handling Cookies using just vanilla JavaScript can get tedious real quick that's why I prefer using the <a class="link" href="https://www.npmjs.com/package/js-cookie" target="_blank">JavaScript Cookie Package</a>
+
+
+<h3>Handling Cookies with <a class="link" href="https://www.npmjs.com/package/js-cookie" target="_blank">JavaScript Cookie Package</a></h3>
+
+JavaScript Cookie is a simple lightweight JavaScript API for handling cookies. It works on all browsers, accepts any character, heavily tested and requires no dependency. Awesome!
+
+<h4>Installation</h4>
+
+Run the command below in your root folder.
+
+```js
+npm install js-cookie --save
+```
+
+<h4>Cookie Attributes</h4>
+<br>
+
+<li><i>Expire:</i> define when the cookie will be removed. Value can be a Number which will be interpreted as days from time of creation or a Date instance.</li>
+<li><i>Path:</i> a String indicating the path where the cookie is visible. </li>
+<li><i>Domain:</i> a String indicating a valid domain where the cookie should be visible. The cookie will also be visible to all subdomains. </li>
+<li><i>Secure:</i> Either true or false, indicating if the cookie transmission requires a secure protocol (https).
+</li>
+
+
+<h4>Create a cookie</h4>
+
+We can create a cookie that valid across the entire website by providing the name and the value as shown below.
+
+```js
+import Cookies from 'js-cookie';
+
+Cookies.set('name', 'value');
+```
+
+We can specify how long it takes for a cookie to expire by passing an object that contains the number of days before expiration as the third argument in the `Cookie.set` method. The cookie that`s created below expires after 7 days. By default, a cookie is removed when the user closes the browser.
+
+```js
+import Cookies from 'js-cookie';
+
+Cookies.set('name', 'value', { expires: 7 });
+```
+
+Next,We can create an secure expiring cookie that's only valid to the path of the current page. The path is add to the previous Object which contains the expiration date.
+
+```js
+Cookies.set('name', 'value', { expires: 7, path: '', secure: true });
+```
+
+<h4>Read cookie</h4>
+
+The point of creating cookies is so we can use them later. We can access already existing cookies using the `Cookie.get` method. Let's create and read a real cookie called 'theme'.
+
+```js
+import Cookies from 'js-cookie';
+
+Cookies.set('theme', 'dark');
+Cookies.get('theme') // => 'dark'
+```
+
+You can also update a cookie by overriding it's value
+
+```js
+Cookies.set('theme', 'light');
+```
+
+Now the theme cookie has a value of 'light'.
+
+We can get all cookies present at once by calling `Cookies.get` method without passing in any arguments as shown below.
+
+```js
+
+Cookies.get(); // => { theme: 'light' }
+
+```
+
+<h4>Delete cookie</h4>
+
+You can delete cookies that are globally accessible running the `Cookie.remove` method with just the first argument which is `value`  
+
+```js
+Cookies.remove('theme');
+```
+<strong>Note:</strong>cwhen deleting a cookie and you're not relying on the default attributes, you must pass the exact same path and domain attributes that were used to set the cookie.
+let's set and delete a cookie valid to the path of the current page as an example.
+
+```js
+Cookies.set('direction', 'north', { path: '' });
+Cookies.remove('direction'); // fail!
+Cookies.remove('direction', { path: '' }); // removed!
+```
+
 
