@@ -84,10 +84,10 @@ With a path parameter, you can tell the browser what path the cookie belongs to.
 document.cookie = "username=LindaOjo; expires=Wed, 1 Oct 2022 12:00:00 UTC; path=/";
 ```
 
-Handling Cookies using just vanilla JavaScript can get tedious real quick that's why I prefer using the <a class="link" href="https://www.npmjs.com/package/js-cookie" target="_blank">JavaScript Cookie Package</a>
+Handling Cookies using just vanilla JavaScript can get tedious real quick that's why I prefer using the <a class="link" href="https://www.npmjs.com/package/js-cookie" target="_blank" rel="noopener">JavaScript Cookie Package</a>
 
 
-<h3>Handling Cookies with <a class="link" href="https://www.npmjs.com/package/js-cookie" target="_blank">JavaScript Cookie Package</a></h3>
+<h3>Handling Cookies with <a class="link" href="https://www.npmjs.com/package/js-cookie" target="_blank" rel="noopener">JavaScript Cookie Package</a></h3>
 
 JavaScript Cookie is a simple lightweight JavaScript API for handling cookies. It works on all browsers, accepts any character, heavily tested and requires no dependency. Awesome!
 

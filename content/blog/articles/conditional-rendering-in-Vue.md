@@ -19,7 +19,7 @@ Conditional Rendering can be implemented in Vue using the directives below
 
 <h3>v-if</h3>
 
-The ```v-if``` directive can used to conditionally render an element including other elements that may be within it. The block will only be rendered if the directive’s expression returns a <a class="link" href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy" target="_blank">truthy value</a>.
+The ```v-if``` directive can used to conditionally render an element including other elements that may be within it. The block will only be rendered if the directive’s expression returns a <a class="link" href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy" target="_blank" rel="noopener">truthy value</a>.
 
 Example
 

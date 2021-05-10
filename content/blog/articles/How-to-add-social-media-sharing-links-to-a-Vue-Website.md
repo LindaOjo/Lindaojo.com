@@ -9,7 +9,7 @@ isBlogPost: true
 
 In the article, I share a step by step guide on how to add sharing links to your Vue website. This will enable your users to share your website page on social media with just a click of a button, literally.
 
-We are using the <a class="link" href="https://www.npmjs.com/package/vue-social-sharing" target="_blank">Vue Social Sharing</a> package to add sharing links. This package supports sharing on over 20 networks including all the favourites like Twitter, Facebook, WhatsApp, email and much more. You can <a class="link" href="https://www.npmjs.com/package/vue-social-sharing" target="_blank">check out other supported networks</a>. Let's dive in!
+We are using the <a class="link" href="https://www.npmjs.com/package/vue-social-sharing" target="_blank" rel="noopener">Vue Social Sharing</a> package to add sharing links. This package supports sharing on over 20 networks including all the favourites like Twitter, Facebook, WhatsApp, email and much more. You can <a class="link" href="https://www.npmjs.com/package/vue-social-sharing" target="_blank" rel="noopener">check out other supported networks</a>. Let's dive in!
 
 <h3>Install Vue Social Sharing package</h3>
 
