@@ -19,7 +19,7 @@ Cookies are mainly used for three purposes:
 
 <h4>Session management</h4>
 
-Logins, shopping carts, game scores, or anything else the server should remember.
+Logins, game scores, or anything else the server should remember.
 
 <h4>Personalization</h4>
 
@@ -65,22 +65,23 @@ Only HTTPS websites can set secure cookies, i.e., cookies with encrypted data. M
 
 JavaScript can create, read, and delete cookies with the document.cookie property.
 
-With JavaScript, a cookie can be created like this:
+With JavaScript, a cookie can be created by setting a `cookie-name` and `cookie-value` as shown below.
 
 ```js
-document.cookie = "name=Linda Ojo";
+document.cookie = "username=LindaOjo";
 ```
+The `cookie-name` above is `username` and it's corresponding value is `LindaOjo`
 
 You can also add an expiry date (in UTC time). By default, the cookie is deleted when the browser is closed:
 
 ```js
-document.cookie = "name=Linda Ojo; expires=Wed, 1 Oct 2022 12:00:00 UTC";
+document.cookie = "username=LindaOjo; expires=Wed, 1 Oct 2022 12:00:00 UTC";
 ```
 
 With a path parameter, you can tell the browser what path the cookie belongs to. By default, the cookie belongs to the current page.
 
 ```js
-document.cookie = "name=Linda Ojo; expires=Wed, 1 Oct 2022 12:00:00 UTC; path=/";
+document.cookie = "username=LindaOjo; expires=Wed, 1 Oct 2022 12:00:00 UTC; path=/";
 ```
 
 Handling Cookies using just vanilla JavaScript can get tedious real quick that's why I prefer using the <a class="link" href="https://www.npmjs.com/package/js-cookie" target="_blank">JavaScript Cookie Package</a>
@@ -151,7 +152,7 @@ Cookies.set('theme', 'light');
 
 Now the theme cookie has a value of 'light'.
 
-We can get all cookies present at once by calling `Cookies.get` method without passing in any arguments as shown below.
+We can get all cookies present at once by calling `Cookies.get` method without passing in any arguments. An object containing all cookies is returned in this case.
 
 ```js
 
@@ -168,12 +169,14 @@ Cookies.remove('theme');
 ```
 
 <strong>Note:</strong> when deleting a cookie and you are not relying on the default attributes, you must pass the exact same path and domain attributes that were used to set the cookie.
-let us set and delete a cookie valid to the path of the current page as an example.
+Let us set and delete a cookie valid to the path of the current page as an example.
 
 ```js
 Cookies.set('direction', 'north', { path: '' });
 Cookies.remove('direction'); // fail!
 Cookies.remove('direction', { path: '' }); // removed!
 ```
+
+That's a wrap! This is a simple introduction to HTTPS Cookies,I trust you learnt a lot.
 
 
