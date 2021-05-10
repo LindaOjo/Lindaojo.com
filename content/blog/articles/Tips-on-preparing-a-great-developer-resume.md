@@ -37,7 +37,7 @@ On average, most single-page resumes would be scanned through within a minute. I
 
 A great way to improve readability is by having a simple layout that lets you communicate effectively.
 
-<a href="https://www.canva.com" class="link" target="_blank">Canva</a> has great templates which you can use to create beautiful resumes.
+<a href="https://www.canva.com" class="link" target="_blank" rel="noopener">Canva</a> has great templates which you can use to create beautiful resumes.
 
 <h3>Relevant things first, relevant things only</h3>
 

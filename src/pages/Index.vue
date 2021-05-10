@@ -31,7 +31,7 @@
         <div class="bio fade-in lg:w-3/4 lg:text-2xl sm:w-3/4 mx-auto my-5" >
             <p>I'm Linda, a frontend developer in Lagos, Nigeria. I spend most of my time solving
                 problems by creating beautiful and functional products. I actively give back to the
-                developer community by mentoring on <a class="link" href="https://codingcoach.io/" target="_blank">CodingCoach</a> and co-organizing community programs such as <a class="link"  href="https://www.meetup.com/vuejs-nigeria/" target="_blank">VueJS Nigeria Meetup</a>. </p>          
+                developer community by mentoring on <a class="link" href="https://codingcoach.io/" target="_blank" rel="noopener">CodingCoach</a> and co-organizing community programs such as <a class="link"  href="https://www.meetup.com/vuejs-nigeria/" target="_blank">VueJS Nigeria Meetup</a>. </p>          
         </div>
 
         <div class="fade-in inline-flex w-full justify-between items-end mt-8 md:mt-8 sm:mt-5">

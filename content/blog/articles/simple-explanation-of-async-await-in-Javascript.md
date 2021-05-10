@@ -57,12 +57,12 @@ What do we do to get the right result even if B is delayed? How do we ask Javasc
 
 The answer is we make the function asynchronous. This is where ```async-await``` comes in.
 
-<strong>Note</strong>: there are other ways to write asynchronous code. You could use <a href="https://www.freecodecamp.org/news/javascript-callback-functions-what-are-callbacks-in-js-and-how-to-use-them/" class="link" >Callback functions</a> and <a href="https://www.freecodecamp.org/news/javascript-promises-explained/" class="link" target="_blank">promises</a>.
+<strong>Note</strong>: there are other ways to write asynchronous code. You could use <a href="https://www.freecodecamp.org/news/javascript-callback-functions-what-are-callbacks-in-js-and-how-to-use-them/" class="link" >Callback functions</a> and <a href="https://www.freecodecamp.org/news/javascript-promises-explained/" class="link" target="_blank" rel="noopener">promises</a>.
 
 <h3>Asynchronous Functions using Async-Await</h3>
 
 To make a function Asynchronous we declare the function using the ```Async``` keyword.
-The word “async” before a function means the function will always returns a <a class="link" href="https://medium.com/javascript-in-plain-english/truly-understanding-promises-in-javascript-cb31ee487860" target="_blank">promise</a>.
+The word “async” before a function means the function will always returns a <a class="link" href="https://medium.com/javascript-in-plain-english/truly-understanding-promises-in-javascript-cb31ee487860" target="_blank" rel="noopener">promise</a>.
 
 The async function below...
 
@@ -105,4 +105,4 @@ solveC(); // 3
 
 <strong>Note</strong>: the ```await``` keyword can only be used within ```async``` functions.
 
-That's it! Hope this was helpful cause I kept it light for beginners. If you want to read a more advanced explanation of async-await, I recommend <a class="link" href="https://medium.com/javascript-in-plain-english/async-await-javascript-5038668ec6eb" target="_blank">this article by Ashay Mandwarya</a>
+That's it! Hope this was helpful cause I kept it light for beginners. If you want to read a more advanced explanation of async-await, I recommend <a class="link" href="https://medium.com/javascript-in-plain-english/async-await-javascript-5038668ec6eb" target="_blank" rel="noopener">this article by Ashay Mandwarya</a>

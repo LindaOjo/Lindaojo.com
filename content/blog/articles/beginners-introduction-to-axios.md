@@ -48,7 +48,7 @@ Using unpkg CDN:
 
 <h3>Making a "GET" request</h3>
 
-Let's query the <a href="https://dummyapi.io/explorer" target="_blank" class="link">DummyAPI</a> to retrieve a list of users, using `axios.get()`.
+Let's query the <a href="https://dummyapi.io/explorer" target="_blank" rel="noopener" class="link">DummyAPI</a> to retrieve a list of users, using `axios.get()`.
 
 ```js
 import axios from 'axios';
@@ -57,7 +57,7 @@ const response = axios.get('https://dummyapi.io/data/api/user?limit=10')
 const users = response.data
 ```
 
-Since Axios always returns the query in an object data, we can rewrite the code above as using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank" class="link">destructuring</a>
+Since Axios always returns the query in an object data, we can rewrite the code above as using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank" rel="noopener" class="link">destructuring</a>
 
 ```js
 import axios from 'axios';
@@ -91,4 +91,4 @@ addUser (user) => {
 addUser(newUser);
 ```
 
-This is a quick introduction for beginners. Axios enables you to do so much more. You can read about more advanced Axios methods in this <a href="https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/#postjson" target="_blank">Article by Faraz Kelhini</a> 
+This is a quick introduction for beginners. Axios enables you to do so much more. You can read about more advanced Axios methods in this <a href="https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/#postjson" target="_blank" rel="noopener">Article by Faraz Kelhini</a> 

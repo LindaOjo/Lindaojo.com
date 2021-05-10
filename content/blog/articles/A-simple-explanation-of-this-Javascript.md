@@ -1,7 +1,7 @@
 ---
 image: 'https://res.cloudinary.com/lindaojo/image/upload/v1609107494/this_JS_wjxoir.png'
 title: "A simple explanation of 'this' - JavaScript"
-duration: "2 minute"
+duration: "2 minutes"
 excerpt: "In this post, I will be sharing a simple and detailed explanation of 'this' keyword in JavaScript. "
 date: "2020-12-28"
 isBlogPost: true

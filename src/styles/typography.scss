@@ -4,7 +4,7 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 .h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .h2 {
@@ -13,6 +13,10 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 .h3 {
     font-size: 1.5rem;
+}
+
+.h5 {
+    font-size: 1.2rem;
 }
 
 .primary-color{
@@ -29,4 +33,9 @@ body, h1, h2, h3, h4, h5, h6, p {
     .h3 {
         font-size: 1.3rem !important;
     }
+
+    .h5 {
+        font-size: 1.1rem !important;
+    }
+
 }
