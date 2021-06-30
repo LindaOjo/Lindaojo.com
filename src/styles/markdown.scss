@@ -1,7 +1,10 @@
 .gridsome-highlight {
     background-color: var(--code-block-background)!important;
     border: 2px solid white !important;
+}
 
+article a {
+    color: #5baaf8 !important;
 }
 
 article>h2 {
