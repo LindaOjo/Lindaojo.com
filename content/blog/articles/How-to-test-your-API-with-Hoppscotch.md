@@ -9,6 +9,8 @@ isBlogPost: true
 
 In this article, I will show you how to interact with APIs by making requests while showing you some of the cool features of [Hoppscotch](https://hoppscotch.io/).
 
+This article is sponsored by [Aviyel](https://aviyel.com/home) 🎉. Aviyel works with open source creators to build and incentivise active communities, achieve financial independence and increase adoption of their projects.
+
 <h3>Introduction to Hoppscotch</h3>
 
 Hoppscotch is an online open-source API request builder built by [Liyas Thomas](https://github.com/liyasthomas) and [contributors](https://github.com/hoppscotch/hoppscotch/graphs/contributors) that helps you create requests faster, saving precious time on development. It is lightweight, effective, and efficient,
@@ -50,7 +52,7 @@ APIs are interacted with by making API requests. Hoppscotch lets you make reques
 
 We are going to use the [{JSON} Placeholder](https://jsonplaceholder.typicode.com/) free fake API which can be used for testing and prototyping.  This will enable us carry out all CRUD operations.
 
-First off, head over to [Hoppscotch](https://hoppscotch.io/) and place this JSON placeholder request url for posts (https://jsonplaceholder.typicode.com/posts]) in the URL field as shown below.
+First off, head over to [Hoppscotch](https://hoppscotch.io/) and place this JSON placeholder request url for posts (https://jsonplaceholder.typicode.com/posts) in the URL field as shown below.
 
 
 ![Hoppscotch](https://paper-attachments.dropbox.com/s_25C8401A7C42B836680BB473E9904ECF2B97F28BEC5C746CC173653B69B6F6E7_1623348597261_add-url.png)
