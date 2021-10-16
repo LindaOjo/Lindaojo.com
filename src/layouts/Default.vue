@@ -53,7 +53,6 @@
                         <div v-click-outside="hideMenu">
                             <g-link class="menu-link" to="/">Home</g-link>
                             <g-link class="menu-link" to="/articles/">Articles</g-link>
-                            <g-link class="menu-link" to="/poems/">Poems</g-link>
                             <g-link class="menu-link" to="/contact/">Contact</g-link>
                         </div>
                     </div>
